@@ -2,10 +2,28 @@ body{
     margin: 0px;
 }
 .menu{
-    background:#2E8B57 ;
+    background: #19302B;
     padding: 1.5em;
-    font-size: 1.1em;
+    font-size: 2em;
 }
-.menu button{
-
+.menu a{
+    background: none;
+    border: 1px solid #fff5;
+    border-radius: 50%;
+}
+.menu a img{
+    width: 1.8em;
+    border-radius: 50%;
+}
+input{
+    background: #3E6C6A ;
+    border-radius: 5px;
+    border: none;
+}
+.pesquisar{
+    border: none;
+    border-radius: 50%;
+}
+.pesquisar img{
+    width: 50px;
 }
