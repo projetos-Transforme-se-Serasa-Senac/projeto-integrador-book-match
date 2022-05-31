@@ -1,29 +1,170 @@
+                                /* *********** */
+                                /*   DESKTOP   */
+                                /* ********** */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
     margin: 0px;
 }
+.body2{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/********/
+/**MENU**/
+/********/
 .menu{
-    background: #19302B;
-    padding: 1.5em;
-    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #035024  ,  #02735E);
+    padding: 10px;
+    padding-bottom:0px ;
+    height: 65px;
+    text-decoration: none !important;
 }
-.menu a{
+
+
+   
+.menuDesktop{
+    font-family: 'Poppins', sans-serif;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+    color: blanchedalmond;
+    text-decoration: none !important;
+
+}
+
+
+/*LOGO*/
+.menu .logoDesktop{
+    width: 95px;
+    height: 45px;
+    
+}
+.menu .logoMobile{
+    display:none;
+}
+
+/*Pesquisar*/
+.pesquisar button{
     background: none;
-    border: 1px solid #fff5;
-    border-radius: 50%;
+    border: none;
 }
-.menu a img{
-    width: 1.8em;
-    border-radius: 50%;
+.pesquisar img{
+    width: 40px;
+    height: 40px;
 }
-input{
+.pesquisar input {
+    background: #19302B;
+    border: none;
+    border-radius: 5px;
+    padding-left: 200px ;
+    padding: 10px;
+    width: 350px;
+    height: 36px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: blanchedalmond !important;
+}
+
+/*Perfilsinho*/
+.perfil{
+    width: 3.0em;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.perfil:hover{
+    transform: scale(1.05);   
+}
+.menuMobile{
+    display: none;
+}
+
+                                    /* ************************* */
+                                    /* *********Mobile********** */
+                                    /* ************************* */
+
+@media only screen and (max-width: 600px){
+    /* MENU */
+.menu{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo */
+.menu .logoDesktop{
+    display: none !important;
+}
+.menu .logoMobile{
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+    /* MENU DE BAIXO NO MOBILE */
+
+footer{
+    margin: 0px;
+}
+footer .catMobile{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: #035024;
+    position: absolute;
+    padding: 20px;
+}
+.catMobile a{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 30px;
+}
+.menuDesktop{
+    display: none !important;
+
+}
+    /* PESQUISAR */
+.pesquisar input{
     background: #3E6C6A ;
     border-radius: 5px;
     border: none;
+    width: 100px;
+    margin-bottom: 50px ;
+    margin-top: 0px;
 }
-.pesquisar{
-    border: none;
+.pesquisar .lupa{ 
+    margin-top: 30px;
+    width: 1.7em;
+} 
+
+
+
+    /* PERFILZINHO */
+.perfil a button{
+    margin-top: 4em;
+    max-width: 30px;
+    width: 4em;
     border-radius: 50%;
 }
-.pesquisar img{
-    width: 50px;
+.perfil:hover{
+    transform: scale(1.05);  
+    
 }
+}
+/* NÃO SEI NOMEAR AS COISAS, SE ESTIVER DIFICIL DE ENTENDER PODE FICAR A VONTADE PRA MUDAR (; */
