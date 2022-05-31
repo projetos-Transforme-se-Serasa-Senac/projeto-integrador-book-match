@@ -13,10 +13,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/********/
-/**MENU**/
-/********/
-.menu{
+                                            /***********/
+                                            /**HEADER**/
+                                            /**********/
+header{
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to right, #035024  ,  #02735E);
@@ -28,27 +28,32 @@ body{
 
 
    
-.menuDesktop{
+/* .menuDesktop{
     font-family: 'Poppins', sans-serif;
     /* display: flex;
-    justify-content: space-between; */
+    justify-content: space-between; 
     padding: 10px;
     margin: 10px;
     font-size: 1.1em;
     color: blanchedalmond;
     text-decoration: none !important;
 
-}
+} */
 
 
 /*LOGO*/
-.menu .logoDesktop{
-    width: 95px;
+header img .logo{
+    width: 150px;
     height: 45px;
-    
+    margin-top: 10px;
 }
-.menu .logoMobile{
-    display:none;
+header .logo{
+    width: 150px;
+    height: 45px;
+    margin-bottom: 10px ;
+}
+header img:hover{
+    transform: scale(1.05);   
 }
 
 /*Pesquisar*/
@@ -68,14 +73,14 @@ body{
     padding: 10px;
     width: 350px;
     height: 36px;
-    margin-top: 12px;
-    margin-bottom: 10px;
+    margin-top: 5px; 
+    margin-bottom: 40px;
     color: blanchedalmond !important;
 }
 
 /*Perfilsinho*/
 .perfil{
-    width: 3.0em;
+    width: 2.8em;
     border-radius: 100%;
     overflow: hidden;
     position: relative;
@@ -83,16 +88,109 @@ body{
 .perfil:hover{
     transform: scale(1.05);   
 }
-.menuMobile{
-    display: none;
+
+                                            /***********/
+                                            /****NAV****/
+                                            /**********/
+nav a{
+    text-decoration: none;
+    color: #035024;
+
 }
+nav{
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .menuMobile{
+    display: none;
+} */
 
                                     /* ************************* */
                                     /* *********Mobile********** */
                                     /* ************************* */
 
-@media only screen and (max-width: 600px){
-    /* MENU */
+/* @media only screen and (max-width: 600px){
+
+    /* MENU 
 .menu{
     max-width: 800px;
     width: 100%;
@@ -100,7 +198,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-/* Logo */
+/* Logo 
 .menu .logoDesktop{
     display: none !important;
 }
@@ -109,12 +207,12 @@ body{
     width: 1em;
     height: 1em;
 }
-    /* MENU DE BAIXO NO MOBILE */
+    /* MENU DE BAIXO NO MOBILE 
 
 footer{
     margin: 0px;
 }
-footer .catMobile{
+footer .menuMobile{
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -128,7 +226,7 @@ footer .catMobile{
     position: absolute;
     padding: 20px;
 }
-.catMobile a{
+.menuMobile a{
     display: flex;
     justify-content: space-evenly;
     text-decoration: none;
@@ -139,7 +237,7 @@ footer .catMobile{
     display: none !important;
 
 }
-    /* PESQUISAR */
+    /* PESQUISAR 
 .pesquisar input{
     background: #3E6C6A ;
     border-radius: 5px;
@@ -155,7 +253,7 @@ footer .catMobile{
 
 
 
-    /* PERFILZINHO */
+    /* PERFILZINHO 
 .perfil a button{
     margin-top: 4em;
     max-width: 30px;
@@ -166,5 +264,5 @@ footer .catMobile{
     transform: scale(1.05);  
     
 }
-}
+}*/
 /* NÃO SEI NOMEAR AS COISAS, SE ESTIVER DIFICIL DE ENTENDER PODE FICAR A VONTADE PRA MUDAR (; */
