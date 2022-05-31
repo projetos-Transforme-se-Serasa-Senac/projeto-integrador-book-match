@@ -20,6 +20,8 @@ const App = () => {
   return ( 
     <div>
 
+    <Menu/>
+
     <Navegacao/> 
 
     <Routes>
@@ -35,3 +37,5 @@ const App = () => {
 }
  
 export default App;
+
+
