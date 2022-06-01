@@ -1,0 +1,268 @@
+                                /* *********** */
+                                /*   DESKTOP   */
+                                /* ********** */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0px;
+}
+.body2{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+                                            /***********/
+                                            /**HEADER**/
+                                            /**********/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #035024  ,  #02735E);
+    padding: 10px;
+    padding-bottom:0px ;
+    height: 65px;
+    text-decoration: none !important;
+}
+
+
+   
+/* .menuDesktop{
+    font-family: 'Poppins', sans-serif;
+    /* display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.1em;
+    color: blanchedalmond;
+    text-decoration: none !important;
+
+} */
+
+
+/*LOGO*/
+header img .logo{
+    width: 150px;
+    height: 45px;
+    margin-top: 10px;
+}
+header .logo{
+    width: 150px;
+    height: 45px;
+    margin-bottom: 10px ;
+}
+header img:hover{
+    transform: scale(1.05);   
+}
+
+/*Pesquisar*/
+.pesquisar button{
+    background: none;
+    border: none;
+}
+.pesquisar img{
+    width: 40px;
+    height: 40px;
+}
+.pesquisar input {
+    background: #19302B;
+    border: none;
+    border-radius: 5px;
+    padding-left: 200px ;
+    padding: 10px;
+    width: 350px;
+    height: 36px;
+    margin-top: 5px; 
+    margin-bottom: 40px;
+    color: blanchedalmond !important;
+}
+
+/*Perfilsinho*/
+.perfil{
+    width: 2.8em;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.perfil:hover{
+    transform: scale(1.05);   
+}
+
+                                            /***********/
+                                            /****NAV****/
+                                            /**********/
+nav a{
+    text-decoration: none;
+    color: #035024;
+
+}
+nav{
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .menuMobile{
+    display: none;
+} */
+
+                                    /* ************************* */
+                                    /* *********Mobile********** */
+                                    /* ************************* */
+
+/* @media only screen and (max-width: 600px){
+
+    /* MENU 
+.menu{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* Logo 
+.menu .logoDesktop{
+    display: none !important;
+}
+.menu .logoMobile{
+    display: block;
+    width: 1em;
+    height: 1em;
+}
+    /* MENU DE BAIXO NO MOBILE 
+
+footer{
+    margin: 0px;
+}
+footer .menuMobile{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: #035024;
+    position: absolute;
+    padding: 20px;
+}
+.menuMobile a{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 30px;
+}
+.menuDesktop{
+    display: none !important;
+
+}
+    /* PESQUISAR 
+.pesquisar input{
+    background: #3E6C6A ;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    margin-bottom: 50px ;
+    margin-top: 0px;
+}
+.pesquisar .lupa{ 
+    margin-top: 30px;
+    width: 1.7em;
+} 
+
+
+
+    /* PERFILZINHO 
+.perfil a button{
+    margin-top: 4em;
+    max-width: 30px;
+    width: 4em;
+    border-radius: 50%;
+}
+.perfil:hover{
+    transform: scale(1.05);  
+    
+}
+}*/
+/* NÃO SEI NOMEAR AS COISAS, SE ESTIVER DIFICIL DE ENTENDER PODE FICAR A VONTADE PRA MUDAR (; */
