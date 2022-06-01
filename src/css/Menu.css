@@ -89,23 +89,6 @@ header img:hover{
     transform: scale(1.05);   
 }
 
-                                            /***********/
-                                            /****NAV****/
-                                            /**********/
-nav a{
-    text-decoration: none;
-    color: #035024;
-
-}
-nav{
-    font-size: 1.1em;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 50px;
-}
-
-
 
 
 
