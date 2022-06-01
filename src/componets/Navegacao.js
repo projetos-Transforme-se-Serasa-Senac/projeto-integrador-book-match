@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const Navegacao = () => {
+    require ('./css/Navegacao.css')
     return ( 
         <div>
 
