@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Menu from './componets/Menu';
+import Menu from './components/Menu';
 
-import Navegacao from './componets/Navegacao';
+import Navegacao from './components/Navegacao';
 
 import { Routes, Route } from "react-router-dom"; 
 
