@@ -7,10 +7,12 @@ const Menu = () => {
     require ('./Menu.css')
 
     return ( 
-        <div >
-                {/* <div>
-                    <img scr="#" LOGO/>
-                </div> */}
+        <header>
+            <Link to="/" className="logo"><img src="https://i.imgur.com/QcRjnUP.png" /></Link>
+
+            <div className="pesquisar" >
+                <input type="text"/><img className="lupa" src="https://i.imgur.com/rFe6FMK.png"/>
+            </div>
 
             <div>
 
@@ -21,7 +23,7 @@ const Menu = () => {
             </div>
 
 
-        </div>
+        </header>
      );
 }
  
