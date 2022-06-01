@@ -20,9 +20,10 @@ header{
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to right, #035024  ,  #02735E);
-    padding: 10px;
-    padding-bottom:0px ;
-    height: 65px;
+    padding: 15px;
+    padding: bottom 12px;
+    height: 70px;
+    margin-bottom: 5px;
     text-decoration: none !important;
 }
 
@@ -44,12 +45,12 @@ header{
 /*LOGO*/
 header img .logo{
     width: 150px;
-    height: 45px;
+    height: 30px;
     margin-top: 10px;
 }
 header .logo{
     width: 150px;
-    height: 45px;
+    height: 35px;
     margin-bottom: 10px ;
 }
 header img:hover{

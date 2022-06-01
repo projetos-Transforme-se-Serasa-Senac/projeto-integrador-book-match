@@ -22,6 +22,8 @@ const Menu = () => {
 
             </div>
 
+            <a href="#"> <img class="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/></a>
+
 
         </header>
      );
