@@ -14,6 +14,10 @@ import Comunidade from './Comunidade';
 
 import Chat from './Chat';
 
+import Emprestados from './Emprestados';
+import CadastroLivros from './CadastroLivros';
+import Perfil from './Perfil';
+
 
 
 const App = () => {
@@ -30,7 +34,12 @@ const App = () => {
       <Route path="/comunidade" element={<Comunidade/>}/>
       <Route path="/chat" element={<Chat/>}/>
     </Routes>
-
+      
+    <Routes>
+      <Route path="/emprestados" element={<Emprestados/>}/>
+      <Route path="/cadastroLivros" element={<CadastroLivros/>}/>
+      <Route path="/perfil" element={<Perfil/>}/>
+    </Routes>
 
     </div>
    );
