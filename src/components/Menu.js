@@ -4,6 +4,17 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
 
+    const estaMostrando = () =>{}
+
+    // const estaMostrando = () => {
+    //     document.getElementsByClassName("modal")[0].style.display ="block"
+    //      document.getElementsByClassName("fundoPreto")[0].style.display ="block"
+    
+    //     document.getElementById("inputTitulo").value ="";
+    //     document.getElementById("inputTitulo").focus();    //focar no quadrado para clicar
+    // }
+    
+
     require ('./Menu.css')
 
     return ( 
@@ -14,7 +25,7 @@ const Menu = () => {
                 <input type="text"/><img className="lupa" src="https://i.imgur.com/rFe6FMK.png"/>
             </div>
 
-            <div>
+            <div className="estaMostrando">
 
                 <Link to="/"> Cadastro Livros </Link>
                 <Link to="/"> Perfil </Link>
@@ -22,7 +33,8 @@ const Menu = () => {
 
             </div>
 
-            <a href="#"> <img class="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/></a>
+            <a onClick={estaMostrando()} href="#"> <img className="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/>
+            </a>
 
 
         </header>
