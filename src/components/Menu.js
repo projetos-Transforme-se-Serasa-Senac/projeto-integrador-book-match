@@ -20,7 +20,9 @@ const Menu = () => {
             <div className='opcoesMenu'>
                 <ul>
                     <li><Link to="/"> Cadastro Livros </Link></li>
+                    <hr/>
                     <li><Link to="/"> Perfil </Link></li>
+                    <hr/>
                     <li><Link to="/"> Emprestados </Link></li>
                 </ul>             
             </div>

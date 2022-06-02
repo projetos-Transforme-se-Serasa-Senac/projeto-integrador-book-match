@@ -88,6 +88,46 @@ header img:hover{
 .perfil:hover{
     transform: scale(1.05);   
 }
+.opcoesMenu{
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin-top: 50px;
+    right: 15px;
+    position: absolute;
+    border:2px solid #02735E;
+}
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #035024;
+}
+
+hr {
+    width: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                             /***********/
                                             /****NAV****/
