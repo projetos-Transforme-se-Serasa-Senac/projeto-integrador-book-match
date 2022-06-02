@@ -3,17 +3,39 @@ import React from 'react';
 
 const CadastroLivros = () => {
     return ( 
-        <div>
+        <section>
+            <form method="POST">
+                <h1> Cadastro de Livros </h1>
 
-            <h1> Cadastro de Livros </h1>
+                <label for='nome'> Nome do Livro </label>
+                <input id="nome" type='text'/>
 
+                <label for='nome'> Autor </label>
+                <input id="nome" type='text'/>
 
-            <button> Cadastrar </button>
-            <br/>
-            <br/>
-            <button> Cancelar </button>
+                <label for='nome'> Gênero </label>
+                <input id="nome" type='text'/>
 
-        </div>
+                <label for='nome'> Classificação Etária  </label>
+                <input id="nome" type='text'/>
+
+                <label for='nome'> Tags </label>
+                <input id="nome" type='text'/>
+
+                <label for='nome'> Data da Devolução </label>
+                <input id="nome" type='text'/>
+
+                <label for='nome'> Aluguel (opcional)</label>
+                <input id="nome" type='text'/>
+
+                <label for='nome'> Sinopse </label>
+                <input id="nome" type='text'/>
+
+                <input type='submit' value='Cadastrar'/>
+                <input type='submit' value='Cancelar'/>
+            </form>
+        </section>
+        
      );
 }
  
