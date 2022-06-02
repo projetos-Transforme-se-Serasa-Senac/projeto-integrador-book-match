@@ -29,13 +29,13 @@ const Menu = () => {
                         <hr/>
                         <li><Link to="/"> Emprestados </Link></li>
                         <hr/>
-                        <li> <Link to="/"> Sair </Link> </li>
+                        <li> <Link to="/"> Sair </Link> <img src='https://i.imgur.com/rUnPf2j.png'/> </li>
                     </ul>             
                 </div>
 
                    : null
                 }
-            </div>
+            </div> 
 
 
         </header>
