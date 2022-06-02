@@ -6,6 +6,9 @@ import Match from '../Match';
 import Feed from '../Feed';
 import Comunidade from '../Comunidade';
 import Chat from '../Chat';
+import Emprestados from '../Emprestados';
+import CadastroLivros from '../CadastroLivros';
+import Perfil from '../Perfil';
 
 const AppRouter = () => {
     return(
@@ -18,6 +21,9 @@ const AppRouter = () => {
                 <Route path="/feed" element={<Feed/>}/>
                 <Route path="/comunidade" element={<Comunidade/>}/>
                 <Route path="/chat" element={<Chat/>}/>
+                <Route path="/emprestados" element={<Emprestados/>}/>
+                <Route path="/cadastroLivros" element={<CadastroLivros/>}/>
+                <Route path="/perfil" element={<Perfil/>}/>
             </Routes>
         </Router>
     );
