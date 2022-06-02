@@ -11,7 +11,7 @@ const Menu = () => {
 
     return ( 
         <header>
-            <Link to="/" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
+            <Link to="/match" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
 
             <div className="pesquisar" >
                 <input type="text"/><img className="lupa" src="https://i.imgur.com/rFe6FMK.png"/>
@@ -23,11 +23,11 @@ const Menu = () => {
 
                 <div className='opcoesMenu'>
                     <ul>
-                        <li><Link to="/"> Cadastro Livros </Link></li>
+                        <li><Link to="/cadastroLivros"> Cadastro Livros </Link></li>
                         <hr/>
-                        <li><Link to="/"> Perfil </Link></li>
+                        <li><Link to="/perfil"> Perfil </Link></li>
                         <hr/>
-                        <li><Link to="/"> Emprestados </Link></li>
+                        <li><Link to="/emprestados"> Emprestados </Link></li>
                         <hr/>
                         <li> <Link to="/"> Sair </Link> <img src='https://i.imgur.com/rUnPf2j.png'/> </li>
                     </ul>             
