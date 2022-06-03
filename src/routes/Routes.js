@@ -6,6 +6,9 @@ import Match from '../pages/Match/Match';
 import Feed from '../pages/Feed/Feed';
 import Comunidade from '../pages/Comunidade/Comunidade';
 import Chat from '../pages/Chat/Chat';
+import Emprestados from '../pages/Emprestados/Emprestados';
+import CadastroLivros from '../pages/CadastroLivros/CadastroLivros';
+import Perfil from '../pages/Perfil/Perfil';
 
 const AppRouter = () => {
     return(
