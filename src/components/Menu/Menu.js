@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-
 import { Link } from "react-router-dom";
+
 
 const Menu = () => {
 
-    require ('./Menu.css')
+    require('./Menu.css')
 
     const [estaMostrando, mostraElemento] = useState(false)
     const mostrarOuOcultar = () => mostraElemento(!estaMostrando)
+
+    const [mostraMenu, alteraMostrarMenu] = useState(true)
 
     return ( 
         <header>

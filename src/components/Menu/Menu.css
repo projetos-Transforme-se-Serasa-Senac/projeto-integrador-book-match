@@ -113,7 +113,9 @@ hr {
 
 
 
-
+.invisivel{
+    display: none;
+}
 
 
 
@@ -146,61 +148,6 @@ nav{
     justify-content: space-between;
     margin: 0px 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
