@@ -21,6 +21,10 @@ const AppRouter = () => {
             <Route path="/comunidade" element={<Comunidade/>}/>
             <Route path="/chat" element={<Chat/>}/>
 
+            {/* ROTAS MENU */}
+            <Route path="/emprestados" element={<Emprestados/>}/>
+            <Route path="/cadastroLivros" element={<CadastroLivros/>}/>
+            <Route path="/perfil" element={<Perfil/>}/>
             
         </Routes>
 
