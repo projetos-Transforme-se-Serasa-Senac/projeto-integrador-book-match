@@ -1,25 +1,88 @@
+import { useState } from "react";
+
+
 const SignUp = () => {
+    require ('./SignUp.css')
+    const [Nome, setNome] = useState ("")
+    const [usuario, setUsuario] = useState ("")
+    const [email, setEmail] = useState ("")
+    const [senha, setSenha] = useState ("")
+
     return(
-        <section>
-            <form method="POST">
-                <label for='nome'> Nome </label>
-                <input id="nome" type='text' required/>
+    <div className="container">
+        <div className="container-login">
+            <div className="wrapLogin">
 
-                <label for='usuario'> Usuário </label>
-                <input id="usuario" type='text' required/>
+                    <section>
+                        <form method="POST">
+                            <span className="loginTitle">Tela de cadastro</span>
 
-                <label for='email'> Email </label>
-                <input id="email" type='email' required/>
+                            <div className="wrapInput">
+                                <input 
+                                    className={Nome !== ""? 'temValor input': 'input' } 
+                                    id="nome" type='text' 
+                                    required
+                                    value={Nome}
+                                    onChange={e => setNome(e.target.value)}
+                                />
+                                <label className="focusInput" for='nome'> Nome </label>
+                                
+                            </div>
 
-                <label for='senha'> Senha </label>
-                <input id='senha' type='password' required/>
+                            <div className="wrapInput">
+                                <label for='usuario'> Usuário </label>
+                                <input
+                                    className={usuario !== ""? 'temValor input': 'input' } 
+                                    id="usuario"
+                                    type='text'
+                                    required 
+                                    value={usuario}
+                                    onChange={e => setUsuario(e.target.value)}
+                                />
+                            </div>
 
-                <label for='confirmaSenha'> Confirme a Senha </label>
-                <input id="confirmaSenha" type='password' required/>
+                            <div className="wrapInput">
+                                <label for='email'> Email </label>
+                                <input 
+                                    className={email !== ""? 'temValor input': 'input' } 
+                                    id="email" 
+                                    type='email' 
+                                    required
+                                    value={email}
+                                    onChange={e => setEmail(e.target.value)}
+                                />
+                            </div>
 
-                <input type='submit' value='Cadastrar'/>
-            </form>
-        </section>
+                            <div className="wrapInput">
+                                <label for='senha'> Senha </label>
+                                <input
+                                    className={senha !== ""? 'temValor input': 'input' }  
+                                    id='senha' 
+                                    type='password'
+                                    required
+                                    value={senha}
+                                    onChange={e => setSenha(e.target.value)}
+                                />
+                            </div>
+                                
+                            <div className="wrapInput">
+                                <label for='confirmaSenha'> Confirme a Senha </label>
+                                <input
+                                    className={senha !== ""? 'temValor input': 'input' } 
+                                    id="confirmaSenha"
+                                    type='password'
+                                    required
+                                    value={senha}
+                                    onChange={e => setSenha(e.target.value)}
+                                />
+                            </div>
+                                <input type='submit' className="login-form-btn" value='Cadastrar'/>
+                        </form>
+                   </section>
+
+            </div>
+        </div>
+    </div>
     );
 }
 

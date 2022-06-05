@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    background-image: url('https://i.imgur.com/hu5ktgp.jpg');
+}
 *{
+   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .container{
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
+    float: right;
+    
 }
 .container-login{
     width: 100%;
@@ -33,23 +41,28 @@
 .loginTitle{
     display: block;
     font-size: 30px;
-    color: whitesmoke;
+    color: rgb(7, 5, 5);
 
     line-height: 1.2;
     text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
 }
 .loginTitle img{
     width: 90px;
+    margin: 20px;
+    
+    border-radius: 15px;
 }
 .wrapInput{
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #035933;
+    border-bottom: 2px solid #adadad;
     margin-bottom: 37px;
 }
 .input{
     font-size: 15px;
-    color: #fff;
+    color: #2E8B57;
     line-height: 1.2;
     border: none;
     display: block;
@@ -86,7 +99,7 @@
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
 
-    background: linear-gradient(to left, #2E8B57, #32CD32);
+    background: linear-gradient(to left,#32CD32, #40E0D0);
 
 }
 .focusInput::after{
@@ -120,14 +133,12 @@
         
 }
 
-
-
-
  .container-login-form-btn{
      display: flex;
      flex-wrap: wrap;
      justify-content: center ;
      padding-bottom: 13px;
+
  }
  .login-form-btn{
     font-size: 15px;
@@ -149,7 +160,7 @@
 
 }
 .login-form-btn:hover{
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 .text-center{
