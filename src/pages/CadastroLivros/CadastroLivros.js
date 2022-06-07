@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Match from '../Match/Match';
+
 
 const CadastroLivros = () => {
     return ( 
@@ -41,7 +43,7 @@ const CadastroLivros = () => {
                 <textarea id='sinopse' rows='5' cols='35' required> </textarea>
 
                 <input type='submit' value='Cadastrar'/>
-                <input type='submit' value='Cancelar'/>
+                <input type='submit' value='Cancelar' />
             </form>
         </section>
         
