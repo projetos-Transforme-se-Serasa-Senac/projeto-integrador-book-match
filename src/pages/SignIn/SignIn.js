@@ -17,11 +17,11 @@ const SignIn = () => {
                 <form className="loginForm">
 
                     {/* Logo e mensagem */}
-                    <span className="loginTitle">Bem vindo!</span>
+                    <span className="loginTitle">Book Match</span>
 
-                    <span className="loginTitle">
+                    {/* <span className="loginTitle">
                         <img src="https://i.imgur.com/P3vDZ0n.jpg"/>
-                    </span>
+                    </span> */}
 
 
                     {/* Usuario e senha */}
