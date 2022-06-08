@@ -9,25 +9,25 @@ const Emprestados = () => {
         {
            nome: "Livro: A menina que roubava livros",
            autor: "Autor: Markus Zusak",
-           devolucao: "Data de devolução: 07/05",
-           pessoa: "Emprestou: Giulia",
-           imagem: "https://i.imgur.com/xMs70Vl.png"
+           eprestimo: "Data de empréstimo: 01/05",
+           devolucao: "Data de devolução: 15/05",
+           pessoa: "Emprestou: Giulia"
         },
 
         {
             nome: "O assassinato no expresso oriente",
-            devolucao: "Data de devolução: 07/05",
             autor: "Autor: Agatha Christie",
-            pessoa: "Emprestou: Giulia",
-            imagem: "https://i.imgur.com/2E3nakQ.png" 
+            eprestimo: "Data de empréstimo: 01/05",
+            devolucao: "Data de devolução: 15/05",
+            pessoa: "Emprestou: Giulia"
          },
 
          {
             nome: "Corte de espinhos e rosas",
-            devolucao: "Data de devolução: 07/05",
             autor: "Autor: Sarah J. Maas",
-            pessoa: "Emprestou: Giulia",
-            imagem: "https://i.imgur.com/im9zDIr.jpg" 
+            eprestimo: "Data de empréstimo: 01/05",
+            devolucao: "Data de devolução: 15/05",
+            pessoa: "Emprestou: Giulia"
          }
     ]
 
@@ -45,16 +45,18 @@ const Emprestados = () => {
                 livros.map( livros => {
                     return(
 
-                        <div className = "livros">
-                            <h3> { livros.nome } </h3>
-                            <h5> {livros.autor} </h5>
-                            <h5> {livros.pessoa} </h5>
-                            <h5> {livros.devolucao} </h5>
-                            <img src = {livros.imagem}  width = "250px"/>
-                            <br/>
-                            <br/>
-                            <br/>
-                        </div>
+                        <ul className = "livros">
+                            <li>
+                                <h3> { livros.nome } </h3>
+                                <h5> {livros.autor} </h5>                           
+                                <h5> {livros.eprestimo} </h5>
+                                <h5> {livros.devolucao} </h5>
+                                <h5> {livros.pessoa} </h5>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </li>
+                        </ul>
                     )                 
                 })
             }
