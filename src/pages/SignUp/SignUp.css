@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
 
 body{
     background-image: url('https://i.imgur.com/hu5ktgp.jpg');
@@ -11,7 +11,10 @@ body{
 }
 .container{
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
+
+
+    
 }
 .container-login{
     width: 100%;
@@ -44,14 +47,18 @@ body{
     line-height: 1.2;
     text-align: center;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
-.loginTitle img{
+
+
+
+/* .loginTitle img{
     width: 90px;
     margin: 20px;
+
     
     border-radius: 15px;
-}
+} */
 .wrapInput{
     width: 100%;
     position: relative;
@@ -82,7 +89,7 @@ body{
     left: 0;
 
     pointer-events: none;
-    color: whitesmoke
+    color: #2E8B57
 }
 .focusInput::before{
     content: "";
@@ -102,7 +109,7 @@ body{
 }
 .focusInput::after{
     font-size: 15px;
-    color: #555;
+    color: #999;
     line-height: 1.2;
 
     content: attr(data-placeholder);
@@ -129,6 +136,13 @@ body{
 .input:focus + .focusInput::before{
     width: 100%;
         
+}
+
+.temValor + .focusInput::after{
+    top: -15px;
+}
+.temValor + .focusInput::before{
+    width: 100% ;
 }
 
  .container-login-form-btn{
