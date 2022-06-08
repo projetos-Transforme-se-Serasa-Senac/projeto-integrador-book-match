@@ -12,7 +12,7 @@ const SignIn = () => {
     <div className="container">   
         <div className="container-login">
             {/* {document.getElementById('menu').innerHTML='jasjdaj'} */}
-            <div class="wrapLogin">
+            <div className="wrapLogin">
 
                 <form className="loginForm">
 
