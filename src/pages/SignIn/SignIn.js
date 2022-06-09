@@ -3,13 +3,14 @@ import { useState } from "react";
 
 const SignIn = () => {
      require ('./SignIn.css')
+     require ('../../assets/global.css')
 
     const [usuario, setUsuario] = useState ("")
     const [senha, setSenha] = useState ("")
 
 
     return(
-    <div className="container">   
+    <div className="container background">   
         <div className="container-login">
             {/* {document.getElementById('menu').innerHTML='jasjdaj'} */}
             <div class="wrapLogin">
@@ -17,11 +18,7 @@ const SignIn = () => {
                 <form className="loginForm">
 
                     {/* Logo e mensagem */}
-                    <span className="loginTitle">Book Match</span>
-
-                    {/* <span className="loginTitle">
-                        <img src="https://i.imgur.com/P3vDZ0n.jpg"/>
-                    </span> */}
+                    <span className="loginTitle">Faça seu logIn</span>
 
 
                     {/* Usuario e senha */}
