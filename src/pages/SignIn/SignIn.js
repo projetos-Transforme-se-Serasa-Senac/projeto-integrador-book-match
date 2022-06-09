@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const SignIn = () => {
      require ('./SignIn.css')
-     require ('../../assets/global.css')
+    //  require ('../../assets/global.css')
 
     const [usuario, setUsuario] = useState ("")
     const [senha, setSenha] = useState ("")
