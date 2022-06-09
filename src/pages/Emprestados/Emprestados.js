@@ -7,7 +7,7 @@ const Emprestados = () => {
 
     const livros = [
         {
-           nome: "Livro: A menina que roubava livros",
+           nome: "A menina que roubava livros",
            autor: "Autor: Markus Zusak",
            eprestimo: "Data de empréstimo: 01/05",
            devolucao: "Data de devolução: 15/05",
