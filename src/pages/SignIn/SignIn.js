@@ -13,7 +13,7 @@ const SignIn = () => {
     <div className="container background">   
         <div className="container-login">
             {/* {document.getElementById('menu').innerHTML='jasjdaj'} */}
-            <div class="wrapLogin">
+            <div className="wrapLogin">
 
                 <form className="loginForm">
 
