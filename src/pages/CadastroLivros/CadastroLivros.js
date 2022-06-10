@@ -4,48 +4,73 @@ import Match from '../Match/Match';
 
 
 const CadastroLivros = () => {
+    require ('./CadastroLivros.css')
     return ( 
-        <section>
-            <form method="POST">
-                <h1> Cadastro de Livros </h1>
+    <div className='container'>
+        <div className='container-cadastro'>
+            <div className='wrapCadastro'>
+                <section>
+                    <form method="POST">
 
-                <label for='nome'> Nome do Livro </label>
-                <input id="nome" type='text' required/>
+                    <span className="cadastroTitle">Cadastro de livros</span>
 
-                <label for='autor'> Autor </label>
-                <input id="autor" type='text' required/>
+                        <div className='hoverInput '>    
+                            <input id="nome" className='info' type='text' placeholder='Nome do livro *' required/>
+                            <span className="focusInput" for="nome" data-placeholder="Nome do livro"></span>
+                        </div>   
 
-                <label for='genero'> Gênero </label>
-                <input id="genero" type='text'required/>
+                        <div className='hoverInput '>  
+                            <input id="autor" className='info' type='text' placeholder='Autor *' required/>
+                            <span for='autor'  className="focusInput" data-placeholder="Autor"></span>                             
+                        </div>  
 
-                <label for='classificacao' > Classificação Indicativa  </label>
-                <select id='classificacao' required>
-                    <option value="0"> -- </option> 
-                    <option value="1"> L </option>
-                    <option value="2"> 10 </option>
-                    <option value="3"> 12 </option>
-                    <option value="4"> 14 </option>
-                    <option value="5"> 16 </option>
-                    <option value="6"> 18+ </option>
-                </select>
-                
-                <label for='tags'> Tags </label>
-                <input id="tags" type='text'/>
+                        <div className='hoverInput '> 
+                            <input id="genero" className='info' type='text' placeholder='Gênero *' required/>
+                            <span for='genero'  className="focusInput" data-placeholder="Gênero"></span>                               
+                        </div>       
+                           
+                        
+                        
+                         <div className='organizacao'>  
+                            <select id='classificacao' required >
+                                <option value="0"> Classificação indicatória * </option> 
+                                <option value="1"> L </option>
+                                <option value="2"> 10 </option>
+                                <option value="3"> 12 </option>
+                                <option value="4"> 14 </option>
+                                <option value="5"> 16 </option>
+                                <option value="6"> 18+ </option>
+                            </select>
+                            <span for='classificacao'  ></span>
+                        
+                            
+                            <label for='tags'></label>
+                            <input id="tags"  placeholder='Tags' type='text'/>
+                        </div> 
 
-                <label for='devolucao' required> Data da Devolução </label>
-                <input id="devolucao" type='date'/>
+                            <label for='devolucao' className='titleData' required>Data de devolução*</label>
+                            <br/>
+                            <input id="devolucao"  type='date'/>
 
-                <label for='aluguel'> Aluguel (opcional)</label>
-                <input id="aluguel" type='number'/>
+                            <label for='aluguel' ></label>
+                            <input id="aluguel" placeholder=' Valor do aluguel (opcional)' type='number'/>
+                        
+                        
 
 
-                <label for='sinopse'> Sinopse </label>
-                <textarea id='sinopse' rows='5' cols='35' required> </textarea>
+                        <label for='sinopse'> Sinopse </label>
+                        <br/>
+                        <textarea id='sinopse' rows='5' cols='35' required> </textarea>
 
-                <input type='submit' value='Cadastrar'/>
-                <input type='submit' value='Cancelar' />
-            </form>
-        </section>
+                        <div className='cadastroBtns'>                          
+                            <input type='submit' className='btnCadastro' value='Cancelar' />
+                            <input type='submit' className='btnCadastro' value='Cadastrar'/>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
         
      );
 }

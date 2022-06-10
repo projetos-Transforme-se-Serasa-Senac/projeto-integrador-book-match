@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
+
+body{
+    background-color: #b0d4ba;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box ;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    float: left;
+}
+
+.container-cadastro{
+    width: 120%;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+
+    padding: 15px;
+
+}
+.wrapCadastro{
+    width: 500px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+}
+.cadastroTitle{
+    display: block;
+    font-size: 30px;
+    color: rgb(7, 5, 5);
+
+    line-height: 1.2;
+    text-align: center;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+.hoverInput{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #2E8B57;
+    margin-bottom: 37px;
+}
+.info{
+    font-size: 15px;
+    color: #2E8B57;
+    line-height: 1.2;
+    border: none;
+    display: block;
+
+    width: 100%;
+    height: 45px;
+
+    background: transparent;
+
+    padding: 0 5px;
+}
+
+.info:focus{
+    outline: 0;
+}
+.info:focus + .focusInput::after{
+    top:-15px;
+
+}
+.info:focus + .focusInput::before{
+    width: 100%;
+        
+}
+.organizacao{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    margin-bottom: 20px;
+}
+#classificacao{
+    width:55%;
+    height: 40px;
+
+    border-radius:10px ;
+    border: 1px solid #2E8B57;
+
+    color: #757575;
+
+    background: white;
+
+    
+}
+#classificacao:focus{
+    outline: 0;
+}
+#tags{
+    background-color: #fff;
+
+    height: 40px;
+
+    border: 1px solid #2E8B57;
+    border-radius: 10px;
+}
+#tags:focus{
+    outline: 0;
+}
+#devolucao{
+    background: #fff;
+    height: 40px;
+
+
+    border-radius: 10px;
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+
+    margin-bottom: 20px;
+}
+#devolucao:focus{
+    outline: 0;
+}
+.titleData{
+    color:#757575;
+}
+
+#aluguel{
+    background: #fff;
+    height: 40px;
+
+
+    border-radius: 10px;
+    border: 1px solid #2E8B57;
+
+    margin-bottom: 20px;
+    margin-left: 60px;
+
+}
+#aluguel:focus{
+    outline: 0;
+}
+#sinopse{
+    width: 100%;
+
+    border-radius: 10px;
+    border: 2px solid #2E8B57;
+
+    color: #757575; 
+}
+#sinopse{
+    outline: 0;
+}
+.cadastroBtns{
+    display: flex;
+    justify-content:  space-between;
+
+}
+.btnCadastro{
+    border-radius: 10px;
+    border: none;
+
+    margin: 10px;
+
+    background: linear-gradient(to left, #2E8B57, #32CD32);
+
+    width: 150px;
+    height: 50px;
+
+    color: aliceblue;
+}
+@media only screen and (max-width: 600px){
+
+    #classificacao{
+        width: 100%;
+        height: 40px;
+
+        border-radius:10px ;
+    }
+    #classificacao:focus{
+        outline: 0;
+    }
+    .organizacao{
+        display: block;
+    }
+    #aluguel{
+        background: #fff;
+        height: 40px;
+    
+    
+        border-radius: 10px;
+        border: 1px solid #2E8B57;
+    
+        margin-bottom: 20px;
+        margin-left: 0px;
+    
+    }
+    
+}
