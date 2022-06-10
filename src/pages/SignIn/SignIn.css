@@ -2,7 +2,7 @@
 
 body{
     background-image: url('https://i.imgur.com/v23QPln.jpg');
-    background-size: cover;
+    background-size:cover ;
 }
 *{
    
@@ -55,13 +55,7 @@ body{
 }
 
 
-/* .loginTitle img{
-    width: 90px;
-    margin: 20px;
 
-    
-    border-radius: 15px;
-} */
 .wrapInput{
     width: 100%;
     position: relative;
@@ -197,4 +191,29 @@ body{
     color: #035933;
     line-height:  1.5;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url('https://i.imgur.com/v23QPln.jpg');
+        background-size:cover;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        
+    }
+    .wrapLogin{
+        width: 110%;
+        background: #f5f5f5;
+        border-radius: 10px;
+        height: 500px;  
+        
+        margin: 0;
+    
+        overflow: hidden;
+        padding: 77px 55px 33px 55px;
+        box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+    }
 }

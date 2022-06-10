@@ -16,7 +16,7 @@ const Menu = () => {
             <Link to="/match" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
 
             <div className="pesquisar" >
-                <input type="text"/><img className="lupa" src="https://i.imgur.com/rFe6FMK.png"/>
+                <input classname="input" type="text"/><img className="lupa" src="https://i.imgur.com/rFe6FMK.png"/>
             </div>
 
             <div> 

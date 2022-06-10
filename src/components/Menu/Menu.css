@@ -27,6 +27,7 @@ header{
 }
 
 
+
    
 /* .menuDesktop{
     font-family: 'Poppins', sans-serif;
@@ -88,11 +89,13 @@ header img:hover{
 .perfil:hover{
     transform: scale(1.05);   
 }
+
+/* opções do menu */
 .opcoesMenu{
     background: whitesmoke;
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-    margin-top: 50px;
+    margin-top: 10px;
     right: 10px;
     position: absolute;
     border:2px solid #035024;
@@ -108,7 +111,7 @@ ul a{
 }
 
 hr {
-    width: 65%;
+    width: 80%;
 }
 
 
@@ -116,21 +119,6 @@ hr {
 .invisivel{
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                                             /***********/
@@ -151,35 +139,18 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .menuMobile{
+.menuMobile{
     display: none;
-} */
+}
 
                                     /* ************************* */
                                     /* *********Mobile********** */
                                     /* ************************* */
 
-/* @media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
 
-    /* MENU 
+ /* MENU  */
+
 .menu{
     max-width: 800px;
     width: 100%;
@@ -187,7 +158,8 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-/* Logo 
+
+/* Logo  */
 .menu .logoDesktop{
     display: none !important;
 }
@@ -196,7 +168,7 @@ nav{
     width: 1em;
     height: 1em;
 }
-    /* MENU DE BAIXO NO MOBILE 
+    /* MENU DE BAIXO NO MOBILE  */
 
 footer{
     margin: 0px;
@@ -226,23 +198,25 @@ footer .menuMobile{
     display: none !important;
 
 }
-    /* PESQUISAR 
+     /* PESQUISAR  */
 .pesquisar input{
-    background: #3E6C6A ;
-    border-radius: 5px;
+    background: #19302B ;
+    border-radius: 10px;
     border: none;
-    width: 100px;
+
     margin-bottom: 50px ;
     margin-top: 0px;
+
+    width: 75%;
 }
 .pesquisar .lupa{ 
-    margin-top: 30px;
+    margin-top: 0px;
     width: 1.7em;
 } 
 
 
 
-    /* PERFILZINHO 
+    /* PERFILZINHO */
 .perfil a button{
     margin-top: 4em;
     max-width: 30px;
@@ -250,8 +224,8 @@ footer .menuMobile{
     border-radius: 50%;
 }
 .perfil:hover{
-    transform: scale(1.05);  
+    transform: scale(0.00);  
     
 }
-}*/
+}
 /* NÃO SEI NOMEAR AS COISAS, SE ESTIVER DIFICIL DE ENTENDER PODE FICAR A VONTADE PRA MUDAR (; */

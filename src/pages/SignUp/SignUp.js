@@ -19,7 +19,7 @@ const SignUp = () => {
                             <span className="loginTitle">Book Match</span>
 
                             {/* Informações do usuario */}
-                            <div className="wrapInput">
+                    <div className="wrapInput">
                         <input 
                             className={nome !== ""? 'temValor input': 'input' } 
                             id="nome" type='text'
@@ -27,8 +27,7 @@ const SignUp = () => {
                             onChange={e => setNome(e.target.value)}
                         />
                         
-                        <span className="focusInput" data-placeholder="Nome"></span>
-                      
+                        <span className="focusInput" data-placeholder="Nome"></span>                     
                     </div>
 
 
@@ -80,9 +79,10 @@ const SignUp = () => {
                         <span className="focusInput" data-placeholder="Confirme sua senha"></span>
                       
                     </div>
-
-
+                    <div className="divButtons" >
+                                <a href="" className="login-form-a"  value='Voltar'>Voltar</a>
                                 <input type='submit' className="login-form-btn" value='Cadastrar'/>
+                    </div>
                         </form>
                    </section>
 
