@@ -53,7 +53,7 @@ const CadastroLivros = () => {
                             <input id="devolucao"  type='date'/>
 
                             <label for='aluguel' ></label>
-                            <input id="aluguel" placeholder=' Valor do aluguel (opcional)' type='number'/>
+                            <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
                         
                         
 
