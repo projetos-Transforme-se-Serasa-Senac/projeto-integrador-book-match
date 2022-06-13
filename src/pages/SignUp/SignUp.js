@@ -80,7 +80,7 @@ const SignUp = () => {
                       
                     </div>
                     <div className="divButtons" >
-                                <a href="" className="login-form-a"  value='Voltar'>Voltar</a>
+                                <a href="/" className="login-form-a"  value='Voltar'>Voltar</a>
                                 <input type='submit' className="login-form-btn" value='Cadastrar'/>
                     </div>
                         </form>
