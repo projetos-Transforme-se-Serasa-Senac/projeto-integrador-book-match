@@ -159,6 +159,27 @@ nav{
     justify-content: space-between;
 }
 
+/* opções do menu */
+.opcoesMenu{
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    margin-top: 10px;
+    right: 10px;
+    position: absolute !important;
+    border:2px solid #035024;
+    width: 180px;
+}
+ul{
+    margin-top: 20px;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #035024;
+
+}
+
 /* Logo  */
 .menu .logoDesktop{
     display: none !important;
