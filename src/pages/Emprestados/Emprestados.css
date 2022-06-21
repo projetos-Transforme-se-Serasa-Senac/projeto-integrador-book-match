@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #B0D4BA;
+}
+.card{
+    margin: 20px;
+    position: relative;
+    width: 40%;
+
+    color: #02674A;
+}
+.card-text1{
+    margin-top: 20px ;
+    margin-bottom: 2px;
+}
+.voltar{
+    margin: 15px;
+}
+.voltarLink{
+    text-decoration: none;
+    color: #02674A;
+
+    font-size: 1.2em;
+
+}
+.voltar:hover{
+    font-size: 1.1em;
+    color: #02674A ;
+}
+@media only screen and (max-width: 600px){
+    .card{
+        width: 96%;
+        margin: 6px;
+    }
+}
