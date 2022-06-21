@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #F3F2EF;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.capaFundo{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height:250px;
+}
+.fotoPerfil{
+    top: 300px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+
+    border: 3px solid #fff;
+    position: absolute;
+
+}
+.nomePerfil{
+    margin-top: 50px ;
+    padding-left: 20px;
+}
+.infoPerfil{
+    padding-left: 20px;
+}
+.cidadePerfil{
+    font-size: 0.8em;
+    padding-left: 20px;
+    color: #9c9c99;
+}
+.perfilPrincipal{
+    background: #fff;
+
+    border-radius: 10px;
+}
