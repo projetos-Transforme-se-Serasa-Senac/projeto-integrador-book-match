@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap');
 
 body{
-    background-image: url('https://i.imgur.com/v23QPln.jpg');
+    background-image: url('https://i.imgur.com/6Ogw5VV.jpg');
     background-size:cover ;
 }
 *{
@@ -207,6 +207,7 @@ body{
     .wrapLogin{
         width: 110%;
         background: #f5f5f5;
+        opacity: 97%;
         border-radius: 10px;
         height: 500px;  
         

@@ -1,0 +1,84 @@
+body{
+    background-color: #F3F2EF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 40px;
+}
+/* Posts do feed */
+.post{ 
+    border-radius: 10px;  
+    border: 1px solid #C6C6C6;
+    width: 600px;
+    height: 900.25px;
+
+    background: #FFFFFF;
+
+    padding: 1% 1% 1% 1%;
+}
+.perfilUsuario{
+    width: 400px;
+    margin: 0px;
+}
+.perfilUsuario .fotoPerfil{
+    width: 2.3em;
+    border-radius: 50%;
+    margin: 10px;
+}
+.imagemPost{
+    width: 100%;
+    height: 80%;
+}
+/* Perfil de ladinho */
+.miniPerfil{
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    width: 200px;
+    height: 249px;
+}
+.perfil02{
+    margin: 1.5em 0 1em 4.1em ;
+    width: 70px;
+    
+    border-radius: 50%;
+}
+.entraPerfil{
+    margin-left: 1.5em;
+}
+.descricaoPerfil{
+    font-size: 0.7em;
+    color: #02735E;
+}
+/* outro treco que vai ficar do lado */
+.explore{
+    border:1px solid #C6C6C6;
+    border-radius: 10px;
+
+    background:#FFFFFF;
+
+    width: 200px;
+    height: 249px;
+
+    padding: 0.6em;
+}
+ol{
+    width: 100%;
+}
+li{
+    list-style: none;
+    margin: 10px;
+}
