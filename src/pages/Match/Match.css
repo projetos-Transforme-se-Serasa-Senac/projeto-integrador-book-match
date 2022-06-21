@@ -1,0 +1,126 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Fira+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #EBEBEB;
+}
+
+.container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+}
+.card {
+    border-radius: 20px;
+    padding: 0px;
+    margin: 50px;
+    
+    width: 50%;
+    position: absolute;
+
+    border: 1px solid #99cb89;
+
+}
+.img{
+    border-radius: 20px 2px 2px 20px;
+    width:50%;
+    
+}
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+}
+.txt{
+    width: 45%;
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    margin-left: 20em;
+}
+.txt1{
+    color: #99cb89;
+}
+.txt2{
+    color: #02674A;
+}
+.botoes{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 25px ;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    
+}
+.botoes .opcao{
+    border-radius: 50%;
+
+    width: 35px;
+
+    box-shadow:  0 0 1em #32CD32;
+
+}
+.botoes .coracao{
+    border-radius: 50%;
+    width: 60px;
+
+    box-shadow:  0 0 1em #32CD32;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    
+    background: none;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        
+    }
+    .card{
+        width: 100%;
+        margin: 20px;
+
+        border: none;
+        border-radius: 0px;
+    }
+    .img{
+        width: 100%;
+
+        border-radius: 0px;
+        
+    }
+    .txt{
+
+        width: 100%;
+        position:absolute;            
+        margin-left: 20em;
+    }
+    .txt1{
+        color: #99cb89;
+    }
+    .txt2{
+        color: #02674A;
+    }
+    .botoes{
+        width: 100%;
+        position: absolute;
+    }
+
+}
