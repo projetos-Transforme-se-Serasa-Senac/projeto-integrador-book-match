@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
@@ -17,14 +17,14 @@ const Match = () => {
             botaoSeguir: "Seguir",
             },
 
-            // {
-            //     imagem: "https://imgur.com/K8rWLXD.png",
-            //     nome: "O assassinato no expresso oriente",
-            //     botaoVoltar: "Voltar",
-            //     botaoNaoCurtir: " Não Curtir",
-            //     botaoCurtir: "Curtir",
-            //     botaoSeguir: "Seguir",
-            // },
+            {
+                imagem: "https://imgur.com/K8rWLXD.png",
+                nome: "O assassinato no expresso oriente",
+                botaoVoltar: "Voltar",
+                botaoNaoCurtir: " Não Curtir",
+                botaoCurtir: "Curtir",
+                botaoSeguir: "Seguir",
+            },
 
             {
                 imagem: "https://imgur.com/gIH07su.png",
@@ -56,7 +56,7 @@ const Match = () => {
                                 <h6 className='txt2'>*descrição do livro*</h6>
                             </div>                             
                                 <div className='botoes'>   
-                                    <button><img className='opcao' src='https://i.imgur.com/fg5bBZm.png'/> </button>
+                                    <button> <img className='opcao' src='https://i.imgur.com/fg5bBZm.png'/> </button>
                                     <button> <img className='coracao' src='https://i.imgur.com/0CRVby7.png'/> </button>
                                     <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>  
                                 </div>
@@ -90,3 +90,5 @@ const Match = () => {
 }
  
 export default Match;
+
+//usar useState e chamar no botao
