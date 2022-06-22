@@ -10,8 +10,8 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    width: 50%;
+#singin .container{
+    width: 80%;
     margin: 0 auto;
     float: right;
     
@@ -33,7 +33,7 @@ body{
     border-radius: 10px;
     height: 500px;
 
-    margin-left: 200px;
+    margin-left: 800px;
 
 
     overflow: hidden;

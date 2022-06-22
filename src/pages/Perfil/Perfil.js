@@ -6,7 +6,7 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 const Perfil = () => {
     require ('./Perfil.css')
     return ( 
-        <div>
+        <div id='perfil'>
 
             <Menu/>
             <Navegacao/>

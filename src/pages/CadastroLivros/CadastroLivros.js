@@ -41,7 +41,7 @@ const CadastroLivros = () => {
         })
     }
     return ( 
-    <>
+    <div id='cadastroLivro'>
     <div className="container">
         <div className="container-cadastro">
             <div className="wrapCadastro">
@@ -122,88 +122,19 @@ const CadastroLivros = () => {
                             
                         </div>
 
-                        {/* botões */}
-                        <div className="divButtons" >
-                                    <a href="Feed" className="btnCancela"  value='Voltar'>Voltar</a>
-                                    <input type='submit' className='btnCadastro' value='Cadastrar'/>
-                        </div>
-                    </form>
-                </section>
+                    {/* botões */}
+                    <div className="divButtons" >
+                                <a href="Match" className="btnCancela"  value='Voltar'>Voltar</a>
+                                <input type='submit' className='btnCadastro' value='Cadastrar'/>
+                    </div>
+                        </form>
+                   </section>
 
             </div>
         </div>
     </div>
         
-    {/* <div className='container'>
-        <div className='container-cadastro'>
-            <div className='wrapCadastro'>
-                <section>
-                    <form method="POST">
-
-                    <div className="wrapInput">
-                        <input 
-                            className={nome !== ""? 'temValor input': 'input' } 
-                            id="nome" type='text'
-                            value={nome}
-                            onChange={e => setNome(e.target.value)}
-                        />
-                        
-                        <span className="focusInput" for="nome" data-placeholder="Nome do livro"></span>                     
-                    </div>  
-
-                        <div className='hoverInput '>  
-                            <input id="autor" className='info' type='text' placeholder='Autor *' required/>
-                            <span for='autor'  className="focusInput" data-placeholder="Autor"></span>                             
-                        </div>  
-
-                        <div className='hoverInput '> 
-                            <input id="genero" className='info' type='text' placeholder='Gênero *' required/>
-                            <span for='genero'  className="focusInput" data-placeholder="Gênero"></span>                               
-                        </div>       
-                           
-                        
-                        
-                         <div className='organizacao'>  
-                            <select id='classificacao' required >
-                                <option value="0"> Classificação indicatória * </option> 
-                                <option value="1"> L </option>
-                                <option value="2"> 10 </option>
-                                <option value="3"> 12 </option>
-                                <option value="4"> 14 </option>
-                                <option value="5"> 16 </option>
-                                <option value="6"> 18+ </option>
-                            </select>
-                            <span for='classificacao'  ></span>
-                        
-                            
-                            <label for='tags'></label>
-                            <input id="tags"  placeholder='Tags' type='text'/>
-                        </div> 
-
-                            <label for='devolucao' className='titleData' required>Data de devolução*</label>
-                            <br/>
-                            <input id="devolucao"  type='date'/>
-
-                            <label for='aluguel' ></label>
-                            <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
-                        
-                        
-
-
-                        <label for='sinopse'> Sinopse </label>
-                        <br/>
-                        <textarea id='sinopse' rows='5' cols='35' required> </textarea>
-
-                        <div className='cadastroBtns'>                          
-                            <input type='submit' className='btnCadastro' value='Cancelar' />
-                            <input type='submit' className='btnCadastro' value='Cadastrar'/>
-                        </div>
-                    </form>
-                </section>
-            </div>
-        </div>
-    </div> */}
-    </>  
+    </div>  
      );
 }
  

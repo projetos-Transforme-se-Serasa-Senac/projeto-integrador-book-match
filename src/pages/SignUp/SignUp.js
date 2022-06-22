@@ -10,7 +10,7 @@ const SignUp = () => {
     const [confirmaSenha, setConfirmaSenha] = useState ("")
 
     return(
-    <div className="container">
+    <div id='signup' className="container">
         <div className="container-login">
             <div className="wrapLogin">
 

@@ -1,24 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:wght@700&display=swap');
 
 nav{
     text-decoration: none;
     color: #035024;
-
 }
 nav:hover{
     font-style: #76DC14;
 }
 nav{
     font-size: 1.1em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     display: flex;
     justify-content: space-between;
     margin: 0px 50px;
 
     text-decoration: none;
 }
-p{
+#navegacao hr{
+    margin: 15px;
+    width: 98%;
+}
+#navegacao p{
     display: none;
 }
 
@@ -40,6 +42,9 @@ p{
         background: #f5f5f5;
 
         margin: 0;
+    }
+    hr{
+        display: none;
     }
 
 }

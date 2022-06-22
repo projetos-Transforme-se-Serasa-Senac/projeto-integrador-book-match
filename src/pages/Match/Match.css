@@ -12,7 +12,7 @@ body{
     background-color: #EBEBEB;
 }
 
-.container{
+#match .container{
     width: 100%;
 
     display: flex;
@@ -22,7 +22,7 @@ body{
 .card {
     border-radius: 20px;
     padding: 0px;
-    margin: 50px;
+    margin-top: 15px;
     
     width: 50%;
     position: absolute;
