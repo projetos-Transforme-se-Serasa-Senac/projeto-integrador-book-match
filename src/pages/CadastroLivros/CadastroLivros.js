@@ -13,7 +13,7 @@ const CadastroLivros = () => {
 
   
     return ( 
-    <>
+    <div id='cadastroLivro'>
     <div className="container">
         <div className="container-cadastro">
             <div className="wrapCadastro">
@@ -96,7 +96,7 @@ const CadastroLivros = () => {
 
                     {/* botões */}
                     <div className="divButtons" >
-                                <a href="Feed" className="btnCancela"  value='Voltar'>Voltar</a>
+                                <a href="Match" className="btnCancela"  value='Voltar'>Voltar</a>
                                 <input type='submit' className='btnCadastro' value='Cadastrar'/>
                     </div>
                         </form>
@@ -175,7 +175,7 @@ const CadastroLivros = () => {
             </div>
         </div>
     </div> */}
-    </>  
+    </div>  
      );
 }
  
