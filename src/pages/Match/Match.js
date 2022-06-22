@@ -63,22 +63,6 @@ const Match = () => {
                          </div>
                     </div>     
 
-                    //      <div className="card">
-                    //         <ul className = "match">
-                    //             <li>
-                    //                 <img src= {match.imagem} width="200px" />
-                    //                 <h3> {match.nome} </h3>
-                    //                 <button> {match.botaoVoltar} </button>
-                    //                 <button> {match.botaoNaoCurtir} </button>
-                    //                 <button> {match.botaoCurtir} </button>
-                    //                 <button> {match.botaoSeguir} </button>
-                                    
-                    //                 <br/>
-                    //                 <br/>
-                    //                 <br/>
-                    //             </li>
-                    //         </ul>
-                    // </div> 
                         )       
                              
                     })
