@@ -39,13 +39,13 @@ const Emprestados = () => {
         
         <div>
             <div className='voltar'>
-                <a href='Match' className='voltarLink'>  Voltar</a>
+                <a href='Match' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> Voltar</a>
             </div>
 
             {
             livros.map( livros => {
                 return(
-                    <div>
+                    <div id='Emprestados'>
                         <div>
                         <div className="card mb-3" >
                             <div className="row g-0">
