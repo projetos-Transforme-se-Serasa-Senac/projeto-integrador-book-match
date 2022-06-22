@@ -11,8 +11,9 @@ const CadastroLivros = () => {
     const [genero, setgenero] = React.useState ("")
     const [sinopse, setsinopse] = React.useState ("")
 
-    const cadastraLivro = () => {
-        const titulo = document.querySelector('#titulo').value
+    const cadastraLivro = (e) => {
+        e.preventDefault();
+        const titulo = document.getElementById('titulo').value
         const autor = document.querySelector('#autor').value
         const genero = document.querySelector('#genero').value
         const classficacao_etaria = document.querySelector('#classficacao_etaria').value
@@ -47,7 +48,7 @@ const CadastroLivros = () => {
             <div className="wrapCadastro">
 
                 <section>
-                    <form method="POST" onSubmit={cadastraLivro()}>
+                    <form method="POST" onSubmit={(e) => cadastraLivro(e)}>
                         {/* Nome, autor e g */}
                         <div className="wrapInput">
                             <input 
@@ -100,9 +101,9 @@ const CadastroLivros = () => {
 
                             <input id="tags"  placeholder='Tags' type='text'/>
                                     
-                            <label for='devolucao' className='titleData' required>Data de devolução*</label>
+                            {/* <label for='devolucao' className='titleData' required>Data de devolução*</label>
                             <br/>
-                            <input id="devolucao"  type='date'/>
+                            <input id="devolucao"  type='date'/> */}
 
                             <label for='aluguel' ></label>
                             <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
