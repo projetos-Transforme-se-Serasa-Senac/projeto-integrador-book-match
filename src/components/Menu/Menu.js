@@ -16,9 +16,16 @@ const Menu = () => {
             <Link to="/match" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
 
             <div className="pesquisar" >
-                <input className="input" type="text"/><img className="lupa" src="https://i.imgur.com/rFe6FMK.png"/>
-            </div>
 
+                <div className='inputDiv'>
+                    <input className="input" placeholder='Pesquise um livro...' type="text"/>
+                </div>
+                <div className='imgDiv'>
+                    <button className='lupa' type='submit'><i className="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+            </div>
+        
             <div> 
                 <a onClick={mostrarOuOcultar} href="#"> <img className="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/> </a>
                 {estaMostrando ? 
