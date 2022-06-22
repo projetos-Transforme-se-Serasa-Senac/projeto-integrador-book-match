@@ -6,41 +6,12 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 const Match = () => {
     require ('./Match.css')
 
-    
-        // const match = [
-        //     {
-        //     imagem: "https://i.imgur.com/ce3M15R.jpg",
-        //     nome: "A menina que roubava livros",
-        //     botaoVoltar: "Voltar",
-        //     botaoNaoCurtir: " Não Curtir",
-        //     botaoCurtir: "Curtir",
-        //     botaoSeguir: "Seguir",
-        //     },
-
-        //     {
-        //         imagem: "https://imgur.com/K8rWLXD.png",
-        //         nome: "O assassinato no expresso oriente",
-        //         botaoVoltar: "Voltar",
-        //         botaoNaoCurtir: " Não Curtir",
-        //         botaoCurtir: "Curtir",
-        //         botaoSeguir: "Seguir",
-        //     },
-
-        //     {
-        //         imagem: "https://imgur.com/gIH07su.png",
-        //         nome: "Corte de espinhos e rosas",
-        //         botaoVoltar: "Voltar",
-        //         botaoNaoCurtir: "Não Curtir",
-        //         botaoCurtir: "Curtir",
-        //         botaoSeguir: "Seguir",
-        //     }
-        // ]
 
         const [match, alteraMatch] = useState([])
         const axios = require('axios');
 
         useEffect(() => {
-            axios.get('http://localhost:3001/match')
+            axios.get('http://192.168.61.112:3001/match')
             .then(function(response){
                 const dados = response.data;
                 alteraMatch(dados);
@@ -66,7 +37,7 @@ const Match = () => {
                     <div className='container'>
    
                         <div className="card  animate__rotateOutUpLeft" >  
-                            {/* <img src={match.imagem}  className="img"/>                                */}
+                            <img src={match.imagem}  className="img"/>                               
                             <div className='txt'>
                                 <h3 className='txt1'> {match.titulo} </h3> 
                                 <h3> {match.autor} </h3> 
@@ -94,5 +65,3 @@ const Match = () => {
 }
  
 export default Match;
-
-//usar useState e chamar no botao
