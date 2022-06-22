@@ -96,7 +96,7 @@ const CadastroLivros = () => {
 
                     {/* botões */}
                     <div className="divButtons" >
-                                <a href="Feed" className="btnCancela"  value='Voltar'>Voltar</a>
+                                <a href="Match" className="btnCancela"  value='Voltar'>Voltar</a>
                                 <input type='submit' className='btnCadastro' value='Cadastrar'/>
                     </div>
                         </form>
