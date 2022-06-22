@@ -8,37 +8,45 @@ body{
     padding: 0;
 }
 
-.container{
+#feed .container{
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin-top: 40px;
 }
 /* Posts do feed */
-.post{ 
+#feed .post{ 
     border-radius: 10px;  
     border: 1px solid #C6C6C6;
-    width: 600px;
-    height: 900.25px;
+    width: 50%;
+    height: 80%;
 
     background: #FFFFFF;
 
     padding: 1% 1% 1% 1%;
 }
-.perfilUsuario{
+#feed .perfilUsuario{
     width: 400px;
     margin: 0px;
 }
-.perfilUsuario .fotoPerfil{
+#feed .perfilUsuario .fotoPerfil{
     width: 2.3em;
     border-radius: 50%;
     margin: 10px;
 }
-.imagemPost{
+#feed .imagemPost{
     width: 100%;
-    height: 80%;
+}
+.botoesFeed{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    border: none;
+    background: none;
+    color: #02735E;
 }
 /* Perfil de ladinho */
 .miniPerfil{

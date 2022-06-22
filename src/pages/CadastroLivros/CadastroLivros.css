@@ -12,7 +12,7 @@ body{
     font-family: 'Fira Sans', sans-serif;
 }
 
-.container{
+#cadastroLivro .container{
     width: 70%;
     margin: 0 auto;
     float: right;
