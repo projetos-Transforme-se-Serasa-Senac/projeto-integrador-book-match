@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:wght@700&display=swap');
 
-nav{
+/* nav{
     text-decoration: none;
     color: #035024;
-}
+    background-color: #f5f5f5;
+    width: 100%;
+    padding: 1em;
+} */
 nav:hover{
     font-style: #76DC14;
 }
@@ -11,8 +14,10 @@ nav{
     font-size: 1.1em;
     font-family: 'Lato', sans-serif;
     display: flex;
-    justify-content: space-between;
-    margin: 0px 50px;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 1em;
+    background: #EBEBEB;
 
     text-decoration: none;
 }

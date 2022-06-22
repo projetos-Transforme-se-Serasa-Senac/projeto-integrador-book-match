@@ -20,30 +20,60 @@ const Feed = () => {
                 </div>
             </div>
 
-            <div className='post'>
-                <div className='perfilUsuario'>
-                    <img className='fotoPerfil' src='https://i.imgur.com/95jo9qd.jpg'/>
+            <div className='container-post'>
 
-                    <span className='titulo'>Fulaninha de tal</span>
-                    
-                    <div> 
-                        <h6>Marina - Carlos Ruiz Zafon</h6>
-                        <label>*Resumo do livro* </label>
+                {/* <div className='post'>
+                    <div className='perfilUsuario'>
+                        <img className='fotoPerfil' src='https://i.imgur.com/95jo9qd.jpg'/>
+
+                        <span className='titulo'>Fulaninha de tal</span>
+                        
+                        <div> 
+                            <h6>Marina - Carlos Ruiz Zafon</h6>
+                            <label>*Resumo do livro* </label>
+                        </div>
                     </div>
-                </div>
-                
-                <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
-                <div className='botoesFeed'>
+                    
+                    <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
+                    <div className='botoesFeed'>
 
-                    <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
-                    <p className='btn'>|</p>
-                    <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
-                    <p className='btn'>|</p>
-                    <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
-               
+                        <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                        <p className='btn'>|</p>
+                        <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
+                        <p className='btn'>|</p>
+                        <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
+                
+                    </div>
+                    
+                </div> */}
+
+                
+                <div className='post'>
+                    <div className='perfilUsuario'>
+                        <img className='fotoPerfil' src='https://i.imgur.com/95jo9qd.jpg'/>
+
+                        <span className='titulo'>Fulaninha de tal</span>
+                        
+                        <div> 
+                            <h6>Marina - Carlos Ruiz Zafon</h6>
+                            <label>*Resumo do livro* </label>
+                        </div>
+                    </div>
+                    
+                    <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
+                    <div className='botoesFeed'>
+
+                        <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                        <p className='btn'>|</p>
+                        <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
+                        <p className='btn'>|</p>
+                        <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
+                
+                    </div>
+                    
                 </div>
+
             </div>
-            
 
             <div className='explore'>
 

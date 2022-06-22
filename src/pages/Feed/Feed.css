@@ -16,6 +16,10 @@ body{
 
     margin-top: 40px;
 }
+#feed .container-post{
+    display: flex;
+    justify-content: center;
+}
 /* Posts do feed */
 #feed .post{ 
     border-radius: 10px;  

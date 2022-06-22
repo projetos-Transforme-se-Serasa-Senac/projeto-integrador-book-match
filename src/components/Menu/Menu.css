@@ -59,26 +59,31 @@ header img:hover{
     transform: scale(1.05);   
 }
 
-/*Pesquisar*/
-.pesquisar button{
-    background: none;
-    border: none;
+/* Pesquisar*/
+.pesquisar{
+    display: flex;
+    justify-content: center;
 }
-.pesquisar img{
-    width: 40px;
-    height: 40px;
-}
-.pesquisar input {
-    background: #19302B;
+.input,
+.lupa{
+    background: #b7cdb7;
     border: none;
-    border-radius: 5px;
-    padding-left: 200px ;
-    padding: 10px;
-    width: 350px;
-    height: 36px;
-    margin-top: 5px; 
-    margin-bottom: 40px;
-    color: blanchedalmond !important;
+    padding: 8px;
+}
+.input{
+    width: 18em;
+    border-radius: 5px 0px 0  5px;
+}
+.lupa{
+    border-radius: 0 5px 5px  0;
+
+}
+input{
+    outline: none;
+}
+.pesquisar input:focus,.pesquisar input:focus button{
+    box-shadow: 0px 0px 5px red;
+
 }
 
 /*Perfilsinho*/

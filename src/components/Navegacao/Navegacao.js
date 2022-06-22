@@ -9,20 +9,20 @@ const Navegacao = () => {
         <div id='navegacao'>
         <nav>
 
-            <NavLink to="/match"> Match  </NavLink>  
+            <NavLink to="/match"><i className="fa-solid fa-heart-circle-check"/> Match  </NavLink>  
             <p>|</p>
             
-            <NavLink to="/feed"> Feed <i class="fa-solid fa-mobile-screen-button"></i></NavLink>
+            <NavLink to="/feed"><i className="fa-solid fa-mobile-screen-button"/> Feed </NavLink>
             <p>|</p>
             
-            <NavLink to="/comunidade"> Comunidade <i class="fa-solid fa-people-roof"></i></NavLink>
+            <NavLink to="/comunidade"><i className="fa-solid fa-people-roof"/> Comunidade </NavLink>
             <p>|</p>
             
-            <NavLink to="/chat"> Chat <i class="fa-solid fa-comments"></i></NavLink>
+            <NavLink to="/chat"> <i className="fa-solid fa-comments"/> Chat </NavLink>
             
             
         </nav>
-        <hr/>
+        {/* <hr/> */}
         </div>
         
      );
