@@ -60,7 +60,7 @@ CREATE TABLE `livro` (
   `aluguel` double DEFAULT NULL,
   `sinopse` longtext NOT NULL,
   PRIMARY KEY (`id_livro`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,6 +69,7 @@ CREATE TABLE `livro` (
 
 LOCK TABLES `livro` WRITE;
 /*!40000 ALTER TABLE `livro` DISABLE KEYS */;
+INSERT INTO `livro` VALUES (1,'Teste','Teste3','lalala','12','kaskka',12,'skdfsvbdkfbekrf'),(2,'Teste43','Teste293','lalala','undefined','',15,'sçljflaskdjflasd');
 /*!40000 ALTER TABLE `livro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +89,7 @@ CREATE TABLE `usuario` (
   `senha` varchar(45) NOT NULL,
   PRIMARY KEY (`id_usuario`),
   UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,6 +98,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` VALUES (1,'Alice da Silva Costa','aliceSCosta','alicealmeyda72@gmail.com','2001-10-23','123456'),(2,'Giulia Maia','giulia.maia','giulia.maia','2005-11-11','123456');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -137,4 +139,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-31 15:18:41
+-- Dump completed on 2022-06-22 16:27:41
