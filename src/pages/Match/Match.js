@@ -7,21 +7,40 @@ const Match = () => {
     require ('./Match.css')
 
 
-        const [match, alteraMatch] = useState([])
+        const [matches, alteraMatches] = useState([])
+        const [match, alteraMatch] = useState( null )
+        const [indiceMatch, alteraIndice] = useState( 0 )
+        const [final, finalMatch] = useState (false)
         const axios = require('axios');
 
         useEffect(() => {
-            axios.get('http://192.168.61.112:3001/match')
+            axios.get('http://localhost:3001/match')
             .then(function(response){
                 const dados = response.data;
-                alteraMatch(dados);
-                console.log(dados)
+                alteraMatches(dados);
             })
             .catch(function(error){
                 console.log(error);
             })
         }, [])
 
+        useEffect (() =>{
+            if (matches != 0){
+                alteraMatch(matches[ indiceMatch ])
+            }
+        }, [matches])
+
+        useEffect (() =>{
+                if ( indiceMatch > matches.length ){
+                    finalMatch(true)
+                }else{
+                    alteraMatch(matches[ indiceMatch ])
+                }
+        }, [indiceMatch])
+
+        const curtir = () => {
+            alteraIndice(indiceMatch +1)
+        }
 
         return ( 
             <div>
@@ -29,10 +48,9 @@ const Match = () => {
                 <Navegacao/>
 
                 {
-                    match == 0 ? "Carregando..." :
-                    match.map( match => {
-                        return(
-                    
+                    final == true ? "Você chegou ao fim, volte em breve...":
+
+                    match == null ? "Carregando..." :
 
                     <div className='container'>
    
@@ -48,15 +66,13 @@ const Match = () => {
                             </div>                             
                                 <div className='botoes'>   
                                     <button> <img className='opcao' src='https://i.imgur.com/fg5bBZm.png'/> </button>
-                                    <button> <img className='coracao' src='https://i.imgur.com/0CRVby7.png'/> </button>
-                                    <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>  
+                                    <button onClick={() =>curtir()}> <img className='coracao' src='https://i.imgur.com/0CRVby7.png'/> </button>
+                                    <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>
+                                    <button> <img className='seguir' src="/" /> </button>  
                                 </div>
                          </div>
                     </div>     
 
-                        )       
-                             
-                    })
                 }
 
             </div>
