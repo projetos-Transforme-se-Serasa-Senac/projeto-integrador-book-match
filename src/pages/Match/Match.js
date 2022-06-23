@@ -54,23 +54,23 @@ const Match = () => {
 
                     match == null ? "Carregando..." :
 
-                    <div className='container'>
+                    <div className='containerMatch'>
    
-                        <div className="card  animate__rotateOutUpLeft" >  
-                            <img src={match.imagem}  className="img"/>                               
-                            <div className='txt'>
-                                <h3 className='txt1'> {match.titulo} </h3> 
+                        <div className="cardMatch  animate__rotateOutUpLeft" >  
+                            <img src={match.imagem}  className="imgMatch"/>                               
+                            <div className='txtMatch'>
+                                <h3 className='txt1Match'> {match.titulo} </h3> 
                                 <h3> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
                                 <p> {match.classficacao_etaria} </p> 
                                 <p> {match.aluguel} </p> 
-                                <p className='txt2'>{match.sinopse}</p>
+                                <p className='txt2Match'>{match.sinopse}</p>
                             </div>                             
-                                <div className='botoes'>   
-                                    <button> <img className='opcao' src='https://i.imgur.com/fg5bBZm.png'/> </button>
-                                    <button onClick={() =>curtir()}> <img className='coracao' src='https://i.imgur.com/0CRVby7.png'/> </button>
-                                    <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>
-                                    <button> <img className='seguir' src="/" /> </button>  
+                                <div className='botoesMatch'>   
+                                    <button> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
+                                    <button onClick={() =>curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/0CRVby7.png'/> </button>
+                                    <button> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
+                                    <button> <img className='seguirMatch' src="/" /> </button>  
                                 </div>
                          </div>
                     </div>     
