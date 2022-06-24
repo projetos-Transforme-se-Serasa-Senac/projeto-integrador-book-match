@@ -24,9 +24,7 @@ const Match = () => {
             })
         }, [])
 
-<<<<<<< HEAD
         {/*{match.imagem}*/}
-=======
         useEffect (() =>{
             if (matches != 0){
                 alteraMatch(matches[ indiceMatch ])
@@ -45,23 +43,11 @@ const Match = () => {
             alteraIndice(indiceMatch +1)
         }
 
->>>>>>> a5428a200687324614ddff76b4dc76d2d966cc62
         return ( 
             <div className='pagina' id='match'>
                 <Menu/>
                 <Navegacao/>
                     
-<<<<<<< HEAD
-
-                    <div  className='container'>
-   
-                        <div className="card  animate__rotateOutUpLeft" >  
-                            <div>
-                                <img src="https://i.imgur.com/H9pWlr1.png"  className="img"/> 
-                            </div>                                  
-                            <div className='txt'>
-                                <h3 className='txt1'> {match.titulo} </h3> 
-=======
                 <div className='container'>
    
                 {
@@ -75,21 +61,12 @@ const Match = () => {
                             <img src={match.imagem}  className="imgMatch"/>                               
                             <div className='txtMatch'>
                                 <h3 className='txt1Match'> {match.titulo} </h3> 
->>>>>>> a5428a200687324614ddff76b4dc76d2d966cc62
                                 <h3> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
                                 <p> {match.classficacao_etaria} </p> 
                                 <p> {match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
                             </div>                             
-<<<<<<< HEAD
-                            <div className='botoes'>   
-                                <button> <img className='opcao' src='https://i.imgur.com/YaQkYdl.png'/> </button>
-                                <button> <img className='coracao' src='https://i.imgur.com/rUyKKXU.png'/> </button>
-                                <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>  
-                            </div>
-                        </div>
-=======
                                 <div className='botoesMatch'>   
                                     <button> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
                                     <button onClick={() =>curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/0CRVby7.png'/> </button>
@@ -97,7 +74,6 @@ const Match = () => {
                                     <button> <img className='seguirMatch' src="/" /> </button>  
                                 </div>
                          </div>
->>>>>>> a5428a200687324614ddff76b4dc76d2d966cc62
                     </div>     
 
                 //     match == 0 ? "Carregando..." :
