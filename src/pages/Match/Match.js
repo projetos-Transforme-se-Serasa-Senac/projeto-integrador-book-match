@@ -11,7 +11,7 @@ const Match = () => {
         const axios = require('axios');
 
         useEffect(() => {
-            axios.get('http://192.168.61.112:3001/match')
+            axios.get('http://localhost:3001/match')
             .then(function(response){
                 const dados = response.data;
                 alteraMatch(dados);
