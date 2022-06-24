@@ -22,7 +22,7 @@ const Feed = () => {
 
             <div className='container-post'>
 
-                {/* <div className='post'>
+                <div className='post'>
                     <div className='perfilUsuario'>
                         <img className='fotoPerfil' src='https://i.imgur.com/95jo9qd.jpg'/>
 
@@ -45,7 +45,7 @@ const Feed = () => {
                 
                     </div>
                     
-                </div> */}
+                </div>
 
                 
                 <div className='post'>

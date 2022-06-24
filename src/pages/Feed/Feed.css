@@ -19,6 +19,8 @@ body{
 #feed .container-post{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 /* Posts do feed */
 #feed .post{ 
