@@ -16,8 +16,10 @@ nav{
     display: flex;
     justify-content: space-around;
     margin: 0px;
-    padding: 1em;
-    background: #EBEBEB;
+    padding: 0.7em;
+    background: #E0FFFF;
+    /* background: #B0D4BA; */
+
 
     text-decoration: none;
 }

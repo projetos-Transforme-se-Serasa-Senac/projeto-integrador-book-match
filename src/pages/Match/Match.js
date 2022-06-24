@@ -22,9 +22,9 @@ const Match = () => {
             })
         }, [])
 
-
+        {/*{match.imagem}*/}
         return ( 
-            <div>
+            <div className='pagina' id='match'>
                 <Menu/>
                 <Navegacao/>
 
@@ -34,10 +34,12 @@ const Match = () => {
                         return(
                     
 
-                    <div className='container'>
+                    <div  className='container'>
    
                         <div className="card  animate__rotateOutUpLeft" >  
-                            <img src={match.imagem}  className="img"/>                               
+                            <div>
+                                <img src="https://i.imgur.com/H9pWlr1.png"  className="img"/> 
+                            </div>                                  
                             <div className='txt'>
                                 <h3 className='txt1'> {match.titulo} </h3> 
                                 <h3> {match.autor} </h3> 
@@ -46,12 +48,12 @@ const Match = () => {
                                 <p> {match.aluguel} </p> 
                                 <p className='txt2'>{match.sinopse}</p>
                             </div>                             
-                                <div className='botoes'>   
-                                    <button> <img className='opcao' src='https://i.imgur.com/fg5bBZm.png'/> </button>
-                                    <button> <img className='coracao' src='https://i.imgur.com/0CRVby7.png'/> </button>
-                                    <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>  
-                                </div>
-                         </div>
+                            <div className='botoes'>   
+                                <button> <img className='opcao' src='https://i.imgur.com/YaQkYdl.png'/> </button>
+                                <button> <img className='coracao' src='https://i.imgur.com/rUyKKXU.png'/> </button>
+                                <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>  
+                            </div>
+                        </div>
                     </div>     
 
                         )       
