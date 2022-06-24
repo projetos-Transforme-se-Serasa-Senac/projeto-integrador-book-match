@@ -4,30 +4,33 @@
     padding: 0;
 
 }
-body{
-    background-image: url('https://i.imgur.com/0bm7y41.jpg');
-    background-size: cover;
+body {
+    /* background-image: url('https://i.imgur.com/Q4Fdpem.jpg');
+    background-size: cover; */
+    background: #F3F2EF;
 }
-
-#match .container{
+.containerMatch{
     width: 100%;
 
     display: flex;
     justify-content: center;
 
 }
-#match.card {
+.cardMatch {
     border-radius: 20px;
     padding: 0px;
-    margin-top: 15px;
+    margin-top: 3%;
     
     width: 50%;
+    height: 505px;
     position: absolute;
 
     border: 1px solid #99cb89;
 
+    background: #fff;
+
 }
-.img{
+.imgMatch{
     border-radius: 20px 2px 2px 20px;
     width:50%;
     
@@ -35,7 +38,7 @@ body{
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
 }
-.txt{
+.txtMatch{
     width: 45%;
 
     position: absolute;
@@ -44,13 +47,13 @@ body{
 
     margin-left: 20em;
 }
-.txt1{
+.txt1Match{
     color: #99cb89;
 }
-.txt2{
+.txt2Match{
     color: #02674A;
 }
-.botoes{
+.botoesMatch{
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -63,7 +66,7 @@ body{
 
     
 }
-.botoes .opcao{
+.botoesMatch .opcaoMatch{
     border-radius: 50%;
 
     width: 35px;
@@ -71,13 +74,13 @@ body{
     box-shadow:  0 0 1em #32CD32;
 
 }
-.botoes .coracao{
+.botoesMatch .coracaoMatch{
     border-radius: 50%;
     width: 60px;
 
     box-shadow:  0 0 1em #32CD32;
 }
-button{
+ button{
     border-radius: 50%;
     border: none;
     

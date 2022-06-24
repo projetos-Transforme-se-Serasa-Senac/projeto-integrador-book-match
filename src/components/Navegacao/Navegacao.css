@@ -13,13 +13,18 @@ nav:hover{
 nav{
     font-size: 1.1em;
     font-family: 'Lato', sans-serif;
+
     display: flex;
     justify-content: space-around;
-    margin: 0px;
-    padding: 1em;
-    background: #EBEBEB;
 
+    margin: 0px;
+    padding: 0.7em;
+    width: 100%;
+
+    background: #E0FFFF;
+    /* background: #B0D4BA; */
     text-decoration: none;
+
 }
 #navegacao hr{
     margin: 15px;

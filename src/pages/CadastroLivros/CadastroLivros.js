@@ -1,5 +1,7 @@
 import React from 'react';
 
+import * as yup from 'yup';
+
 import Match from '../Match/Match';
 
 
@@ -10,6 +12,10 @@ const CadastroLivros = () => {
     const [autor, setautor] = React.useState ("")
     const [genero, setgenero] = React.useState ("")
     const [sinopse, setsinopse] = React.useState ("")
+
+
+    // if (!(await validate() )) return; 
+
 
     const cadastraLivro = (e) => {
         e.preventDefault();
@@ -41,6 +47,21 @@ const CadastroLivros = () => {
             console.log(error);
         })
     }
+
+    async function validate (){
+        let schema = yup.object().shape({
+            titulo: yup.string("Preencha o campo titulo!!")
+                .required("Preencha o campo titulo!!")
+            // autor
+            // genero
+            // classficacao_etaria
+            // foto_livro
+            // sinopse
+        });
+
+        
+    }
+
     return ( 
     <div id='cadastroLivro'>
     <div className="container">
@@ -49,9 +70,9 @@ const CadastroLivros = () => {
 
                 <section>
                     <form method="POST" onSubmit={(e) => cadastraLivro(e)}>
-                        {/* Nome, autor e g */}
+                        {/* Nome do livro */}
                         <div className="wrapInput">
-                            <input 
+                            <input name='titulo'
                                 className={nome !== ""? 'temValor input': 'input' } 
                                 id="titulo" required type='text'
                                 value={nome}
@@ -61,9 +82,9 @@ const CadastroLivros = () => {
                             <span className="focusInput" data-placeholder="Nome do livro"></span>                     
                         </div>
 
-
+                        {/* autor */}
                         <div className="wrapInput">
-                            <input 
+                            <input name='autor'
                                 className={autor !== ""? 'temValor input': 'input' } 
                                 id="autor" required type='text'
                                 value={autor}
@@ -74,8 +95,10 @@ const CadastroLivros = () => {
                             
                         </div>
 
+                        {/* genero */}
+
                         <div className="wrapInput">
-                            <input 
+                            <input name='genero'
                                 className={genero !== ""? 'temValor input': 'input' } 
                                 id="genero" required type='text'
                                 value={genero}
@@ -88,7 +111,7 @@ const CadastroLivros = () => {
 
                         {/* Classificação indicatória, tags e data de devolução */}
                         <div className='organizacao'>
-                            <select id='classficacao_etaria'  required >
+                            <select name='classficacao_etaria' id='classficacao_etaria'  required >
                                 <option value="0"> Classificação indicatória * </option> 
                                 <option value="1"> L </option>
                                 <option value="2"> 10 </option>
@@ -109,10 +132,19 @@ const CadastroLivros = () => {
                             <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
                         </div>
 
+                        {/* foto do livro */}
+
+                        <div>
+                            <input name='foto_livro' type="file" id="foto_livro" accept='.jpg' required>  
+                            </input>
+                        </div>
+
+                        <br/>
+
                         {/*sinópse */}
 
                         <div className="wrapInput">
-                            <textarea 
+                            <textarea name='sinopse'
                                 className={sinopse !== ""? 'temValor input': 'input' } 
                                 id="sinopse"  rows='5' cols='35' required
                                 value={sinopse}

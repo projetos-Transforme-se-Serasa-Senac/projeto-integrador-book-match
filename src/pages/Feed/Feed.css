@@ -16,20 +16,25 @@ body{
 
     margin-top: 40px;
 }
+
+/* Posts do feed */
 #feed .container-post{
-    display: flex;
+    width: 100%;
+    display: center;
     justify-content: center;
 }
-/* Posts do feed */
 #feed .post{ 
     border-radius: 10px;  
     border: 1px solid #C6C6C6;
-    width: 50%;
-    height: 80%;
+    width: 70%;
+    height: responsive;
 
     background: #FFFFFF;
 
     padding: 1% 1% 1% 1%;
+
+    margin-left: 120px;
+    margin-bottom: 20px;
 }
 #feed .perfilUsuario{
     width: 400px;
@@ -59,38 +64,79 @@ body{
 
     background: #FFFFFF;
 
-    width: 200px;
+    width: 260px;
     height: 249px;
+
+    padding: 10px;
+
+    margin-bottom: 10px;
 }
 .perfil02{
-    margin: 1.5em 0 1em 4.1em ;
+    margin: 1em 0 1em 3.1em ;
     width: 70px;
     
     border-radius: 50%;
-}
-.entraPerfil{
-    margin-left: 1.5em;
 }
 .descricaoPerfil{
     font-size: 0.7em;
     color: #02735E;
 }
-/* outro treco que vai ficar do lado */
-.explore{
-    border:1px solid #C6C6C6;
+/* outro treco que vai ficar do outro lado */
+#feed .explore{
+    border: 1px solid #C6C6C6;
     border-radius: 10px;
 
-    background:#FFFFFF;
+    background: #FFFFFF;
 
-    width: 200px;
-    height: 249px;
+    width: 260px;
+    height: 300px;
 
-    padding: 0.6em;
+    padding: 10px;
+
+    position: sticky;
+    top: 105px;
 }
-ol{
-    width: 100%;
-}
-li{
+.explore li{
     list-style: none;
+    font-size: 0.94em;
+
+    margin: 10px;
+}
+.copy{ 
+
+    width: 260px;
+    height: 300px;
+
+    padding-top: 40px;
+
+    position: sticky;
+    top: 450px;
+}
+.copy p{
+    width: 0.8em;
+    color:  #6C7B8B;
+
+}
+/* Treco do lado direito */
+#feed .comunidades{
+    border-radius: 10px;
+    width: 400px ;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    height: 320px;
+    padding: 10px;
+}
+.comunidades hr{
+    width: 100%;
+    position: static;
+}
+.titulo{
+    margin-left: 10px;
+
+}
+.comunidades li{
+    list-style: none;
+    font-size: 0.94em;
+
     margin: 10px;
 }
