@@ -24,7 +24,6 @@ const Match = () => {
             })
         }, [])
 
-
         useEffect (() =>{
             if (matches != 0){
                 alteraMatch(matches[ indiceMatch ])
