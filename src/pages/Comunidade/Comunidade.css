@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fira+Sans+Condensed&family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.TituloPagina{
+    font-size:3em;
+    text-align: center;
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+.wrapper{
+    position: none;
+    top: 50%;
+    /* transform: translate(-50%, -50%); */
+    width:100%;
+    min-width: 650px;
+    height:auto;
+    display: grid;
+    grid-template-columns: 350px 350px 350px  ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cardComunidade{
+    flex: 1;
+    flex-basis: 200px;
+    flex-grow: 0;
+
+    height: 400px;
+
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 7px rgba(0,0,0,.5);
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    overflow: hidden;
+    position: relative;
+
+    margin-bottom: 40px;
+}
+.cardComunidade img{
+    width: 350px;
+    height:400px;
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+}
+.descriptions{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(255,255,255,.7);
+    width:100%;
+    height:100%;
+    transition: all .7s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    clip-path: circle(0% at 100% 100%);
+}
+.cardComunidade:hover .descriptions{
+    left:0px;
+    transition: all .7s ease-in-out;
+    clip-path: circle(75%);
+}
+.cardComunidade:hover{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+    transform: scale(.97);
+}
+.cardComunidade:hover img{
+    transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+    transform: scale(1.6) rotate(20deg);
+    filter: blur(3px);
+}
+.cardComunidade h1{
+    color: #40956f;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+.cardComunidade p{
+    line-height: 24px;
+    height: 67%;
+}
+.cardComunidade button{
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    background-image: linear-gradient(to bottom right, #40956f, #31CC32);
+    color:#fff;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+    transition: all .5s ease-in-out;
+    top: 0;
+}
+.cardComunidade button:hover{
+    transform: scale(.95) translateX(-5px);
+    transition: all .5s ease-in-out;
+}
+/* .containerComunidade{
+    margin-left: 180px;
+
+}
+ .cardComunidade {
+    display: inline-block;
+    position: relative !important;
+    
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+
+    border-radius: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+
+    margin: 15px;
+    margin-left: 20px; 
+  }
+  
+  .card-perfil-img {
+    height: 70%;
+  }
+  
+  .card-descricao-bk {
+    background-image: linear-gradient(0deg , #006400, #3CB371);
+    border-radius: 30px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+  }
+  
+  /* .second .card-descricao-bk {
+    background-image: linear-gradient(-20deg , #006400, #3CB371);
+  } */
+  
+  /* .card-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 30%;
+    left: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .card-logo img {
+    height: 100%;
+  }
+  
+  .card-descricao {
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    left: 150px;
+    bottom: 26%;
+  }
+  
+  .card-btn {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    bottom: 10%;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+  }
+  
+  .card-btn a {
+    color: #fff;
+  }
+  
+  .card-data {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    bottom: 10%;
+  }
+  /* END CARD DESIGN */
+  
+  /* body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    min-height: 100vh;
+  }
+  .btn i:before {
+    width: 14px;
+    height: 14px;
+    position: fixed;
+    color: #fff;
+    background: #0077B5;
+    padding: 10px;
+    border-radius: 50%;
+    top:5px;
+    right:5px;
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .containerComunidade{
+    margin-left: 0px;
+    }
+    .cardComunidade {
+      display: inline-block;
+      position: relative !important;
+      
+      width: 400px;
+      min-width: 400px;
+      height: 400px;
+  
+      margin: 0px;
+      margin-left: 5px;
+
+      bottom: 30px;
+    }
+}  */

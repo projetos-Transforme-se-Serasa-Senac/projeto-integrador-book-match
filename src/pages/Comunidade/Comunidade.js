@@ -4,14 +4,130 @@ import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
 
 const Comunidade = () => {
+    require ('./Comunidade.css')
+    document.body.style.backgroundImage='none'
+
     return ( 
         <div>
 
             <Menu/>
             <Navegacao/>
-            <h1> Comunidade </h1>
+            <h1 className='TituloPagina'> Conheça novas comunidades </h1>
+
+            {/* <div className='containerComunidade'> */}
+
+            {/* <div className="second cardComunidade">
+                    <img className="card-perfil-img" src="https://i.imgur.com/xRhb5Hv.png" alt=""/>
+                    <div className="card-descricao-bk"></div>
+                    <div className="card-logo">
+                        <img src="https://i.imgur.com/dqhahZC.png" alt=""/>
+                    </div>
+                    <div className="card-descricao">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div  className="card-data">
+                        <p>20.02.2019</p>
+                    </div>
+                    <div className="card-btn">
+                        <a href="#">Entrar</a>
+                    </div>
+                </div>              */}
+
+
+                <div class="wrapper">
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/unndAEa.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis.
+                                </p>
+                                <div className='voltar'>
+                                    <a href='forum' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/uVURdSv.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/0QwVGDr.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/Ps5a7Dp.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/cMr9Fkw.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/LHCYJeh.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis.
+                                </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/9g417x9.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cardComunidade">
+                            <img src='https://i.imgur.com/EnVIUtr.png'/>
+                            <div class="descriptions">
+                                <h1>Lorem</h1>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
+                                <button>
+                                    entrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+             
+            
+
+        {/* </div> */}
 
         </div>
+
      );
 }
  
