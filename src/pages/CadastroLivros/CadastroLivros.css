@@ -4,7 +4,6 @@ body{
     margin: 0;
     padding: 0;
 
-    background-image: url('https://i.imgur.com/3gKnQHQ.jpg');
     background-size: cover;
 
     box-sizing: border-box ;
@@ -12,7 +11,7 @@ body{
     font-family: 'Fira Sans', sans-serif;
 }
 
-#cadastroLivro .container{
+#cadastroLivro .containerCadastro{
     width: 70%;
     margin: 0 auto;
     float: right;
@@ -32,13 +31,13 @@ body{
 
 }
 
-.wrapInput{
+.wrapInputCadastro{
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
     margin-bottom: 37px;
 }
-.input{
+.inputCadastro{
     font-size: 15px;
     color: #2E8B57;
     line-height: 1.2;
@@ -52,7 +51,7 @@ body{
 
     padding: 0 5px;
 }
-.focusInput{
+.focusInputCadastro{
     position: absolute;
     display: block;
     height: 100%;
@@ -64,7 +63,7 @@ body{
     pointer-events: none;
     color: #2E8B57
 }
-.focusInput::before{
+.focusInputCadastro::before{
     content: "";
     display: block;
     position: absolute;
@@ -80,7 +79,7 @@ body{
     background: linear-gradient(to left,#32CD32, #40E0D0);
 
 }
-.focusInput::after{
+.focusInputCadastro::after{
     font-size: 15px;
     color: #999;
     line-height: 1.2;
@@ -99,23 +98,17 @@ body{
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;  
 }
-.input:focus{
+.inputCadastro:focus{
     outline: 0;
 }
-.input:focus + .focusInput::after{
+.inputCadastro:focus + .focusInputCadastro::after,
+.temValorCadastro + .focusInputCadastro::after{
     top:-15px;
 
 }
-.input:focus + .focusInput::before{
-    width: 100%;
-        
-}
-
-.temValor + .focusInput::after{
-    top: -15px;
-}
-.temValor + .focusInput::before{
-    width: 100% ;
+.inputCadastro:focus + .focusInputCadastro::before,
+.temValorCadastro + .focusInputCadastro::before{
+    width: 100%;       
 }
 
 .wrapCadastro{
@@ -142,14 +135,14 @@ body{
 
     font-family: 'Fira Sans', sans-serif;
 }
-.hoverInput{
+.hoverInputCadastro{
     width: 100%;
     position: relative;
     border-bottom: 2px solid #2E8B57;
     margin-bottom: 37px;
 }
 
-.focusInput{
+.focusInputCadastro{
     position: absolute;
     display: block;
     height: 100%;
@@ -162,34 +155,22 @@ body{
     color: #2E8B57
 }
 
-.organizacao{
+.organizacaoCadastro{
     display: flex;
     justify-content: space-between;
 
     margin: 0;
     margin-bottom: 20px;
 }
-#classificacao{
-    width:50%;
-    height: 40px;
+#classficacao_etaria{
+    margin-right: 5px;  
+}
 
-    border-radius:10px ;
-    border: 1px solid #33cf3e;
-
+#tags,
+#aluguel,
+#classficacao_etaria{
     color: #757575;
 
-    background: white;
-
-    margin-right: 10px;
-    margin-bottom: 20px;
-
-
-    
-}
-#classificacao:focus{
-    outline: 0;
-}
-#tags{
     background-color: #fff;
 
     height: 40px;
@@ -197,47 +178,16 @@ body{
 
     border: 1px solid #33cf3e;
     border-radius: 10px;
+    margin-right: 5px;
 
     margin-bottom: 20px;
 }
-#tags:focus{
-    outline: 0;
-}
-#devolucao{
-    background: #fff;
-
-    width: 50%;
-    height: 40px;
 
 
-    border-radius: 10px;
-    border: 1px solid #33cf3e;
-    color: #2E8B57;
-
-    margin-bottom: 20px;
-
-    margin-right:10px ;
-}
-#devolucao:focus{
-    outline: 0;
-}
-.titleData{
-    color:#757575;
-}
-
-#aluguel{
-    background: #fff;
-
-    width: 48%;
-    height: 40px;
-
-
-    border-radius: 10px;
-    border: 1px solid #33cf3e;
-
-    margin-bottom: 20px;
-}
-#aluguel:focus{
+#aluguel:focus,
+#devolucao:focus,
+#tags:focus,
+#classficacao_etaria:focus{
     outline: 0;
 }
 .cadastroBtns{
@@ -257,13 +207,13 @@ body{
 
     color: aliceblue;
 }
-.btnCancela{
+.btnCancelaCadastro{
     border-radius: 10px;
     border: none;
     text-decoration: none;
 
     margin-right: 13.5em;
-    padding: 15px 50px;
+    padding: 15px 53.6px;
 
     background: linear-gradient(to left, #2E8B57, #32CD32);
 
@@ -272,31 +222,57 @@ body{
 
     color: aliceblue;
 }
-.btnCancela:hover{
+.btnCancelaCadastro:hover{
     color: aliceblue;
 }
+
 @media only screen and (max-width: 600px){
     body{
         background-image: url('https://i.imgur.com/v23QPln.jpg');
         background-size:cover;
     }
-    .container{
+    #cadastroLivro .containerCadastro{
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
         float: none;
         
     }
-    .wrapLogin{
-        width: 110%;
-        background: #f5f5f5;
-        opacity: 97%;
-        border-radius: 10px;
-        height: 500px;  
-        
-        margin: 0;
+    .container-cadastro{
+        width: 100%;
+        height: 0%;
     
-        overflow: hidden;
-        padding: 77px 55px 33px 55px;
-        box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+        padding: 15px;
+    
     }
+    .wrapCadastro{
+        width: 100%;
+
+        opacity: 97%;
+    }
+    .btnCadastro{
+        width: 100px;
+        height: 50px;  
+        
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+    .btnCancelaCadastro{
+        border-radius: 10px;
+        border: 1px solid #2E8B57;
+        text-decoration: none;
+    
+        margin-right: 0em;
+        padding:  15px 25px;
+    
+        background: none;
+    
+        color: #2E8B57;
+    }
+    
+
 }

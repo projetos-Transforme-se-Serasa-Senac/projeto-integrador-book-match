@@ -5,6 +5,8 @@ import Match from '../Match/Match';
 
 const CadastroLivros = () => {
     require ('./CadastroLivros.css')
+    document.body.style.backgroundImage='url("https://i.imgur.com/3gKnQHQ.jpg")'
+
     
     const [nome, setNome] = React.useState ("")
     const [autor, setautor] = React.useState ("")
@@ -43,51 +45,51 @@ const CadastroLivros = () => {
     }
     return ( 
     <div id='cadastroLivro'>
-    <div className="container">
+    <div className="containerCadastro">
         <div className="container-cadastro">
             <div className="wrapCadastro">
 
                 <section>
                     <form method="POST" onSubmit={(e) => cadastraLivro(e)}>
                         {/* Nome, autor e g */}
-                        <div className="wrapInput">
+                        <div className="wrapInputCadastro">
                             <input 
-                                className={nome !== ""? 'temValor input': 'input' } 
+                                className={nome !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
                                 id="titulo" required type='text'
                                 value={nome}
                                 onChange={e => setNome(e.target.value)}
                             />
                             
-                            <span className="focusInput" data-placeholder="Nome do livro"></span>                     
+                            <span className="focusInputCadastro" data-placeholder="Nome do livro"></span>                     
                         </div>
 
 
-                        <div className="wrapInput">
+                        <div className="wrapInputCadastro">
                             <input 
-                                className={autor !== ""? 'temValor input': 'input' } 
+                                className={autor !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
                                 id="autor" required type='text'
                                 value={autor}
                                 onChange={e => setautor(e.target.value)}
                             />
                             
-                            <span className="focusInput" data-placeholder="Autor"></span>
+                            <span className="focusInputCadastro" data-placeholder="Autor"></span>
                             
                         </div>
 
-                        <div className="wrapInput">
+                        <div className="wrapInputCadastro">
                             <input 
-                                className={genero !== ""? 'temValor input': 'input' } 
+                                className={genero !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
                                 id="genero" required type='text'
                                 value={genero}
                                 onChange={e => setgenero(e.target.value)}
                             />
                             
-                            <span className="focusInput" data-placeholder="Gênero"></span>
+                            <span className="focusInputCadastro" data-placeholder="Gênero"></span>
                             
                         </div>
 
                         {/* Classificação indicatória, tags e data de devolução */}
-                        <div className='organizacao'>
+                        <div className='organizacaoCadastro'>
                             <select id='classficacao_etaria'  required >
                                 <option value="0"> Classificação indicatória * </option> 
                                 <option value="1"> L </option>
@@ -107,25 +109,26 @@ const CadastroLivros = () => {
 
                             <label for='aluguel' ></label>
                             <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
+                            
                         </div>
 
                         {/*sinópse */}
 
-                        <div className="wrapInput">
+                        <div className="wrapInputCadastro">
                             <textarea 
-                                className={sinopse !== ""? 'temValor input': 'input' } 
+                                className={sinopse !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
                                 id="sinopse"  rows='5' cols='35' required
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />
                             
-                            <span className="focusInput" data-placeholder="Sinópse do livro:"></span>
+                            <span className="focusInputCadastro" data-placeholder="Sinópse do livro:"></span>
                             
                         </div>
 
                     {/* botões */}
-                    <div className="divButtons" >
-                                <a href="Match" className="btnCancela"  value='Voltar'>Voltar</a>
+                    <div className="divButtonsCadastro" >
+                                <a href="Match" className="btnCancelaCadastro"  value='Voltar'>Voltar</a>
                                 <input type='submit' className='btnCadastro' value='Cadastrar'/>
                     </div>
                         </form>
