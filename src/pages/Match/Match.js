@@ -14,7 +14,7 @@ const Match = () => {
         const axios = require('axios');
 
         useEffect(() => {
-            axios.get('http://localhost:3001/match')
+            axios.get('http://localhost:3001/livros')
             .then(function(response){
                 const dados = response.data;
                 alteraMatches(dados);
@@ -38,8 +38,30 @@ const Match = () => {
                 }
         }, [indiceMatch])
 
+        
         const curtir = () => {
-            alteraIndice(indiceMatch +1)
+            const id_livro = match.id_livro
+            const id_usuario = localStorage.getItem("id")
+
+            
+            const obj = {
+                id_livro: id_livro,
+                id_usuario: id_usuario
+            }
+            
+          
+            axios.post('http://localhost:3001/match', obj)
+            .then(function(response){
+                console.log(response);
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+
+          
+
+            alteraIndice(indiceMatch + 1)
+            
         }
 
         return ( 
