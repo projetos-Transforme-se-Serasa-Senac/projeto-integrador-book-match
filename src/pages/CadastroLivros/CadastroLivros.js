@@ -19,6 +19,7 @@ const CadastroLivros = () => {
 
     const cadastraLivro = (e) => {
         e.preventDefault();
+        const id_usuario = localStorage.getItem("id")
         const titulo = document.getElementById('titulo').value
         const autor = document.querySelector('#autor').value
         const genero = document.querySelector('#genero').value
@@ -28,6 +29,7 @@ const CadastroLivros = () => {
         const sinopse = document.querySelector('#sinopse').value
 
         const obj = {
+            id_usuario: id_usuario,
             titulo: titulo,
             autor: autor,
             genero: genero,
@@ -134,10 +136,10 @@ const CadastroLivros = () => {
 
                         {/* foto do livro */}
 
-                        <div>
+                        {/* <div>
                             <input name='foto_livro' type="file" id="foto_livro" accept='.jpg' required>  
                             </input>
-                        </div>
+                        </div> */}
 
                         <br/>
 
