@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 const SignIn = () => {
@@ -7,6 +8,49 @@ const SignIn = () => {
 
     const [usuario, setUsuario] = useState ("")
     const [senha, setSenha] = useState ("")
+
+    const navigate = useNavigate()
+
+
+    const login = (e) => {
+
+
+        e.preventDefault();
+        const usuario = document.querySelector('#usuario').value
+        const senha = document.querySelector('#senha').value
+
+
+        const obj = {
+            usuario: usuario,
+            senha: senha
+        }
+
+        const axios = require('axios');
+
+
+
+
+        axios.post('http://localhost:3001/autentica', obj)
+        .then(function(response){
+            const dados = response.data
+
+            if (dados == 0){
+                alert("Usuário não encontrado")
+                return;
+            }else{
+                console.log(dados)
+                localStorage.setItem("id", dados[0].id_usuario)
+                localStorage.setItem("user", dados[0].user_name)
+
+                navigate('/match')
+          
+            }
+            
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }
 
 
     return(
@@ -49,7 +93,7 @@ const SignIn = () => {
 
                         {/* botão de entrar */}
                         <div className="container-login-form-btn">
-                            <button className="login-form-btn" value='Entrar'> LogIn</button>
+                            <button onClick={(e) => login(e)} className="login-form-btn" value='Entrar'> LogIn</button>
                         </div>
 
                         {/* direcional para a pagina de logUp */}

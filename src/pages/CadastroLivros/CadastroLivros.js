@@ -24,6 +24,7 @@ const CadastroLivros = () => {
 
     const cadastraLivro = (e) => {
         e.preventDefault();
+        const id_usuario = localStorage.getItem("id")
         const titulo = document.getElementById('titulo').value
         const autor = document.querySelector('#autor').value
         const genero = document.querySelector('#genero').value
@@ -33,6 +34,7 @@ const CadastroLivros = () => {
         const sinopse = document.querySelector('#sinopse').value
 
         const obj = {
+            id_usuario: id_usuario,
             titulo: titulo,
             autor: autor,
             genero: genero,
