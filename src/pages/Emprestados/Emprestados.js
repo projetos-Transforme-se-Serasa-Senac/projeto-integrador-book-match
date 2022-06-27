@@ -5,6 +5,8 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 
 const Emprestados = () => {
     require ('./Emprestados.css')
+    document.body.style.backgroundImage='url("https://i.imgur.com/r1MXp8h.png")'
+
 
     const livros = [
         {
