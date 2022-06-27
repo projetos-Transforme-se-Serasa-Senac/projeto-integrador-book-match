@@ -6,8 +6,37 @@ const SignUp = () => {
     const [nome, setNome] = useState ("")
     const [usuario, setUsuario] = useState ("")
     const [email, setEmail] = useState ("")
+    const [dt_nascimento, setNascimento] = useState ("")
     const [senha, setSenha] = useState ("")
     const [confirmaSenha, setConfirmaSenha] = useState ("")
+
+    const cadastraUsuario = (e) => {
+        e.preventDefault();
+
+        const nome = document.querySelector('#nome').value
+        const user_name = document.querySelector('#user_name').value
+        const email = document.querySelector('#email').value
+        const dt_nascimento = document.querySelector('#dt_nascimento').value
+        const senha = document.querySelector('#senha').value
+
+        const obj = {
+            nome: nome,
+            user_name: user_name,
+            email: email,
+            dt_nascimento: dt_nascimento,
+            senha: senha
+        }
+
+        const axios = require('axios');
+
+        axios.post('http://localhost:3001/usuarios', obj)
+        .then(function(response){
+            console.log(response)
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }
 
     return(
     <div id='signup' className="container">
@@ -15,7 +44,7 @@ const SignUp = () => {
             <div className="wrapLogin">
 
                     <section>
-                        <form method="POST">
+                        <form method="POST" onSubmit={(e) => cadastraUsuario(e)}>
                             <span className="loginTitle">Book Match</span>
 
                             {/* Informações do usuario */}
@@ -34,7 +63,7 @@ const SignUp = () => {
                     <div className="wrapInput">
                         <input 
                             className={usuario !== ""? 'temValor input': 'input' } 
-                            id="usuario" type='text'
+                            id="user_name" type='text'
                             value={usuario}
                             onChange={e => setUsuario(e.target.value)}
                         />
@@ -57,6 +86,18 @@ const SignUp = () => {
 
                     <div className="wrapInput">
                         <input 
+                            className={dt_nascimento !== ""? 'temValor input': 'input' } 
+                            id="dt_nascimento" type='date'
+                            value={dt_nascimento}
+                            onChange={e => setNascimento(e.target.value)}
+                        />
+                        
+                        <span className="focusInput"></span>
+                      
+                    </div>
+
+                    <div className="wrapInput">
+                        <input 
                             className={senha !== ""? 'temValor input': 'input' } 
                             id="senha" type='password'
                             value={senha}
@@ -71,7 +112,7 @@ const SignUp = () => {
                     <div className="wrapInput">
                         <input 
                             className={confirmaSenha !== ""? 'temValor input': 'input' } 
-                            id="senha" type='password'
+                            id="confirmaSenha" type='password'
                             value={confirmaSenha}
                             onChange={e => setConfirmaSenha(e.target.value)}
                         />
