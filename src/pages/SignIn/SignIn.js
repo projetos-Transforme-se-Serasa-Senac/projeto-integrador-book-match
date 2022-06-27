@@ -38,9 +38,9 @@ const SignIn = () => {
                 alert("Usuário não encontrado")
                 return;
             }else{
-
-                localStorage.setItem("id", dados.id_usuario)
-                localStorage.setItem("user", dados.usuario)
+                console.log(dados)
+                localStorage.setItem("id", dados[0].id_usuario)
+                localStorage.setItem("user", dados[0].user_name)
 
                 navigate('/match')
           
