@@ -5,6 +5,8 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 
 const Match = () => {
     require ('./Match.css')
+    document.body.style.backgroundImage='none'
+
 
 
         const [matches, alteraMatches] = useState([])
