@@ -1,5 +1,9 @@
 body{
     background-color: #F3F2EF;
+    background-image:none ;
+
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -110,10 +114,10 @@ body{
     padding-top: 40px;
 
     position: sticky;
-    top: 450px;
 }
 .copy p{
     width: 0.8em;
+    text-align: justify;
     color:  #6C7B8B;
 
 }
@@ -139,4 +143,56 @@ body{
     font-size: 0.94em;
 
     margin: 10px;
+}
+@media only screen and (max-width: 600px){
+    #feed .container{
+        width: 100%;
+    
+        display: block;    
+        margin-top: 40px;
+    }
+
+    #feed .comunidades{
+        display: none;
+    }
+    #feed .miniPerfil{
+        display: none;
+    }
+    #feed .explore{
+        display: none;
+    }
+
+    #feed .container-post{
+        width: responsive;
+        display: responsive;
+        justify-content: center;
+
+        margin-left:0px;
+    }
+    #feed .post{ 
+        border-radius: 10px;  
+        border: 1px solid #C6C6C6;
+        width: 100%;
+        height: responsive;
+    
+        background: #FFFFFF;
+    
+        padding:0%;
+    
+        margin-left:0px;
+        margin-bottom: 20px;
+    }
+    #feed .perfilUsuario{
+        width: 400px;
+        margin: 0px;
+        margin-left:0px;
+    }
+    #feed .perfilUsuario .fotoPerfil{
+        width: 2.3em;
+        border-radius: 50%;
+        margin: 10px;
+    }
+    .copy{
+        display: none;
+    }
 }

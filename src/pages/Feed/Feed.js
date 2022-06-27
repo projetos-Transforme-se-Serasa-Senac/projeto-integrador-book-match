@@ -5,6 +5,7 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 
 const Feed = () => {
     require ('./Feed.css')
+    document.body.style.backgroundImage='none'
 
     return ( 
         <div id='feed'>
