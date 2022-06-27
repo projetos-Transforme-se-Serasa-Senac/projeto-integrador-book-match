@@ -2,8 +2,16 @@ import React from 'react';
 
 import * as yup from 'yup';
 
-import Match from '../Match/Match';
+// import Match from '../Match/Match';
 
+const validationPost = yup.object().shape({
+    titulo: yup.string().required(),
+    autor: yup.string().required().min(3, "O nome do autor precisa ser maior") ,
+    genero: yup.string().required().min(3, "O tipo de gênero precisa ser maior") ,
+    classficacao_etaria: yup.string().required(),
+    foto_livro: yup.string().required() ,
+    sinopse: yup.string().required().min(20, "Insira uma sinopse com mais caracteres.")  
+})
 
 const CadastroLivros = () => {
     require ('./CadastroLivros.css')
@@ -12,9 +20,6 @@ const CadastroLivros = () => {
     const [autor, setautor] = React.useState ("")
     const [genero, setgenero] = React.useState ("")
     const [sinopse, setsinopse] = React.useState ("")
-
-
-    // if (!(await validate() )) return; 
 
 
     const cadastraLivro = (e) => {
@@ -48,33 +53,22 @@ const CadastroLivros = () => {
         })
     }
 
-    async function validate (){
-        let schema = yup.object().shape({
-            titulo: yup.string("Preencha o campo titulo!!")
-                .required("Preencha o campo titulo!!")
-            // autor
-            // genero
-            // classficacao_etaria
-            // foto_livro
-            // sinopse
-        });
-
-        
-    }
-
     return ( 
+
     <div id='cadastroLivro'>
     <div className="container">
         <div className="container-cadastro">
             <div className="wrapCadastro">
 
+
                 <section>
                     <form method="POST" onSubmit={(e) => cadastraLivro(e)}>
+
                         {/* Nome do livro */}
                         <div className="wrapInput">
                             <input name='titulo'
                                 className={nome !== ""? 'temValor input': 'input' } 
-                                id="titulo" required type='text'
+                                id="titulo"     required       type='text'
                                 value={nome}
                                 onChange={e => setNome(e.target.value)}
                             />
@@ -82,11 +76,11 @@ const CadastroLivros = () => {
                             <span className="focusInput" data-placeholder="Nome do livro"></span>                     
                         </div>
 
-                        {/* autor */}
+                        {/* Autor */}
                         <div className="wrapInput">
                             <input name='autor'
                                 className={autor !== ""? 'temValor input': 'input' } 
-                                id="autor" required type='text'
+                                id="autor"     required        type='text'
                                 value={autor}
                                 onChange={e => setautor(e.target.value)}
                             />
@@ -95,12 +89,11 @@ const CadastroLivros = () => {
                             
                         </div>
 
-                        {/* genero */}
-
+                        {/* Genero */}
                         <div className="wrapInput">
                             <input name='genero'
                                 className={genero !== ""? 'temValor input': 'input' } 
-                                id="genero" required type='text'
+                                id="genero"      required      type='text'
                                 value={genero}
                                 onChange={e => setgenero(e.target.value)}
                             />
@@ -109,9 +102,9 @@ const CadastroLivros = () => {
                             
                         </div>
 
-                        {/* Classificação indicatória, tags e data de devolução */}
+                        {/* Classificação indicatória */}
                         <div className='organizacao'>
-                            <select name='classficacao_etaria' id='classficacao_etaria'  required >
+                            <select name='classficacao_etaria' id='classficacao_etaria'      required >
                                 <option value="0"> Classificação indicatória * </option> 
                                 <option value="1"> L </option>
                                 <option value="2"> 10 </option>
@@ -122,31 +115,32 @@ const CadastroLivros = () => {
                             </select>
                             <span for='classficacao_etaria'  ></span>
 
+                            {/* Tags */}
                             <input id="tags"  placeholder='Tags' type='text'/>
-                                    
+
+                           {/* Data de devolução */}
                             {/* <label for='devolucao' className='titleData' required>Data de devolução*</label>
                             <br/>
                             <input id="devolucao"  type='date'/> */}
 
+                            {/* Valor do aluguel */}
                             <label for='aluguel' ></label>
                             <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
                         </div>
 
-                        {/* foto do livro */}
-
+                        {/* Foto do livro */}
                         <div>
-                            <input name='foto_livro' type="file" id="foto_livro" accept='.jpg' required>  
+                            <input name='foto_livro' type="file" id="foto_livro" accept='.jpg'      required>  
                             </input>
                         </div>
 
                         <br/>
 
-                        {/*sinópse */}
-
+                        {/*Sinópse */}
                         <div className="wrapInput">
                             <textarea name='sinopse'
                                 className={sinopse !== ""? 'temValor input': 'input' } 
-                                id="sinopse"  rows='5' cols='35' required
+                                id="sinopse"  rows='5' cols='35'        required
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />
@@ -155,7 +149,7 @@ const CadastroLivros = () => {
                             
                         </div>
 
-                    {/* botões */}
+                    {/* Botões */}
                     <div className="divButtons" >
                                 <a href="Match" className="btnCancela"  value='Voltar'>Voltar</a>
                                 <input type='submit' className='btnCadastro' value='Cadastrar'/>
