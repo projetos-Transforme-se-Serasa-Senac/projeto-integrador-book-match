@@ -18,7 +18,7 @@ const Menu = () => {
             <div className="pesquisar" >
 
                 <div className='inputDiv'>
-                    <input className="input" placeholder='Pesquise um livro...' type="text"/>
+                    <input className="input" placeholder='Pesquise um livro...' type="search"/>
                 </div>
                 <div className='imgDiv'>
                     <button className='lupa' type='submit'><i className="fa-solid fa-magnifying-glass"></i></button>
