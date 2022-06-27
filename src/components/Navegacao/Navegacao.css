@@ -24,6 +24,8 @@ nav{
     background: #E0FFFF;
     /* background: #B0D4BA; */
     text-decoration: none;
+    z-index: 1000;
+
 
 }
 #navegacao hr{
@@ -46,7 +48,10 @@ nav{
 
         text-decoration: none;
         bottom: 0;
+
         position: fixed;
+        bottom: 0;
+
         width: 100%;
         text-align: center;
         background: #f5f5f5;
@@ -54,7 +59,7 @@ nav{
         margin: 0;
     }
     hr{
-        display: none;
+        display: block;
     }
 
 }
