@@ -16,7 +16,7 @@ const Match = () => {
         const axios = require('axios');
 
         useEffect(() => {
-            axios.get('http://localhost:3001/match')
+            axios.get('http://localhost:3001/livros')
             .then(function(response){
                 const dados = response.data;
                 alteraMatches(dados);
@@ -26,7 +26,6 @@ const Match = () => {
             })
         }, [])
 
-        {/*{match.imagem}*/}
         useEffect (() =>{
             if (matches != 0){
                 alteraMatch(matches[ indiceMatch ])
@@ -41,10 +40,45 @@ const Match = () => {
                 }
         }, [indiceMatch])
 
+        
         const curtir = () => {
+            const id_livro = match.id_livro
+            const id_usuario = localStorage.getItem("id")
+
+            
+            const obj = {
+                id_livro: id_livro,
+                id_usuario: id_usuario
+            }
+            
+          
+            axios.post('http://localhost:3001/match', obj)
+            .then(function(response){
+                console.log(response);
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+
+          
+
+            alteraIndice(indiceMatch + 1)
+            
+        }
+
+        const nao_curtir = () => {
             alteraIndice(indiceMatch +1)
         }
 
+        const favoritar = () => {
+            alteraIndice(indiceMatch +1)
+        }
+
+        const seguir = () => {
+            alteraIndice(indiceMatch +1)
+        }
+
+        
         return ( 
             <div className='pagina' id='match'>
                 <Menu/>
@@ -70,35 +104,15 @@ const Match = () => {
                                 <p className='txt2Match'>{match.sinopse}</p>
                             </div>                             
                                 <div className='botoesMatch'>   
-                                    <button> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
+                                    <button onClick={() =>nao_curtir()}> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
                                     <button onClick={() =>curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/0CRVby7.png'/> </button>
-                                    <button> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
-                                    <button> <img className='seguirMatch' src="/" /> </button>  
+                                    <button onClick={() =>favoritar()}> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
+                                    <button onClick={() =>seguir()}> <img className='seguirMatch' src="/" /> </button>  
                                 </div>
                          </div>
                     </div>     
 
-                //     match == 0 ? "Carregando..." :
-                //     match.map( match => {
-                //         return(
-                //             <div className="card" >  
-                //                 <img src={match.imagem}  className="img"/>                               
-                //                 <div className='txt'>
-                //                     <h3 className='txt1'> {match.titulo} </h3> 
-                //                     <p> {match.autor} </p> 
-                //                     <p> {match.genero} </p> 
-                //                     <p> {match.classficacao_etaria} </p> 
-                //                     <p> {match.aluguel} </p> 
-                //                     <p className='txt2'>{match.sinopse}</p>
-                //                 </div>                             
-                //                     <div className='botoes'>   
-                //                         <button> <img className='opcao' src='https://i.imgur.com/fg5bBZm.png'/> </button>
-                //                         <button> <img className='coracao' src='https://i.imgur.com/0CRVby7.png'/> </button>
-                //                         <button> <img className='opcao' src='https://i.imgur.com/j78bsOe.png'/> </button>  
-                //                     </div>
-                //             </div>
-                //         )       
-                //     })
+
                  }
             </div>     
 
