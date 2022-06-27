@@ -42,6 +42,19 @@ const Match = () => {
             alteraIndice(indiceMatch +1)
         }
 
+        const nao_curtir = () => {
+            alteraIndice(indiceMatch +1)
+        }
+
+        const favoritar = () => {
+            alteraIndice(indiceMatch +1)
+        }
+
+        const seguir = () => {
+            alteraIndice(indiceMatch +1)
+        }
+
+        
         return ( 
             <div className='pagina' id='match'>
                 <Menu/>
@@ -67,10 +80,10 @@ const Match = () => {
                                 <p className='txt2Match'>{match.sinopse}</p>
                             </div>                             
                                 <div className='botoesMatch'>   
-                                    <button> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
+                                    <button onClick={() =>nao_curtir()}> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
                                     <button onClick={() =>curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/0CRVby7.png'/> </button>
-                                    <button> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
-                                    <button> <img className='seguirMatch' src="/" /> </button>  
+                                    <button onClick={() =>favoritar()}> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
+                                    <button onClick={() =>seguir()}> <img className='seguirMatch' src="/" /> </button>  
                                 </div>
                          </div>
                     </div>     
