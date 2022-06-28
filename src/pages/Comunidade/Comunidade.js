@@ -2,6 +2,7 @@ import React from 'react';
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
+import Forum from '../Forum/Forum';
 
 const Comunidade = () => {
     require ('./Comunidade.css')
@@ -43,7 +44,7 @@ const Comunidade = () => {
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis.
                                 </p>
                                 <div className='voltar'>
-                                    <a href='forum' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
+                                    <a href='Forum' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
                                 </div>
                             </div>
                         </div>

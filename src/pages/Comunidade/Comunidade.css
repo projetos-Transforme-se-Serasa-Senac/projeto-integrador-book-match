@@ -221,3 +221,14 @@
       bottom: 30px;
     }
 }  */
+
+@media only screen and (max-width: 600px){
+
+  .wrapper{
+    grid-template-columns: 100% ;
+  }
+  .cardComunidade img{
+    width: 100%;
+}
+
+}
