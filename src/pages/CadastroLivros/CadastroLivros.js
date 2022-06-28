@@ -1,22 +1,27 @@
 import React from 'react';
 
-import * as yup from 'yup';
+// import {useForm} from 'react-hook-form';
+// import { yupResolver } from '@hookform/resolvers/yup';
+// import * as yup from 'yup';
 
-// import Match from '../Match/Match';
 
-const validationPost = yup.object().shape({
-    titulo: yup.string().required(),
-    autor: yup.string().required().min(3, "O nome do autor precisa ser maior") ,
-    genero: yup.string().required().min(3, "O tipo de gênero precisa ser maior") ,
-    classficacao_etaria: yup.string().required(),
-    foto_livro: yup.string().required() ,
-    sinopse: yup.string().required().min(20, "Insira uma sinopse com mais caracteres.")  
-})
+// const validationPost = yup.object().shape({
+//     titulo: yup.string().required("O titulo é obrigatório"),
+//     autor: yup.string().required("O nome do autor é obrigatório").min(3, "O nome do autor precisa ser maior") ,
+//     genero: yup.string().required("O gênero é obrigatório").min(3, "O tipo de gênero precisa ser maior") ,
+//     classficacao_etaria: yup.string().required("A classificação indicatória é obrigatória"),
+//     foto_livro: yup.string().required("A foto do livro é obrigatória") ,
+//     sinopse: yup.string().required("A sinópse é obrigatória").min(20, "Insira uma sinopse com mais caracteres.")  
+// })
 
 const CadastroLivros = () => {
+
     require ('./CadastroLivros.css')
     document.body.style.backgroundImage='url("https://i.imgur.com/3gKnQHQ.jpg")'
 
+    // const{ register, formState: {erros} } = useForm({
+    //     resolver: yupResolver(validationPost)
+    // })
     
     const [nome, setNome] = React.useState ("")
     const [autor, setautor] = React.useState ("")
@@ -64,16 +69,14 @@ const CadastroLivros = () => {
         <div className="container-cadastro">
             <div className="wrapCadastro">
 
-
                 <section>
                     <form method="POST" onSubmit={(e) => cadastraLivro(e)}>
 
-
                         {/* Nome do livro */}
                         <div className="wrapInputCadastro">
-                            <input name='titulo'
+                            <input name='titulo' 
                                 className={nome !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
-                                id="titulo"     required       type='text'
+                                id="titulo"     required    minLength={3}      type='text'
                                 value={nome}
                                 onChange={e => setNome(e.target.value)}
                             />
@@ -83,9 +86,9 @@ const CadastroLivros = () => {
 
                         {/* Autor */}
                         <div className="wrapInputCadastro">
-                            <input name='autor'
+                            <input name='autor' 
                                 className={autor !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
-                                id="autor"     required        type='text'
+                                id="autor"     required  minLength={3}    type='text'
                                 value={autor}
                                 onChange={e => setautor(e.target.value)}
                             />
@@ -96,9 +99,9 @@ const CadastroLivros = () => {
 
                         {/* Genero */}
                         <div className="wrapInputCadastro">
-                            <input name='genero'
+                            <input name='genero' 
                                 className={genero !== ""? 'temValorCadastro inputCadastro': 'inputCadastro' } 
-                                id="genero"      required      type='text'
+                                id="genero"      required   minLength={3}    type='text'
                                 value={genero}
                                 onChange={e => setgenero(e.target.value)}
                             />
@@ -109,7 +112,7 @@ const CadastroLivros = () => {
 
                         {/* Classificação indicatória */}
                         <div className='organizacaoCadastro'>
-                            <select name='classficacao_etaria' id='classficacao_etaria'      required >
+                            <select name='classficacao_etaria' id='classficacao_etaria'    required >
                                 <option value="0"> Classificação indicatória * </option> 
                                 <option value="1"> L </option>
                                 <option value="2"> 10 </option>
@@ -123,11 +126,6 @@ const CadastroLivros = () => {
                             {/* Tags */}
                             <input id="tags"  placeholder='Tags' type='text'/>
 
-                           {/* Data de devolução */}
-                            {/* <label for='devolucao' className='titleData' required>Data de devolução*</label>
-                            <br/>
-                            <input id="devolucao"  type='date'/> */}
-
                             {/* Valor do aluguel */}
                             <label for='aluguel' ></label>
                             <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
@@ -136,7 +134,7 @@ const CadastroLivros = () => {
 
                         {/* Foto do livro */}
                         <div>
-                            <input name='foto_livro' type="file" id="foto_livro" accept='.jpg'      required>  
+                            <input name='foto_livro' type="text" id="foto_livro"  placeholder='Insira o URL (link da foto)...'  required>  
                             </input>
                         </div>
 
@@ -144,9 +142,9 @@ const CadastroLivros = () => {
 
                         {/*Sinópse */}
                         <div className="wrapInputCadastro">
-                            <textarea name='sinopse'
+                            <textarea name='sinopse' 
                                 className={sinopse !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="sinopse"  rows='5' cols='35'        required
+                                id="sinopse"  rows='5' cols='35'   minLength={20}   required      
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />

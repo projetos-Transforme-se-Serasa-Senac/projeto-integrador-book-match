@@ -33,7 +33,7 @@ const Match = () => {
         }, [matches])
 
         useEffect (() =>{
-                if ( indiceMatch > matches.length ){
+                if ( indiceMatch != 0 && indiceMatch >= matches.length ){
                     finalMatch(true)
                 }else{
                     alteraMatch(matches[ indiceMatch ])
