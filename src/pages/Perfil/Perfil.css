@@ -5,17 +5,19 @@
 body{
     background: #F3F2EF;
 }
-#perfil .container{
-    width: 70%;
-    margin: 0 auto;
-    
+#perfil.container-perfil{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
 }
-.capaFundo{
+
+#perfil.capaFundo{
     border-radius: 10px 10px 0 0;
     width: 100%;
     height:250px;
 }
-.fotoPerfil{
+#perfil.fotoPerfil{
     top: 300px;
     width: 150px;
     border-radius: 50%;
@@ -25,20 +27,79 @@ body{
     position: absolute;
 
 }
-.nomePerfil{
+#perfil.nomePerfil{
     margin-top: 50px ;
     padding-left: 20px;
 }
-.infoPerfil{
+#perfil.infoPerfil{
     padding-left: 20px;
 }
-.cidadePerfil{
+#perfil.cidadePerfil{
     font-size: 0.8em;
     padding-left: 20px;
     color: #9c9c99;
 }
-.perfilPrincipal{
+#perfil.perfilPrincipal{
     background: #fff;
 
     border-radius: 10px;
+}
+#perfil.container-post{
+    width: 100%;
+    display: center;
+    justify-content: center;
+}
+#perfil.post{ 
+    border-radius: 10px;  
+    border: 1px solid #C6C6C6;
+    width: 70%;
+    height: responsive;
+
+    background: #FFFFFF;
+
+    padding: 1% 1% 1% 1%;
+
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+#perfil.perfilUsuario{
+    width: 400px;
+    margin: 0px;
+}
+#perfil.perfilUsuario .fotoPerfil{
+    width: 2.3em;
+    border-radius: 50%;
+    margin: 10px;
+}
+#perfil.imagemPost{
+    width: 100%;
+}
+#perfil.botoesFeed{
+    display: flex;
+    justify-content: space-between;
+}
+#perfil.btn{
+    border: none;
+    background: none;
+    color: #02735E;
+}
+#perfil .explore{
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    width: 260px;
+    height: 300px;
+
+    padding: 10px;
+
+    position: sticky;
+    top: 105px;
+}
+#perfil.explore li{
+    list-style: none;
+    font-size: 0.94em;
+
+    margin: 10px;
 }

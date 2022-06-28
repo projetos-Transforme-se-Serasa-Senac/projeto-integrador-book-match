@@ -34,9 +34,6 @@ const Feed = () => {
                         <li><i class="fa-solid fa-user-nurse"></i> Outra Pessoa aqui</li>
                     </ol>
                 </div>
-                <div className='copy'>
-                    <p>Squad Amazonas © 2022 </p>
-                </div>
             </div>
            
 
@@ -131,7 +128,10 @@ const Feed = () => {
                             
                             <li>A culpa é das estrelas e afins</li>
                         </ol>
+                <div className='squad'>
+                    <p>Squad Amazonas © 2022 </p>
                 </div>
+            </div>
 
 
         </div>

@@ -106,16 +106,16 @@ body{
 
     margin: 10px;
 }
-.copy{ 
-
-    width: 260px;
+.squad{ 
+    width: 300px;
     height: 300px;
 
     padding-top: 40px;
 
-    position: sticky;
+    position: fixed;
+    top: 450px;
 }
-.copy p{
+.squad p{
     width: 0.8em;
     text-align: justify;
     color:  #6C7B8B;
@@ -129,6 +129,9 @@ body{
     border: 1px solid #C6C6C6;
     height: 320px;
     padding: 10px;
+
+    position: sticky;
+    top:110px;
 }
 .comunidades hr{
     width: 100%;

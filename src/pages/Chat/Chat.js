@@ -38,8 +38,12 @@ const Chat = () => {
                         <img src='https://i.imgur.com/EnVIUtr.png'/>
                         <p>Tiffany Silva</p>
                     </div>
-                    <input type='text' placeholder='Mensagem'>
-                </input>
+                    <div className='enviarMensagem'>
+                        <input type='text' placeholder='Mensagem'/>
+                        <button>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
                 </div>
                 
 

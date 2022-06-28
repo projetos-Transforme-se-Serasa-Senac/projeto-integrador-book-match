@@ -17,7 +17,8 @@ const Forum = () => {
 
             <div className='containerForum'>
                 <div className='nomeDaComunidade'>
-                    <img src='https://i.imgur.com/PAviEUh.png'/>
+                    <img className='capaComunidade' src='https://i.imgur.com/6lB93nT.png'/>
+                    <img className='perfilCominidade' src='https://i.imgur.com/rJrV2iC.png'/>
                     <h3> As meninas super poderosas</h3>
                     <p>doutrinadores das meninas super poderosas </p>
                     <button>ENTRAR AGORA</button>

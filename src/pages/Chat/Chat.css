@@ -8,34 +8,30 @@
     justify-content: center;
 }
 .conversas{
-    margin-top: 40px;
     margin-bottom: 20px;
+    margin-top: 5px;
     width: 350px;
     height: 600px;
 
-    background-color: #44986F;
+    background-color: #B0D4BA;
     border-radius:  10px 0 0 10px ;
 
 }
 .conversa{
     border-radius: 0 10px 10px 0;
-    margin-top: 40px;
+    margin-top: 5px;
     margin-bottom: 20px;
 
     width: 1050px;
     height: 600px;
-    background-color: #B0D4BA;
 }
 .pessoa{
     font-family: 'Staatliches', cursive;
     height: 50px;
-    margin-top: 10px;
     text-align: center;
-    margin-left: 25%;
-
-    border-radius: 15px;
-    width: 50%;
-    background: #44986F;
+  
+    width: 100%;
+    background: #B0D4BA;
 
     display: flex;
     justify-content: center;
@@ -50,18 +46,41 @@
     margin-right: 50px;
 }
 .pessoa p{
-    margin-top: 5px;
     font-size: 1.3em;
 
 }
-.conversa input{
+.conversa .enviarMensagem{
+    display: flex;
+    justify-content: center;
+
+}
+.enviarMensagem input{
     width: 500px;
     height: 40px;
 
     border-radius: 15px;
     border: none;
     position: absolute;
-    bottom: -50px;
+    bottom: -100px;
 
-    left: 670px;
+    background: #B7CDB7;
+}
+.enviarMensagem{
+    background: #B0D4BA;
+    width: 100%;
+}
+.enviarMensagem button{
+    border: none;
+
+    position: absolute;
+    bottom: -100px;
+
+    margin-left: 40%;
+
+    background: #B7CDB7 ;
+
+    padding: 10px;
+    border-radius: 50%;
+    width: 35px;
+
 }

@@ -26,29 +26,49 @@ const Perfil = () => {
 
                     </div>
                 </div>
+                <div className='container-perfil'>
+                    <div className='comunidadesParticipa'>
+                    <h6 className='titulo'>conheça novas comunidades</h6>
+                        <ol>
+                            <li>Assembléia de Deus</li>
+                        
+                            <li>Chocolatras anonimos book</li>
+                        
+                            <li> Para todos os livros que ja amei</li>
+                            
+                            <li>A culpa é das estrelas e afins</li>
+                        </ol>
+                    </div>
+                
+                    <div className='post'>
+                        <div className='perfilUsuario'>
+                            <img className='fotoPerfil' src='https://i.imgur.com/95jo9qd.jpg'/>
 
-            </div>
-            <div className="card text-center">
-                <div className="card-header">
-                    <ul className="nav nav-tabs card-header-tabs">
-                    <li className="nav-item">
-                        <a className="nav-link active" aria-current="true" href="#">Active</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Link</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link disabled">Disabled</a>
-                    </li>
-                    </ul>
-                </div>
-                <div className="card-body">
-                    <h5 className="card-title">Special title treatment</h5>
-                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a hrefName="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+                            <span className='titulo'>Fulaninha de tal</span>
+                            
+                            <div> 
+                                <h6>Marina - Carlos Ruiz Zafon</h6>
+                                <label>*Resumo do livro* </label>
+                            </div>
+                        </div>
+                        
+                        <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
+                        <div className='botoesFeed'>
 
+                            <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                            <p className='btn'>|</p>
+                            <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
+                            <p className='btn'>|</p>
+                            <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
+                    
+                        </div>
+                        
+                    </div>
+                </div>
+               
+               
+            </div>
+           
         </div>
      );
 }
