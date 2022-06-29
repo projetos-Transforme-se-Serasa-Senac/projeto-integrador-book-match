@@ -84,7 +84,7 @@ const Feed = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <img className='imagemPost' src={`${postagens.imagem}`}/>
+                                <img className='imagemPost' src={`${postagens.imagem}`}/>    
                                 <div className='botoesFeed'>
 
                                     <button  onClick={e => setToogle(state => !state)} className='btn' > Curtir <i class="fa-solid fa-thumbs-up"  
