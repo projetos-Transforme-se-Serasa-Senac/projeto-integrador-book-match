@@ -9,17 +9,19 @@ body {
     background-size: cover; */
     background: #F3F2EF;
 }
-.containerMatch{
+#match .containerMatch{
     width: 100%;
 
     display: flex;
     justify-content: center;
 
 }
-.cardMatch {
+#match .cardMatch {
     border-radius: 20px;
     padding: 0px;
-    margin-top: 3%;
+    margin-top: 0.5%;
+
+
     
     width: 50%;
     height: 505px;
@@ -30,15 +32,12 @@ body {
     background: #fff;
 
 }
-.imgMatch{
+#match .imgMatch{
     border-radius: 20px 2px 2px 20px;
     width:50%;
     
 }
-.animate__animated.animate__bounce {
-    --animate-duration: 2s;
-}
-.txtMatch{
+#match .txtMatch{
     width: 45%;
 
     position: absolute;
@@ -47,13 +46,13 @@ body {
 
     margin-left: 20em;
 }
-.txt1Match{
+#match .txt1Match{
     color: #99cb89;
 }
-.txt2Match{
+#match .txt2Match{
     color: #02674A;
 }
-.botoesMatch{
+#match .botoesMatch{
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -66,21 +65,22 @@ body {
 
     
 }
-.botoesMatch .opcaoMatch{
+#match .botoesMatch .opcaoMatch{
     border-radius: 50%;
 
-    width: 35px;
-
-    box-shadow:  0 0 1em #32CD32;
-
+    width: 45px;
+   
+    box-shadow: 0 0 20px #d9d9d9;
 }
-.botoesMatch .coracaoMatch{
+#match .botoesMatch .coracaoMatch{
     border-radius: 50%;
-    width: 60px;
+    width: 70px;
 
-    box-shadow:  0 0 1em #32CD32;
+    
+    box-shadow: 0 0 20px  #d9d9d9;
+
 }
- button{
+#match button{
     border-radius: 50%;
     border: none;
     

@@ -99,15 +99,15 @@ const Match = () => {
                                 <h3 className='txt1Match'> {match.titulo} </h3> 
                                 <h3> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
-                                <p> {match.classficacao_etaria} </p> 
+                                <p> +{match.classficacao_etaria} </p> 
                                 <p> {match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
                             </div>                             
                                 <div className='botoesMatch'>   
-                                    <button onClick={() =>nao_curtir()}> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
-                                    <button onClick={() =>curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/0CRVby7.png'/> </button>
                                     <button onClick={() =>favoritar()}> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
-                                    <button onClick={() =>seguir()}> <img className='seguirMatch' src="/" /> </button>  
+                                    <button onClick={() =>nao_curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/gzwzejd.png'/> </button>
+                                    <button onClick={() =>curtir()}> <img className='coracaoMatch' src='https://i.imgur.com/zShS9df.png'/> </button>
+                                    <button onClick={() =>seguir()}> <img className='opcaoMatch' src="https://i.imgur.com/0RSm0kS.png" /> </button>  
                                 </div>
                          </div>
                     </div>     
