@@ -79,7 +79,7 @@ const Feed = () => {
                                         <span className='titulo'>{postagens.user_name}</span>
                                         
                                         <div> 
-                                            <h6>Marina - Carlos Ruiz Zafon</h6>
+                                            <h6>{postagens.titulo}</h6>
                                             <label>*Resumo do livro* </label>
                                         </div>
                                     </div>
