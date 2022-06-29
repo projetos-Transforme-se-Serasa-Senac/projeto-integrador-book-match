@@ -9,6 +9,7 @@ import Chat from '../pages/Chat/Chat';
 import Emprestados from '../pages/Emprestados/Emprestados';
 import CadastroLivros from '../pages/CadastroLivros/CadastroLivros';
 import Perfil from '../pages/Perfil/Perfil';
+import Forum from '../pages/Forum/Forum';
 
 const AppRouter = () => {
     return(
@@ -23,6 +24,7 @@ const AppRouter = () => {
             <Route path="/feed" element={<Feed/>}/>
             <Route path="/comunidade" element={<Comunidade/>}/>
             <Route path="/chat" element={<Chat/>}/>
+            <Route path="/forum" element={<Forum/>}/>
 
             {/* ROTAS MENU */}
             <Route path="/emprestados" element={<Emprestados/>}/>

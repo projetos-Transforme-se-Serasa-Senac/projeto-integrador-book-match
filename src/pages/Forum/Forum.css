@@ -1,3 +1,112 @@
-p{
-    background-color: brown;
+body{
+    background-color: #F3F2EF;
+}
+.TituloPagina{
+    text-align: center;
+}
+.containerForum{
+    width: 100%;
+    height: 0%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+    padding: 15px;
+    
+    
+}
+.nomeDaComunidade .capaComunidade{
+    border-radius: 10px 10px 0px 0;
+    border: none;
+
+    width: 100%;
+    height: 40%;
+}
+.nomeDaComunidade .perfilCominidade{
+    border-radius: 10px;
+    position: absolute;
+    left: 130px;
+    top: 300px;
+    border: 2px solid whitesmoke;
+
+    width: 50px;
+}
+.nomeDaComunidade h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.3em;
+}
+.nomeDaComunidade p{
+    width: 70%;
+    height: 20%;
+    margin: 9px;
+    font-size: 1em;
+    text-align: justify;
+}
+
+#forum .post{
+    padding: 20px;
+
+    background: #fff;
+
+    border: 1px solid #46996F;
+    border-radius: 10px;
+
+
+    width: 600px;
+    height: responsive ;
+}
+#forum .post hr{
+    width: 100%;
+}
+.nomeDaComunidade{
+    background: #fff;
+
+    border: 1px solid #46996F;
+    border-radius: 10px;
+
+    width: 300px;
+    height: 350px ;
+}
+.botoesForum{
+    margin-left: 20px ;
+    margin-right: 20px;
+    color: #46996F;
+    display: flex;
+    justify-content: space-between;
+}
+#forum .botao{
+    border: none;
+    color: #2A846B;
+
+    background: transparent;
+}
+#forum .post img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.postNomeForum{
+    display: flex;
+    justify-content: flex-start;
+}
+.postNomeForum p{
+    margin-left: 10px;
+    margin: 10px;
+}
+.nomeDaComunidade button{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 15px;
+    border: 1px solid #46996F;
+    border-radius: 10px;
+
+    background: transparent;
+
+    height: 40px;
+    width: 90%;
+
+
 }
