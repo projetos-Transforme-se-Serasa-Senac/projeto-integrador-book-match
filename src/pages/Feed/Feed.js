@@ -7,8 +7,18 @@ const Feed = () => {
     require ('./Feed.css')
     document.body.style.backgroundImage='none'
 
+    
+    const [toogle, setToogle] = React.useState(true);
+    const [cor, setCor] = React.useState('#c3c3c3');
+
+    React.useEffect(() => {
+        setCor((state) => toogle ? '#c3c3c3': '#02735E');
+      }, [toogle]);
+
+
     return ( 
         <div id='feed'>
+
 
             <Menu/>
             <Navegacao/>
@@ -37,6 +47,7 @@ const Feed = () => {
             </div>
            
 
+
             <div className='container-post'>
 
                 <div className='post'>
@@ -50,19 +61,19 @@ const Feed = () => {
                             <label>*Resumo do livro* </label>
                         </div>
                     </div>
-                    
                     <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
                     <div className='botoesFeed'>
 
-                        <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                        <button  onClick={e => setToogle(state => !state)} className='btn' > Curtir <i class="fa-solid fa-thumbs-up"  
+                        style={{backgroundColor:cor,}}>  </i></button>
                         <p className='btn'>|</p>
                         <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
                         <p className='btn'>|</p>
                         <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
                 
                     </div>
-                    
                 </div>
+
 
                 
                 <div className='post'>
@@ -80,7 +91,8 @@ const Feed = () => {
                     <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
                     <div className='botoesFeed'>
 
-                        <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                        <button  onClick={e => setToogle(state => !state)} className='btn'>Curtir <i class="fa-solid fa-thumbs-up"
+                        style={{backgroundColor:cor,}}></i></button>
                         <p className='btn'>|</p>
                         <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
                         <p className='btn'>|</p>
@@ -105,7 +117,8 @@ const Feed = () => {
                     <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
                     <div className='botoesFeed'>
 
-                        <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                        <button  onClick={e => setToogle(state => !state)} className='btn'>Curtir <i class="fa-solid fa-thumbs-up"
+                        style={{backgroundColor:cor,}}></i></button>
                         <p className='btn'>|</p>
                         <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
                         <p className='btn'>|</p>
