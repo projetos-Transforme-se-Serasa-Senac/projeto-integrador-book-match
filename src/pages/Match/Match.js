@@ -90,8 +90,6 @@ const Match = () => {
             .catch(function(error){
                 console.log(error);
             })
-
-            alteraIndice(indiceMatch +1)
         }
 
         
