@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from "react-router-dom";
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
@@ -19,6 +20,7 @@ const Match = () => {
             axios.get('http://localhost:3001/livros')
             .then(function(response){
                 const dados = response.data;
+                console.log(dados)
                 alteraMatches(dados);
             })
             .catch(function(error){
@@ -60,8 +62,6 @@ const Match = () => {
                 console.log(error);
             })
 
-          
-
             alteraIndice(indiceMatch + 1)
             
         }
@@ -75,6 +75,22 @@ const Match = () => {
         }
 
         const seguir = () => {
+            const id_seguidor = localStorage.getItem('id')
+            const id_seguindo = match.id_usuario
+
+            const obj = {
+                id_seguidor: id_seguidor,
+                id_seguindo: id_seguindo
+            }
+
+            axios.post('http://localhost:3001/seguir', obj)
+            .then(function(response){
+                console.log(response);
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+
             alteraIndice(indiceMatch +1)
         }
 
@@ -102,6 +118,7 @@ const Match = () => {
                                 <p> {match.classficacao_etaria} </p> 
                                 <p> {match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
+                                <p>{match.user_name}</p>
                             </div>                             
                                 <div className='botoesMatch'>   
                                     <button onClick={() =>nao_curtir()}> <img className='opcaoMatch' src='https://i.imgur.com/fg5bBZm.png'/> </button>
