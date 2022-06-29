@@ -6,21 +6,25 @@ body{
     /* background-image: url('https://i.imgur.com/r1MXp8h.png'); */
     background-size: cover;
 }
+#Emprestados .cards{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+
+}
 #Emprestados .card{
     margin: 20px;
     position: relative;
-    width: 40%;
+    width: 18em;
 
     color: #02674A;
 }
-.card-text1{
-    margin-top: 20px ;
-    margin-bottom: 2px;
+#Emprestados .card-body{
+    color: #868E96;
 }
-.voltar{
+#Emprestados .voltar{
     margin: 15px;
 }
-.voltarLink{
+#Emprestados .voltarLink{
     border: 1px solid #02674A ;
     text-decoration: none;
     color: #02674A;
@@ -32,6 +36,6 @@ body{
     font-size: 1.2em;
 
 }
-.voltar:hover{
+#Emprestados .voltar:hover{
     color: #02674A ;
 }

@@ -54,27 +54,27 @@ header{
 
 
 /*LOGO*/
-header img .logo{
+#menu img .logo{
     width: 150px;
     height: 45px;
     margin-top: 10px;
 }
-header .logo{
+#menu .logo{
     width: 150px;
     height: 45px;
     margin-bottom: 10px ;
 }
-header img:hover{
+#menu img:hover{
     transform: scale(1.05);   
 }
 
 /* Pesquisar*/
-.pesquisar{
+#menu .pesquisar{
     display: flex;
     justify-content: center;
 }
-.input,
-.lupa{
+#menu .input,
+#menu .lupa{
     background: #b7cdb7;
     border: none;
     padding: 8px;
@@ -82,12 +82,12 @@ header img:hover{
     box-shadow: 0 0 5px #5C6366;
     
 }
-.input{
+#menu .input{
     width: 18em;
     border-radius: 10px 0px 0  10px;
     color: #008B45;
 }
-.lupa{
+#menu .lupa{
     border-radius: 0 10px 10px  0;
 
 }

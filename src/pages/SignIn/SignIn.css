@@ -16,7 +16,7 @@ body{
     float: right;
     
 }
-.container-login{
+#singin .container-login{
     width: 100%;
     height: 100vh;
 
@@ -27,7 +27,7 @@ body{
 
     padding: 15px;
 }
-.wrapLogin{
+#singin .wrapLogin{
     width: 390px;
     background: #f5f5f5;
     border-radius: 10px;
@@ -40,10 +40,10 @@ body{
     padding: 77px 55px 33px 55px;
     box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
 }
-.loginForm{
+#singin .loginForm{
     width: 100%;
 }
-.loginTitle{
+#singin .loginTitle{
     display: block;
     font-size: 30px;
     color: rgb(7, 5, 5);
@@ -56,13 +56,13 @@ body{
 
 
 
-.wrapInput{
+#singin .wrapInput{
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
     margin-bottom: 37px;
 }
-.input{
+#singin .input{
     font-size: 15px;
     color: #2E8B57;
     line-height: 1.2;
@@ -76,7 +76,7 @@ body{
 
     padding: 0 5px;
 }
-.focusInput{
+#singin .focusInput{
     position: absolute;
     display: block;
     height: 100%;
@@ -88,7 +88,7 @@ body{
     pointer-events: none;
     color: whitesmoke
 }
-.focusInput::before{
+#singin .focusInput::before{
     content: "";
     display: block;
     position: absolute;
@@ -104,7 +104,7 @@ body{
     background: linear-gradient(to left,#32CD32, #40E0D0);
 
 }
-.focusInput::after{
+#singin .focusInput::after{
     font-size: 15px;
     color: #999;
     line-height: 1.2;
@@ -123,33 +123,33 @@ body{
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;  
 }
-.input:focus{
+#singin .input:focus{
     outline: 0;
 }
-.input:focus + .focusInput::after{
+#singin .input:focus + .focusInput::after{
     top:-15px;
 
 }
-.input:focus + .focusInput::before{
+#singin .input:focus + .focusInput::before{
     width: 100%;
         
 }
 
-.temValor + .focusInput::after{
+#singin .temValor + .focusInput::after{
     top: -15px;
 }
-.temValor + .focusInput::before{
+#singin .temValor + .focusInput::before{
     width: 100% ;
 }
 
- .container-login-form-btn{
+#singin .container-login-form-btn{
      display: flex;
      flex-wrap: wrap;
      justify-content: center ;
      padding-bottom: 13px;
 
  }
- .login-form-btn{
+ #singin .login-form-btn{
     font-size: 15px;
     border: none;
     border-radius: 10px;
@@ -168,25 +168,25 @@ body{
     background: linear-gradient(to left, #2E8B57, #32CD32);
 
 }
-.login-form-btn:hover{
+#singin .login-form-btn:hover{
     cursor: pointer;   
 }
 
-.text-center{
+#singin .text-center{
     display: flex    ;
     justify-content: center;
     align-items: center;
 
     margin-top: 50px;
 }
-.txt1{
+#singin .txt1{
     font-size: 14px;
     color:#2E8B57;
     line-height:  1.5;
     padding-right: 5px;
     text-decoration: none;
 }
-.txt2{
+#singin .txt2{
     font-size: 14px;
     color: #035933;
     line-height:  1.5;
