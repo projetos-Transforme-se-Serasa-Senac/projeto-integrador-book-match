@@ -51,7 +51,7 @@ const Feed = () => {
                         </div>
                     </div>
                     
-                    <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
+                    <img className='imagemPost' src='https://i.imgur.com/qT4vsAg.png'/>
                     <div className='botoesFeed'>
 
                         <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
