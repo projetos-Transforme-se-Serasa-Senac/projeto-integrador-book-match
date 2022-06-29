@@ -59,7 +59,9 @@ body{
 .btn{
     border: none;
     background: none;
-    color: #02735E;
+     /* color: #02735E; */
+    /* color: #c3c3c3;
+    color: #446677  */
 }
 /* Perfil de ladinho */
 .miniPerfil{

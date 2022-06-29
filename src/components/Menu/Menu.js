@@ -11,8 +11,29 @@ const Menu = () => {
 
     const [mostraMenu, alteraMostrarMenu] = useState(true)
 
+
+
+    // modal.addEventListener('click', function(e) {
+    //     if (e.target == this) fecha();
+    //   });
+
+    // var modal = document.getElementById('modal');
+    //     modal.addEventListener('click', function(e) {
+    //     if (e.target == this) fecha();
+    //     });
+
+    //     function abre() {
+    //         modal.style.display = 'block';
+    //       }
+        
+    //     function fecha() {
+    //         modal.style.display = 'none';
+    //       }
+
+
+
     return ( 
-        <header>
+        <header id='menu'>
             <Link to="/match" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
 
             <div className="pesquisar" >
@@ -27,7 +48,8 @@ const Menu = () => {
             </div>
         
             <div> 
-                <a onClick={mostrarOuOcultar} href="#"> <img className="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/> </a>
+                <a onClick={mostrarOuOcultar} href="#"> <img className="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/>  </a>
+                {/* <div id="modal" onblur="fecha()"></div> */}
                 {estaMostrando ? 
 
                 <div className='opcoesMenu'>
@@ -38,7 +60,7 @@ const Menu = () => {
                         <hr/>
                         <li><Link to="/emprestados"> Emprestados </Link></li>
                         <hr/>
-                        <li> <Link to="/"> Sair </Link> <img src='https://i.imgur.com/rUnPf2j.png'/> </li>
+                        <li><Link to="/"> Sair </Link> <img src='https://i.imgur.com/rUnPf2j.png'/> </li>
                     </ul>             
                 </div>
 

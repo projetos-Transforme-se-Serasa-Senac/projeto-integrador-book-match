@@ -18,7 +18,7 @@ body{
     
 }
 
-.container-cadastro{
+#cadastroLivro .container-cadastro{
     width: 100%;
     height: 0%;
 
@@ -31,13 +31,13 @@ body{
 
 }
 
-.wrapInputCadastro{
+#cadastroLivro .wrapInputCadastro{
     width: 100%;
     position: relative;
     border-bottom: 2px solid #adadad;
     margin-bottom: 37px;
 }
-.inputCadastro{
+#cadastroLivro .inputCadastro{
     font-size: 15px;
     color: #2E8B57;
     line-height: 1.2;
@@ -51,7 +51,7 @@ body{
 
     padding: 0 5px;
 }
-.focusInputCadastro{
+#cadastroLivro .focusInputCadastro{
     position: absolute;
     display: block;
     height: 100%;
@@ -63,7 +63,7 @@ body{
     pointer-events: none;
     color: #2E8B57
 }
-.focusInputCadastro::before{
+#cadastroLivro .focusInputCadastro::before{
     content: "";
     display: block;
     position: absolute;
@@ -79,7 +79,7 @@ body{
     background: linear-gradient(to left,#32CD32, #40E0D0);
 
 }
-.focusInputCadastro::after{
+#cadastroLivro .focusInputCadastro::after{
     font-size: 15px;
     color: #999;
     line-height: 1.2;
@@ -98,20 +98,20 @@ body{
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;  
 }
-.inputCadastro:focus{
+#cadastroLivro .inputCadastro:focus{
     outline: 0;
 }
-.inputCadastro:focus + .focusInputCadastro::after,
-.temValorCadastro + .focusInputCadastro::after{
+#cadastroLivro .inputCadastro:focus + .focusInputCadastro::after,
+#cadastroLivro .temValorCadastro + .focusInputCadastro::after{
     top:-15px;
 
 }
-.inputCadastro:focus + .focusInputCadastro::before,
-.temValorCadastro + .focusInputCadastro::before{
+#cadastroLivro .inputCadastro:focus + .focusInputCadastro::before,
+#cadastroLivro .temValorCadastro + .focusInputCadastro::before{
     width: 100%;       
 }
 
-.wrapCadastro{
+#cadastroLivro .wrapCadastro{
     height: 700px;
     width: 70%;
     background: #f5f5f5;
@@ -125,7 +125,7 @@ body{
     padding: 77px 55px 33px 55px;
     box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
 }
-.cadastroTitle{
+#cadastroLivro .cadastroTitle{
     display: block;
     font-size: 30px;
     color: rgb(7, 5, 5);
@@ -135,14 +135,14 @@ body{
 
     font-family: 'Fira Sans', sans-serif;
 }
-.hoverInputCadastro{
+#cadastroLivro .hoverInputCadastro{
     width: 100%;
     position: relative;
     border-bottom: 2px solid #2E8B57;
     margin-bottom: 37px;
 }
 
-.focusInputCadastro{
+#cadastroLivro .focusInputCadastro{
     position: absolute;
     display: block;
     height: 100%;
@@ -155,7 +155,7 @@ body{
     color: #2E8B57
 }
 
-.organizacaoCadastro{
+#cadastroLivro .organizacaoCadastro{
     display: flex;
     justify-content: space-between;
 
@@ -190,12 +190,12 @@ body{
 #classficacao_etaria:focus{
     outline: 0;
 }
-.cadastroBtns{
+#cadastroLivro .cadastroBtns{
     display: flex;
     justify-content:  space-between;
 
 }
-.btnCadastro{
+#cadastroLivro .btnCadastro{
     border-radius: 10px;
     border: none;
 
@@ -207,7 +207,7 @@ body{
 
     color: aliceblue;
 }
-.btnCancelaCadastro{
+#cadastroLivro .btnCancelaCadastro{
     border-radius: 10px;
     border: none;
     text-decoration: none;
@@ -222,7 +222,7 @@ body{
 
     color: aliceblue;
 }
-.btnCancelaCadastro:hover{
+#cadastroLivro .btnCancelaCadastro:hover{
     color: aliceblue;
 }
 

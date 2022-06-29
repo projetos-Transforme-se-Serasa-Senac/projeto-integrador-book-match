@@ -5,7 +5,7 @@ import Navegacao from '../../components/Navegacao/Navegacao';
 
 const Emprestados = () => {
     require ('./Emprestados.css')
-    document.body.style.backgroundImage='url("https://i.imgur.com/r1MXp8h.png")'
+    document.body.style.backgroundImage='none'
 
 
     const livros = [
@@ -48,25 +48,17 @@ const Emprestados = () => {
             livros.map( livros => {
                 return(
                     <div id='Emprestados'>
-                        <div>
-                        <div className="card mb-3" >
-                            <div className="row g-0">
-                                <div className="col-md-4">
-                                <img src={livros.imagem} className="img-fluid rounded-start" alt="..."/>
-                                </div>
-                                <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">{livros.nome}-<h6>{livros.autor}</h6></h5>
-                                    <p className="card-text1">{livros.eprestimo}</p>
-                                    <p className="card-text">{livros.devolucao}</p>
-                                    <p className="card-text"><small className="text-muted">{livros.pessoa}</small></p>
-                                </div>
-                                </div>
+                        <div class="card">
+                            <img src= {livros.imagem} /> 
+                                <h3> { livros.nome } </h3>
+                            <div class="card-body">
+                                <h5> {livros.autor} </h5>
+                                <h5> {livros.pessoa} </h5>
+                                <h5> {livros.devolucao} </h5>
                             </div>
-                            </div>
-                        </div>
-                     
+                         </div>
                     </div>
+                        
                       
                     )                 
                 })
