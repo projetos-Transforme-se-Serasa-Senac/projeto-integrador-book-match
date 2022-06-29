@@ -12,7 +12,7 @@ const Menu = () => {
     const [mostraMenu, alteraMostrarMenu] = useState(true)
 
     return ( 
-        <header>
+        <header id='menu'>
             <Link to="/match" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
 
             <div className="pesquisar" >
