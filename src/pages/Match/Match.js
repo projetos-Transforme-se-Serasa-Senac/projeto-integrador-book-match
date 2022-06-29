@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from "react-router-dom";
+
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
@@ -9,7 +9,7 @@ const Match = () => {
     document.body.style.backgroundImage='none'
 
 
-
+    
         const [matches, alteraMatches] = useState([])
         const [match, alteraMatch] = useState( null )
         const [indiceMatch, alteraIndice] = useState( 0 )
