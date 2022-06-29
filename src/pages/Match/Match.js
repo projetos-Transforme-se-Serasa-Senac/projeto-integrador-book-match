@@ -114,7 +114,7 @@ const Match = () => {
                                 <h3> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
                                 <p> +{match.classficacao_etaria} </p> 
-                                <p> {match.aluguel} </p> 
+                                <p> R${match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
                                 <p>{match.user_name}</p>
                             </div>                             
