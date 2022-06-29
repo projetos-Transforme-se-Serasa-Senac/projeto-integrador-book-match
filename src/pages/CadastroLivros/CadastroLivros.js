@@ -1,28 +1,10 @@
 import React from 'react';
 
-// import {useForm} from 'react-hook-form';
-// import { yupResolver } from '@hookform/resolvers/yup';
-// import * as yup from 'yup';
-
-
-// const validationPost = yup.object().shape({
-//     titulo: yup.string().required("O titulo é obrigatório"),
-//     autor: yup.string().required("O nome do autor é obrigatório").min(3, "O nome do autor precisa ser maior") ,
-//     genero: yup.string().required("O gênero é obrigatório").min(3, "O tipo de gênero precisa ser maior") ,
-//     classficacao_etaria: yup.string().required("A classificação indicatória é obrigatória"),
-//     foto_livro: yup.string().required("A foto do livro é obrigatória") ,
-//     sinopse: yup.string().required("A sinópse é obrigatória").min(20, "Insira uma sinopse com mais caracteres.")  
-// })
-
 const CadastroLivros = () => {
 
     require ('./CadastroLivros.css')
     document.body.style.backgroundImage='url("https://i.imgur.com/3gKnQHQ.jpg")'
 
-    // const{ register, formState: {erros} } = useForm({
-    //     resolver: yupResolver(validationPost)
-    // })
-    
     const [nome, setNome] = React.useState ("")
     const [autor, setautor] = React.useState ("")
     const [genero, setgenero] = React.useState ("")
