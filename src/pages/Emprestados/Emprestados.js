@@ -64,18 +64,6 @@ const Emprestados = () => {
                                 </div>
                             </div>
                             </div>
-                            {/* <ul className = "livros">
-                                <li>
-                                    <h3> { livros.nome } </h3>
-                                    <h5> {livros.autor} </h5>                           
-                                    <h5> {livros.eprestimo} </h5>
-                                    <h5> {livros.devolucao} </h5>
-                                    <h5> {livros.pessoa} </h5>
-                                    <br/>
-                                    <br/>
-                                    <br/>
-                                </li>
-                            </ul> */}
                         </div>
                      
                     </div>
