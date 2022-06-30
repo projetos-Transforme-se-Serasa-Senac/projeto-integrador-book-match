@@ -42,7 +42,6 @@ const Perfil = () => {
                 
                     <div className='post'>
                         <div className='perfilUsuario'>
-                            <img className='fotoPerfil' src='https://i.imgur.com/95jo9qd.jpg'/>
 
                             <span className='titulo'>Fulaninha de tal</span>
                             
