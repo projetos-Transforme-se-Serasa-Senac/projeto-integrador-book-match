@@ -18,7 +18,7 @@ const Navegacao = () => {
             <NavLink to="/comunidade"><i className="fa-solid fa-people-roof"/> Comunidade </NavLink>
             <p>|</p>
             
-            <NavLink to="/chat"> <i className="fa-solid fa-comments"/> Chat </NavLink>
+            <NavLink to="/perfil"> <i className="fa-solid fa-comments"/>Perfil </NavLink>
             
             
         </nav>
