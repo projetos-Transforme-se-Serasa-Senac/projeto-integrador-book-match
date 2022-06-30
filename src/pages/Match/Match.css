@@ -19,12 +19,12 @@ body {
 #match .cardMatch {
     border-radius: 20px;
     padding: 0px;
-    margin-top: 0.5%;
+    margin-top: 5%;
 
 
     
     width: 50%;
-    height: 505px;
+    /* height: 480px; */
     position: absolute;
 
     border: 1px solid #99cb89;
@@ -35,6 +35,7 @@ body {
 #match .imgMatch{
     border-radius: 20px 2px 2px 20px;
     width:50%;
+
     
 }
 #match .txtMatch{

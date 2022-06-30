@@ -21,6 +21,8 @@ nav{
     padding: 0.7em;
     width: 100%;
 
+    position: fixed;    
+
     background: #DEFFEC;
     /* background: #B0D4BA; */
     text-decoration: none;

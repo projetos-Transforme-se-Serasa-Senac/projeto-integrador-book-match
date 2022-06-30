@@ -18,26 +18,31 @@ body{
     display: flex;
     justify-content: space-between;
 
-    margin-top: 20px;
+    margin-top: 50px;
+
+    padding: 3%;
+
 }
+
 
 /* Posts do feed */
 #feed .container-postFeed{
     width: 100%;
-    display: center;
+    /* display: center; */
     justify-content: center;
+    margin: 0 3%;
 }
 #feed .postFeed{ 
     border-radius: 10px;  
     border: 1px solid #C6C6C6;
-    width: 50%;
+    /* width: 50%; */
     height: responsive;
 
     background: #FFFFFF;
 
     padding: 1% 1% 1% 1%;
 
-    margin-left: 400px;
+    /* margin-left: 400px; */
     margin-top: 0;
 }
 #feed .perfilUsuarioFeed{
@@ -71,11 +76,16 @@ body{
     background: #FFFFFF;
 
     width: 260px;
-    height: 249px;
+    height: fit-content;
 
-    padding: 100px;
+    padding: 10px;
 
     margin-bottom: 10px;
+}
+
+#feed .container-perfilFeed{
+    position: sticky;
+    top: 105px;
 }
 #feed .perfil02Feed{
     margin: 1em 0 1em 3.1em ;
@@ -99,8 +109,6 @@ body{
 
     padding: 10px;
 
-    position: sticky;
-    top: 105px;
 }
 #feed .exploreFeed li{
     list-style: none;

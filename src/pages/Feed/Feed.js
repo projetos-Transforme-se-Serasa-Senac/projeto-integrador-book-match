@@ -64,10 +64,12 @@ const Feed = () => {
                             <li><i class="fa-solid fa-user-nurse"></i> Outra Pessoa aqui</li>
                         </ol>
                     </div>
+                </div>
+                
+                <div className='container-postFeed'>
                     {postagens.map(postagens => {
                     return(
 
-                            <div className='container-postFeed'>
                                     <div className='postFeed'>
                                         <div className='perfilUsuarioFeed'>
                                             <img className='fotoPerfilFeed' src=''/>
@@ -91,7 +93,7 @@ const Feed = () => {
                                 
                                     </div>
                                     </div>
-                            </div> 
+                            
                     )
                 })}
                 </div>
@@ -117,55 +119,6 @@ const Feed = () => {
 
             </div>
            
-            {postagens.map(postagens => {
-                return(
-                    <div className='container-post'>
-
-
-                        <div className='container-post'>
-                                <div className='post'>
-                                    <div className='perfilUsuario'>
-                                        <img className='fotoPerfil' src=''/>
-
-                                        <span className='titulo'>{postagens.user_name}</span>
-                                        
-                                        <div> 
-                                            <h6>{postagens.titulo}</h6>
-                                            <label>*Resumo do livro* </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <img className='imagemPost' src={`${postagens.imagem}`}/>    
-                                <div className='botoesFeed'>
-
-                                    <button  onClick={e => setToogle(state => !state)} className='btn' > Curtir <i class="fa-solid fa-thumbs-up"  
-                                    style={{backgroundColor:cor,}}>  </i></button>
-                                    <p className='btn'>|</p>
-                                    <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
-                                    <p className='btn'>|</p>
-                                    <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
-                            
-                                </div>
-                        </div> 
-                </div>
-                )
-            })}
-
-            <div className='comunidades'>
-                    <h6 className='titulo'>conheça novas comunidades</h6>
-                        <ol>
-                            <li>Assembléia de Deus</li>
-                        
-                            <li>Chocolatras anonimos book</li>
-                        
-                            <li> Para todos os livros que ja amei</li>
-                            
-                            <li>A culpa é das estrelas e afins</li>
-                        </ol>
-                <div className='squad'>
-                    <p>Squad Amazonas © 2022 </p>
-                </div>
-            </div>
 
 
         </div>
