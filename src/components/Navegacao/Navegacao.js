@@ -9,7 +9,7 @@ const Navegacao = () => {
         <div id='navegacao'>
         <nav>
 
-            <NavLink to="/match"><i className="fa-solid fa-heart-circle-check"/> Match  </NavLink>  
+            <NavLink to="/match"><i className="fa-solid fa-heart-circle-check"/> Procurar Livros  </NavLink>  
             <p>|</p>
             
             <NavLink to="/feed"><i className="fa-solid fa-mobile-screen-button"/> Feed </NavLink>
