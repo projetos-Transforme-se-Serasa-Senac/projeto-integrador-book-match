@@ -3,6 +3,7 @@ import React from 'react';
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
 import { NavLink } from "react-router-dom";
+// import Pedidos from '../../components/Pedidos/Pedidos';
 
 const Perfil = () => {
     require ('./Perfil.css')
@@ -30,8 +31,6 @@ const Perfil = () => {
 
                     <div>
                         <nav>
-                            {/* <NavLink to="/cadastroLivros"> Cadastrar Livros  </NavLink>  
-                            <p>|</p> */}
                             <NavLink to="/emprestados"> Emprestados </NavLink>
                             <p>|</p>
                             <NavLink to="/solicitacoes"> Solicitações </NavLink>
