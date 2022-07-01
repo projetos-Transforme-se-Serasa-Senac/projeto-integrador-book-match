@@ -86,11 +86,6 @@ const Feed = () => {
 
                                         <button  onClick={e => setToogle(state => !state)} className='btnFeed' > Curtir <i class="fa-solid fa-thumbs-up"  
                                         style={{backgroundColor:cor,}}>  </i></button>
-                                        <p className='btnFeed'>|</p>
-                                        <button className='btnFeed'>Comentar <i class="fa-solid fa-comment"></i></button>
-                                        <p className='btnFeed'>|</p>
-                                        <button className='btnFeed'>Compartilhar <i class="fa-solid fa-share"></i></button>
-                                
                                     </div>
                                     </div>
                             

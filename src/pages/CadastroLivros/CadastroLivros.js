@@ -131,7 +131,7 @@ const CadastroLivros = () => {
                         <div className="wrapInputCadastro">
                             <textarea name='sinopse' 
                                 className={sinopse !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="sinopse"  rows='5' cols='35'   minLength={20}   required      
+                                id="sinopse"  rows='5' cols='35' minlength={20}  maxlength={200}   required      
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />

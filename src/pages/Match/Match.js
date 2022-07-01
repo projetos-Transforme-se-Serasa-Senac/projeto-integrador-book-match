@@ -116,7 +116,7 @@ const Match = () => {
                                 <p> +{match.classficacao_etaria} </p> 
                                 <p> R${match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
-                                <p>{match.user_name}</p>
+                                <p>@{match.user_name}</p>
                             </div>                             
                                 <div className='botoesMatch'>   
                                     <button onClick={() =>favoritar()}> <img className='opcaoMatch' src='https://i.imgur.com/j78bsOe.png'/> </button>
