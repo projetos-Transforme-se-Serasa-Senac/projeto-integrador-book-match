@@ -1,17 +1,55 @@
 import React from 'react';
 
-// import Perfil from '../../Perfil/Perfil'
 
 const Pedidos = () => {
+        const pedidos = [
+            { 
+            nome: "Fulaninha",
+            pessoa: " SOLICITAÇÃO" ,
+            pessoaa: "CANCELAR ",
+            },
+
+            {
+                nome: "Agatha",
+                pessoa: " SOLICITAÇÃO",
+                pessoaa: "CANCELAR ",
+            },
+
+            {
+                nome: "Beatriz",
+                pessoa: "SOLICITAÇÃO",
+                pessoaa: "CANCELAR ",
+            }
+        ]
+
     return(
+        <div> 
 
-    <div> 
+            <h1> Meus Pedidos </h1>
+            <br/>
 
-        <h1> Meus Pedidos </h1>
+            {
+                pedidos.map( pedidos => {
+                    return(
+                        <div id='Pedidos'>
+                            <div >
+                                <h3> { pedidos.nome } </h3>
+                                <div >
+                                    <button> {pedidos.pessoa} </button>
+                                    <br/>
+                                    <button> {pedidos.pessoaa} </button>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    )                 
+                })
+            }
 
-       <a href='Perfil'> Voltar </a>
+            <a href='Perfil'> Voltar </a>
 
-    </div>
+        </div>
 
     );
 }
