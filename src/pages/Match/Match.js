@@ -111,7 +111,7 @@ const Match = () => {
                             <img src={match.imagem}  className="imgMatch"/>                               
                             <div className='txtMatch'>
                                 <h3 className='txt1Match'> {match.titulo} </h3> 
-                                <h3> {match.autor} </h3> 
+                                <h3 className='autorNome'> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
                                 <p> +{match.classficacao_etaria} </p> 
                                 <p> R${match.aluguel} </p> 

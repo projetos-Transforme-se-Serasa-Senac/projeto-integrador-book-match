@@ -47,6 +47,9 @@ body {
 
     margin-left: 20em;
 }
+#match .autorNome{
+    font-size: 1.1em;
+}
 #match .txt1Match{
     color: #99cb89;
 }
@@ -69,13 +72,13 @@ body {
 #match .botoesMatch .opcaoMatch{
     border-radius: 50%;
 
-    width: 45px;
+    width: 35px;
    
     box-shadow: 0 0 20px #d9d9d9;
 }
 #match .botoesMatch .coracaoMatch{
     border-radius: 50%;
-    width: 70px;
+    width: 57px;
 
     
     box-shadow: 0 0 20px  #d9d9d9;
