@@ -54,12 +54,12 @@ const Menu = () => {
 
                 <div className='opcoesMenu'>
                     <ul>
-                        {/* <li><Link to="/cadastroLivros"> Cadastro Livros </Link></li>
-                        <hr/>
-                        <li><Link to="/perfil"> Perfil </Link></li>
+                         <li><Link to="/cadastroLivros"> Cadastrar Livros </Link></li>
+                        <hr/> 
+                        {/* <li><Link to="/perfil"> Perfil </Link></li>
                         <hr/>
                         <li><Link to="/emprestados"> Emprestados </Link></li>
-                        <hr/> */}
+                        <hr/> */} 
                         <li><Link to="/"> Sair </Link> <img src='https://i.imgur.com/rUnPf2j.png'/> </li>
                     </ul>             
                 </div>

@@ -41,7 +41,7 @@ const Emprestados = () => {
         
         <div>
             <div className='voltar'>
-                <a href='Match' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> Voltar</a>
+                <a href='Perfil' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> Voltar</a>
             </div>
 
             {
