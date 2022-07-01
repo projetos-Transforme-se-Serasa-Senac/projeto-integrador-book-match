@@ -105,9 +105,6 @@ const CadastroLivros = () => {
                             </select>
                             <span for='classficacao_etaria'  ></span>
 
-                            {/* Tags */}
-                            <input id="tags"  placeholder='Tags' type='text'/>
-
                             {/* Valor do aluguel */}
                             <label for='aluguel' ></label>
                             <input id="aluguel" placeholder='Valor do aluguel(opcional)' type='number'/>
@@ -126,7 +123,7 @@ const CadastroLivros = () => {
                         <div className="wrapInputCadastro">
                             <textarea name='sinopse' 
                                 className={sinopse !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="sinopse"  rows='5' cols='35'   minLength={20}   required      
+                                id="sinopse"  rows='5' cols='35' minlength={20}  maxlength={200}   required      
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />
