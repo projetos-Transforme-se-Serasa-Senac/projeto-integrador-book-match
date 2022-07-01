@@ -4,7 +4,9 @@ const Solicitacoes = () => {
     return(
         <div>
 
-           
+           <h1> Solicitações </h1>
+
+           <a href='Perfil'> Voltar </a>
 
 
 
