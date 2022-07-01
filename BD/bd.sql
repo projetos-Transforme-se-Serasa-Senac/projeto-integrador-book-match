@@ -61,7 +61,7 @@ CREATE TABLE `livro` (
   `sinopse` longtext NOT NULL,
   `imagem` varchar(60) NOT NULL,
   PRIMARY KEY (`id_livro`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `livro` (
 
 LOCK TABLES `livro` WRITE;
 /*!40000 ALTER TABLE `livro` DISABLE KEYS */;
-INSERT INTO `livro` VALUES (1,'Diário de um Banana','Jeff Kinney','Besteirol','undefined','',12,'Diary of a Wimpy Kid é uma série de livros do gênero ficção científica escrito pelo cartunista norte-americano Jeff Kinney. O primeiro livro foi publicado no dia 1 de abril de 2007 nos Estados Unidos.','https://i.imgur.com/5AaBOHr.png'),(2,'Para Todos os Garotos que Já Amei','Jenny Han','Romance','undefined','',15,'Diary of a Wimpy Kid é uma série de livros do gênero ficção científica escrito pelo cartunista norte-americano Jeff Kinney. O primeiro livro foi publicado no dia 1 de abril de 2007 nos Estados Unidos.',''),(3,'A Menina que Roubava Livros','Markus Zusak','Romance','undefined','',10,'The Book Thief é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador. No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respetivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.',''),(4,'Corte de Espinhos e Rosas','Sarah J. Maas','Romance','undefined','',5,'A Court of Thorns and Roses é uma nova série de romances de alta fantasia para adultos da autora americana Sarah J. Maas, começando com o romance de mesmo nome, lançado em maio de 2015.','');
+INSERT INTO `livro` VALUES (1,'Diário de um Banana','Jeff Kinney','Besteirol','undefined','',12,'Diary of a Wimpy Kid é uma série de livros do gênero ficção científica escrito pelo cartunista norte-americano Jeff Kinney. O primeiro livro foi publicado no dia 1 de abril de 2007 nos Estados Unidos.','https://i.imgur.com/5AaBOHr.png'),(2,'Para Todos os Garotos que Já Amei','Jenny Han','Romance','undefined','',15,'Diary of a Wimpy Kid é uma série de livros do gênero ficção científica escrito pelo cartunista norte-americano Jeff Kinney. O primeiro livro foi publicado no dia 1 de abril de 2007 nos Estados Unidos.','https://i.imgur.com/wwoKNdH.png'),(3,'A Menina que Roubava Livros','Markus Zusak','Romance','undefined','',10,'The Book Thief é um drama do escritor australiano Markus Zusak, publicado em 2005 pela editora Picador. No Brasil e em Portugal, foi lançado pela Intrínseca e a Presença, respetivamente. O livro é sobre Liesel Meminger, uma garota que encontra a Morte três vezes durante 1939–43 na Alemanha nazista.',''),(4,'Corte de Espinhos e Rosas','Sarah J. Maas','Romance','undefined','',5,'A Court of Thorns and Roses é uma nova série de romances de alta fantasia para adultos da autora americana Sarah J. Maas, começando com o romance de mesmo nome, lançado em maio de 2015.',''),(5,'Corte de espinhos e rosas','Sarah J. Maas','Fantasia','5','',0,'Ela roubou uma vida. Agora deve pagar com o coração. Nesse misto de A Bela e A Fera e Game of Thrones, Sarah J. Maas cria um universo repleto de ação, intrigas e romance.','https://i.imgur.com/IUnhL33.png');
 /*!40000 ALTER TABLE `livro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `matches` (
   KEY `id_usuario_has_livro_idx` (`id_usuario_dono`),
   KEY `id_usuario_pedinte_idx` (`id_usuario_pedinte`),
   CONSTRAINT `id_usuario_pedinte` FOREIGN KEY (`id_usuario_pedinte`) REFERENCES `usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +98,7 @@ CREATE TABLE `matches` (
 
 LOCK TABLES `matches` WRITE;
 /*!40000 ALTER TABLE `matches` DISABLE KEYS */;
-INSERT INTO `matches` VALUES (1,1,1),(2,1,6),(3,1,6);
+INSERT INTO `matches` VALUES (1,1,1),(2,1,6),(3,1,6),(4,1,1),(5,1,1),(6,1,1),(7,1,1),(8,1,1),(9,1,1),(10,2,1),(11,1,1),(12,1,1),(13,2,1),(14,1,1),(15,1,1),(16,1,1),(17,1,1),(18,1,1),(19,1,1),(20,1,1),(21,1,1),(22,2,1),(23,1,1),(24,1,1),(25,1,1),(26,1,1);
 /*!40000 ALTER TABLE `matches` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -176,7 +176,7 @@ CREATE TABLE `usuario_livro` (
   KEY `id_livro_idx` (`id_livro`),
   CONSTRAINT `id_livro` FOREIGN KEY (`id_livro`) REFERENCES `livro` (`id_livro`),
   CONSTRAINT `id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -185,7 +185,7 @@ CREATE TABLE `usuario_livro` (
 
 LOCK TABLES `usuario_livro` WRITE;
 /*!40000 ALTER TABLE `usuario_livro` DISABLE KEYS */;
-INSERT INTO `usuario_livro` VALUES (1,1,1),(2,1,2),(3,1,3),(4,1,4);
+INSERT INTO `usuario_livro` VALUES (1,1,1),(2,1,2),(3,1,3),(4,1,4),(5,2,5);
 /*!40000 ALTER TABLE `usuario_livro` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -198,4 +198,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-29 17:00:48
+-- Dump completed on 2022-07-01 17:31:22
