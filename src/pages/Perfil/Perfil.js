@@ -9,6 +9,19 @@ const Perfil = () => {
     require ('./Perfil.css')
     document.body.style.backgroundImage='none'
 
+
+    // livros , alteraLivros
+
+    // buscaEmprestados
+    // buscaSolicitacoes
+    // ...
+
+    
+
+
+    // useEffect( () => buscaEmprestados(), [] )
+    
+
     return ( 
         <div id='perfil'>
 
@@ -49,11 +62,12 @@ const Perfil = () => {
 
                     <div>
                         <div className='navegaçãoPerfil'>
-                            <NavLink className='opcao' to="/emprestados"> Emprestados </NavLink>
+                            {/* onClick={()=> buscaEmprestados() */}
+                            <NavLink className='opcao' > Emprestados </NavLink>
                             
-                            <NavLink  className='opcao' to="/solicitacoes"> Solicitações </NavLink>
+                            <NavLink  className='opcao'> Solicitações </NavLink>
                             
-                            <NavLink  className='opcao' to="/pedidos"> Meus Pedidos </NavLink>
+                            <NavLink  className='opcao'> Meus Pedidos </NavLink>
                         </div>
                     </div>
                     <div className='post'>
