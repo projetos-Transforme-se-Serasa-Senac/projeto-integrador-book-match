@@ -2,6 +2,7 @@ import React from 'react';
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
+import { NavLink } from "react-router-dom";
 
 const Perfil = () => {
     require ('./Perfil.css')
@@ -26,6 +27,20 @@ const Perfil = () => {
 
                     </div>
                 </div>
+
+                    <div>
+                        <nav>
+                            {/* <NavLink to="/cadastroLivros"> Cadastrar Livros  </NavLink>  
+                            <p>|</p> */}
+                            <NavLink to="/emprestados"> Emprestados </NavLink>
+                            <p>|</p>
+                            <NavLink to="/solicitacoes"> Solicitações </NavLink>
+                            <p>|</p>
+                            <NavLink to="/pedidos"> Meus Pedidos </NavLink>
+                        </nav>
+                    </div>
+ 
+
                 <div className='container-perfil'>
                     <div className='comunidadesParticipa'>
                     <h6 className='titulo'>conheça novas comunidades</h6>
