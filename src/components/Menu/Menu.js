@@ -34,7 +34,7 @@ const Menu = () => {
 
     return ( 
         <header id='menu'>
-            <Link to="/match" ><img className="logo" src="https://i.imgur.com/QcRjnUP.png" /></Link>
+            <Link to="/match" ><img className="logo" src="https://i.imgur.com/TL1ZPXS.png" /></Link>
 
             <div className="pesquisar" >
 

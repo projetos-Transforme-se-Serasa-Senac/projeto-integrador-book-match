@@ -29,15 +29,6 @@ const Perfil = () => {
                     </div>
                 </div>
 
-                    <div>
-                        <nav>
-                            <NavLink to="/emprestados"> Emprestados </NavLink>
-                            <p>|</p>
-                            <NavLink to="/solicitacoes"> Solicitações </NavLink>
-                            <p>|</p>
-                            <NavLink to="/pedidos"> Meus Pedidos </NavLink>
-                        </nav>
-                    </div>
  
 
                 <div className='container-perfil'>
@@ -53,7 +44,18 @@ const Perfil = () => {
                             <li>A culpa é das estrelas e afins</li>
                         </ol>
                     </div>
-                
+
+                <div className='containerDireita'>
+
+                    <div>
+                        <div className='navegaçãoPerfil'>
+                            <NavLink className='opcao' to="/emprestados"> Emprestados </NavLink>
+                            
+                            <NavLink  className='opcao' to="/solicitacoes"> Solicitações </NavLink>
+                            
+                            <NavLink  className='opcao' to="/pedidos"> Meus Pedidos </NavLink>
+                        </div>
+                    </div>
                     <div className='post'>
                         <div className='perfilUsuario'>
 
@@ -77,6 +79,7 @@ const Perfil = () => {
                         </div>
                         
                     </div>
+                </div>
                 </div>
                
                

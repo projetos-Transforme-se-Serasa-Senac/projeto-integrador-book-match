@@ -103,3 +103,24 @@ body{
 
     margin: 10px;
 }
+#perfil .navegaçãoPerfil{ 
+    width: 70%;
+
+    background:transparent;
+
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+#perfil .opcao{
+    text-decoration: none;
+    border-radius: 30px; 
+
+    background: #FFFFFF;
+
+    border: 1px solid #C6C6C6;
+    padding: 1% 1% ;
+
+    margin-right:40px;
+
+    color: #02735E ;
+}

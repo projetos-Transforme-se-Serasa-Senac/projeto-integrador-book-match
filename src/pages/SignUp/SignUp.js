@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const SignUp = () => {
     require ('./SignUp.css')
+    document.body.style.backgroundImage='url("https://i.imgur.com/MMp8wsE.jpg")'
     const [nome, setNome] = useState ("")
     const [usuario, setUsuario] = useState ("")
     const [email, setEmail] = useState ("")
