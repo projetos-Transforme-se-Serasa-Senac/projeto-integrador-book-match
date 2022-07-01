@@ -30,6 +30,10 @@ const Feed = () => {
     const [toogle, setToogle] = React.useState(true);
     const [cor, setCor] = React.useState('#c3c3c3');
 
+    const curtir = (e) => {
+        e.target.style.backgroundColor="red";
+    }
+
     React.useEffect(() => {
         setCor((state) => toogle ? '#c3c3c3': '#02735E');
       }, [toogle]);
@@ -82,15 +86,10 @@ const Feed = () => {
                                             </div>
                                         </div>
                                     <img className='imagemPostFeed' src={`${postagens.imagem}`}/>    
-                                    <div className='botoesFeed'>
+                                    <div  onClick={e => curtir(e)} className='botoesFeed'>
 
-                                        <button  onClick={e => setToogle(state => !state)} className='btnFeed' > Curtir <i class="fa-solid fa-thumbs-up"  
+                                        <button  className='btnFeed' > <i class="fa-solid fa-thumbs-up"  
                                         style={{backgroundColor:cor,}}>  </i></button>
-                                        <p className='btnFeed'>|</p>
-                                        <button className='btnFeed'>Comentar <i class="fa-solid fa-comment"></i></button>
-                                        <p className='btnFeed'>|</p>
-                                        <button className='btnFeed'>Compartilhar <i class="fa-solid fa-share"></i></button>
-                                
                                     </div>
                                     </div>
                             
