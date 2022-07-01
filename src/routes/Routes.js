@@ -10,6 +10,8 @@ import Emprestados from '../pages/Emprestados/Emprestados';
 import CadastroLivros from '../pages/CadastroLivros/CadastroLivros';
 import Perfil from '../pages/Perfil/Perfil';
 import Forum from '../pages/Forum/Forum';
+import Pedidos from '../pages/Pedidos/Pedidos';
+import Solicitacoes from '../pages/Solicitacoes/Solicitacoes';
 
 const AppRouter = () => {
     return(
@@ -31,6 +33,9 @@ const AppRouter = () => {
             <Route path="/cadastroLivros" element={<CadastroLivros/>}/>
             <Route path="/perfil" element={<Perfil/>}/>
             
+            {/* ROTAS NAVEGAÇÃO PERFIL */}
+            <Route path='pedidos' element={<Pedidos/>}/>
+            <Route path='solicitacoes' element={<Solicitacoes/>}/>
         </Routes>
 
     );
