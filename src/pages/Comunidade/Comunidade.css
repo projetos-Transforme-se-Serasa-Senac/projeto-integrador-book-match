@@ -10,7 +10,11 @@
     font-family: 'Fira Sans Condensed', sans-serif;
 
 }
+.container{
+    margin-top: 45px;
+}
 .wrapper{
+
     position: none;
     top: 50%;
     /* transform: translate(-50%, -50%); */
