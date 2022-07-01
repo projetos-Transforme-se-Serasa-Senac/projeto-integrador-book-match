@@ -126,6 +126,10 @@ body{
     position: fixed;
     top: 450px;
 }
+#feed .exploreFeed{
+    position: sticky;
+    top: 120px;
+}
 #feed .squadFeed p{
     width: 0.8em;
     text-align: justify;
@@ -142,7 +146,7 @@ body{
     padding: 10px;
 
     position: sticky;
-    top:110px;
+    top:120px;
 }
 #feed .comunidadesFeed hr{
     width: 100%;
