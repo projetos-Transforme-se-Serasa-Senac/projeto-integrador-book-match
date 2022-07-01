@@ -13,7 +13,7 @@ const Comunidade = () => {
 
             <Menu/>
             <Navegacao/>
-            <h1 className='TituloPagina'> Conheça novas comunidades </h1>
+           
 
             {/* <div className='containerComunidade'> */}
 
@@ -34,7 +34,9 @@ const Comunidade = () => {
                     </div>
                 </div>              */}
 
+            <div className='container'>
 
+                <h1 className='TituloPagina'> Conheça novas comunidades </h1>
                 <div class="wrapper">
                         <div class="cardComunidade">
                             <img src='https://i.imgur.com/unndAEa.png'/>
@@ -121,6 +123,7 @@ const Comunidade = () => {
                             </div>
                         </div>
                     </div>
+            </div>
 
              
             
