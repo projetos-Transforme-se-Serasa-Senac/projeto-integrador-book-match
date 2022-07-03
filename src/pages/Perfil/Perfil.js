@@ -30,7 +30,7 @@ const Perfil = () => {
             <h1> Perfil </h1>
             <div className='container'>
                 <div className='perfilPrincipal'>
-                    <img className='capaFundo' src='https://i.imgur.com/04Y0gAR.jpg'/>
+                    <img className='capaFundo' src='https://i.imgur.com/MMp8wsE.jpg'/>
                     <br/>
                     <img className='fotoPerfil' src='https://i.imgur.com/o8Mx6B5.jpg'/>
                     <div>                        
@@ -45,7 +45,7 @@ const Perfil = () => {
  
 
                     <div className='container-perfil'>
-                        {/* <div className='comunidadesParticipa'>
+                        <div className='comunidadesParticipa'>
                         <h6 className='titulo'>conheça novas comunidades</h6>
                             <ol>
                                 <li>Assembléia de Deus</li>
@@ -56,28 +56,25 @@ const Perfil = () => {
                                 
                                 <li>A culpa é das estrelas e afins</li>
                             </ol>
-                        </div> */}
+                        </div>
 
                     <div className='containerDireita'>
 
                     <div>
-                    <nav className='navPerfil'>
+                    <div className='navegacaoPerfil'>
 
-                        <NavLink to="/publicacoes"> Publicações </NavLink>
-                        <p>|</p>
+                        <NavLink className='opcao' to="/publicacoes"> Publicações </NavLink>
+                    
+                        <NavLink className='opcao' to="/emprestados"> Emprestados  </NavLink>                      
 
-                        <NavLink to="/emprestados"> Emprestados  </NavLink>  
-                        <p>|</p>
-
-                        <NavLink to="/pedidos"> Meus Pedidos </NavLink>
-                        <p>|</p>
-
-                        <NavLink to="/solicitacoes"> Solicitações </NavLink>
-                        <p>|</p>
+                        <NavLink className='opcao' to="/pedidos"> Meus Pedidos </NavLink>
+                       
+                        <NavLink className='opcao' to="/solicitacoes"> Solicitações </NavLink>
+                       
 
 
 
-                    </nav>
+                    </div>
                     </div>
                     <div className='post'>
                         <div className='perfilUsuario'>
