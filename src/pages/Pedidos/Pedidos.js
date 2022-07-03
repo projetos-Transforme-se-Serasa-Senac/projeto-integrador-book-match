@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 
 const Pedidos = () => {
@@ -15,7 +15,7 @@ const Pedidos = () => {
         .then(function(response){
             const dados = response.data;
             console.log(dados)
-            listaPostagens(dados)
+            listaPedidos(dados)
         })
         .catch(function(error){
             console.log(error);
