@@ -9,6 +9,7 @@ const CadastroLivros = () => {
     const [autor, setautor] = React.useState ("")
     const [genero, setgenero] = React.useState ("")
     const [sinopse, setsinopse] = React.useState ("")
+    const [foto_livro,setfoto_livro] = React.useState ("")
 
 
     const cadastraLivro = (e) => {
@@ -116,9 +117,20 @@ const CadastroLivros = () => {
                         </div>
 
                         {/* Foto do livro */}
+                        <div className="wrapInputCadastro">
+                            <textarea name='foto_livro' 
+                                className={foto_livro !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
+                                id="foto_livro"  rows='5' cols='35'   minLength={20}   required      
+                                value={foto_livro}
+                                onChange={e => setfoto_livro(e.target.value)}
+                            />
+                            
+                            <span className="focusInputCadastro" data-placeholder="Insira a URL (link) do livro:"></span>
+                            
                         <div>
                             <input name='foto_livro' type="text" id="img_livro"  placeholder='Insira o URL (link da foto)...'  required>  
                             </input>
+                        </div>
                         </div>
 
                         <br/>

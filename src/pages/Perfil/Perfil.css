@@ -10,12 +10,14 @@ body{
     justify-content: space-between;
 
     margin-top: 20px;
+    
 }
 
 #perfil .capaFundo{
     border-radius: 10px 10px 0 0;
     width: 100%;
     height:250px;
+    
 }
 #perfil .fotoPerfil{
     top: 300px;
@@ -28,19 +30,20 @@ body{
 
 }
 #perfil .nomePerfil{
-    margin-top: 50px ;
-    padding-left: 20px;
+    margin-top: 90px ;
 }
-#perfil .infoPerfil{
+#perfil .infoPerfil, 
+.nomePerfil, .cidadePerfil{
     padding-left: 20px;
 }
 #perfil .cidadePerfil{
     font-size: 0.8em;
-    padding-left: 20px;
     color: #9c9c99;
 }
 #perfil .perfilPrincipal{
     background: #fff;
+    border: 1px solid #C6C6C6;
+
 
     border-radius: 10px;
 }
@@ -103,10 +106,13 @@ body{
 
     margin: 10px;
 }
-#perfil .navegaçãoPerfil{ 
+#perfil .navegacaoPerfil{ 
     width: 70%;
 
     background:transparent;
+
+    display: flex;
+    justify-content: space-between;
 
     margin-left: 120px;
     margin-bottom: 20px;
@@ -123,4 +129,16 @@ body{
     margin-right:40px;
 
     color: #02735E ;
+}
+#perfil .comunidadesParticipa{
+    background: #fff;
+    width: 400px;
+    height: 350px;
+
+    border: 1px solid #C6C6C6;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
 }
