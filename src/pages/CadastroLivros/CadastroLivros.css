@@ -4,17 +4,18 @@ body{
     margin: 0;
     padding: 0;
 
-    background-size: cover;
-
-    /* box-sizing: border-box ; */
+    background-color: #afd3b9;
 
     font-family: 'Fira Sans', sans-serif;
 }
 
 #cadastroLivro .containerCadastro{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    float: right;
+
+    display: flex;
+    justify-content: space-between;
+    /* float: right; */
     
 }
 
@@ -162,13 +163,26 @@ body{
     margin: 0;
     margin-bottom: 20px;
 }
-#classficacao_etaria{
+#classficacao_etaria {
     margin-right: 5px;  
 }
+.classificacao_etaria{
+    color: #757575;
 
+    background-color: #fff;
+
+    height: 40px;
+    width: 48%;
+
+    border: 1px solid #33cf3e;
+    border-radius: 10px;
+    margin-right: 5px;
+
+    margin-bottom: 20px;
+}
 #tags,
 #aluguel,
-#classficacao_etaria{
+#classficacao_etaria {
     color: #757575;
 
     background-color: #fff;
@@ -212,7 +226,7 @@ body{
     border: none;
     text-decoration: none;
 
-    margin-right: 13.5em;
+    margin-right: 3em;
     padding: 15px 53.6px;
 
     background: linear-gradient(to left, #2E8B57, #32CD32);

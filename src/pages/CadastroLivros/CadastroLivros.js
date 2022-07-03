@@ -3,7 +3,7 @@ import React from 'react';
 const CadastroLivros = () => {
 
     require ('./CadastroLivros.css')
-    document.body.style.backgroundImage='url("https://i.imgur.com/3gKnQHQ.jpg")'
+    document.body.style.backgroundImage='none'
 
     const [nome, setNome] = React.useState ("")
     const [autor, setautor] = React.useState ("")
@@ -52,7 +52,9 @@ const CadastroLivros = () => {
     return ( 
 
     <div id='cadastroLivro'>
+        
     <div className="containerCadastro">
+    <img src='https://i.imgur.com/5cvof4p.png'/>
         <div className="container-cadastro">
             <div className="wrapCadastro">
 
@@ -99,7 +101,7 @@ const CadastroLivros = () => {
 
                         {/* Classificação indicatória */}
                         <div className='organizacaoCadastro'>
-                            <select name='classificacao_etaria' id='classificacao_etaria'    required >
+                            <select name='classificacao_etaria' id='classificacao_etaria' className='classificacao_etaria'   required >
                                 <option value="0"> Classificação indicatória * </option> 
                                 <option value="1"> L </option>
                                 <option value="2"> 10 </option>
@@ -127,10 +129,7 @@ const CadastroLivros = () => {
                             
                             <span className="focusInputCadastro" data-placeholder="Insira a URL (link) do livro:"></span>
                             
-                        <div>
-                            <input name='foto_livro' type="text" id="img_livro"  placeholder='Insira o URL (link da foto)...'  required>  
-                            </input>
-                        </div>
+        
                         </div>
 
                         <br/>
