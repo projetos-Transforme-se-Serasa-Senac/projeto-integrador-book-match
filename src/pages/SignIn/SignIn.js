@@ -4,6 +4,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
      require ('./SignIn.css')
+     document.body.style.backgroundImage='url("https://i.imgur.com/MMp8wsE.jpg")'
     //  require ('../../assets/global.css')
 
     const [usuario, setUsuario] = useState ("")
@@ -63,7 +64,7 @@ const SignIn = () => {
                     <form className="loginForm">
 
                         {/* Logo e mensagem */}
-                        <span className="loginTitle">Faça seu logIn</span>
+                        <span className="loginTitle"> LogIn</span>
 
 
                         {/* Usuario e senha */}

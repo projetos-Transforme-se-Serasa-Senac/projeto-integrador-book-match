@@ -46,7 +46,7 @@ const SignUp = () => {
 
                     <section>
                         <form method="POST" onSubmit={(e) => cadastraUsuario(e)}>
-                            <span className="loginTitle">Book Match</span>
+                            <span className="loginTitle">Book Share</span>
 
                             {/* Informações do usuario */}
                     <div className="wrapInput">

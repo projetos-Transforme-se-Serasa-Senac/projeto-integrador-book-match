@@ -54,7 +54,7 @@ const CadastroLivros = () => {
     <div id='cadastroLivro'>
         
     <div className="containerCadastro">
-    <img src='https://i.imgur.com/5cvof4p.png'/>
+    <img className='ImgFundo' src='https://i.imgur.com/5cvof4p.png'/>
         <div className="container-cadastro">
             <div className="wrapCadastro">
 

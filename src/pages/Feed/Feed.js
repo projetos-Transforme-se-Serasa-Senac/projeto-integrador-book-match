@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
+import { NavLink } from "react-router-dom";
+import Perfil from '../Perfil/Perfil';
 
 const Feed = () => {
     require ('./Feed.css')
@@ -52,8 +54,13 @@ const Feed = () => {
                     <div className='miniPerfilFeed'>
                         <img className="perfil02Feed" src="https://i.imgur.com/o8Mx6B5.jpg"/>
                         <div className='entraPerfilFeed'>
-                            <h6 className='nomeUsuarioFeed'>{postagens.user_name}</h6>
-                            <span className='descricaoPerfilFeed'>Descrição de perfil</span>
+                            {/* <h6 className='nomeUsuarioFeed'></h6> */}
+
+                            <p><NavLink className='nomeUsuarioFeed' to="/perfil"> Fulaninha {postagens.user_name} </NavLink></p>
+
+                            <p><span className='descricaoPerfilFeed'>EU GOSTO ASSIM, MUITO CHEIONAS,
+                             EU GOSTO ASSIM DAS BEM GRANDONAS, EU GOSTO MAIS SE SÃO CARNUDAS, AINDA MAIS
+                             SE SÃO PANÇUDAS ♪♪♪</span></p>
                         </div>
                     </div>
                     <div className='exploreFeed'>

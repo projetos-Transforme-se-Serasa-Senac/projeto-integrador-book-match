@@ -1,10 +1,10 @@
 body{
     background-color: #F3F2EF;
 }
-.TituloPagina{
+#forum .TituloPagina{
     text-align: center;
 }
-.containerForum{
+#forum .containerForum{
     width: 100%;
     height: 0%;
     
@@ -15,14 +15,24 @@ body{
     
     
 }
-.nomeDaComunidade .capaComunidade{
+.publicaForum {
+    width: 100%;
+    padding: 15px;
+
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+
+    border: 1.8px solid #2A846B;
+}
+#forum .nomeDaComunidade .capaComunidade{
     border-radius: 10px 10px 0px 0;
     border: none;
 
     width: 100%;
     height: 40%;
 }
-.nomeDaComunidade .perfilCominidade{
+#forum .nomeDaComunidade .perfilCominidade{
     border-radius: 10px;
     position: absolute;
     left: 130px;
@@ -31,12 +41,12 @@ body{
 
     width: 50px;
 }
-.nomeDaComunidade h3{
+#forum .nomeDaComunidade h3{
     margin-top: 20px;
     text-align: center;
     font-size: 1.3em;
 }
-.nomeDaComunidade p{
+#forum .nomeDaComunidade p{
     width: 70%;
     height: 20%;
     margin: 9px;
@@ -59,7 +69,7 @@ body{
 #forum .post hr{
     width: 100%;
 }
-.nomeDaComunidade{
+#forum .nomeDaComunidade{
     background: #fff;
 
     border: 1px solid #46996F;
@@ -68,7 +78,7 @@ body{
     width: 300px;
     height: 350px ;
 }
-.botoesForum{
+#forum .botoesForum{
     margin-left: 20px ;
     margin-right: 20px;
     color: #46996F;
@@ -87,15 +97,15 @@ body{
     border-radius: 50%;
 }
 
-.postNomeForum{
+#forum .postNomeForum{
     display: flex;
     justify-content: flex-start;
 }
-.postNomeForum p{
+#forum .postNomeForum p{
     margin-left: 10px;
     margin: 10px;
 }
-.nomeDaComunidade button{
+#forum .nomeDaComunidade button{
     display: flex;
     justify-content: center;
     padding: 5px;

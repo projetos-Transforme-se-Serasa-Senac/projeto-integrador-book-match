@@ -55,6 +55,11 @@ body{
     border-radius: 50%;
     margin: 10px;
 }
+.nomeUsuarioFeed{
+
+    text-decoration: none;
+    color: #000;
+}
 #feed .imagemPostFeed{
   width: 100%;
 }
