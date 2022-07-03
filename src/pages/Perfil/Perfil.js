@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
 import { NavLink } from "react-router-dom";
+import Publicacoes from '../Publicacoes/Publicacoes';
 // import Pedidos from '../../components/Pedidos/Pedidos';
 
 const Perfil = () => {
@@ -10,16 +11,21 @@ const Perfil = () => {
     document.body.style.backgroundImage='none'
 
 
+    const [sessao, alteraSessao] = useState()
     // livros , alteraLivros
 
     // buscaEmprestados
     // buscaSolicitacoes
     // ...
 
-    
+    const buscaPublicacoes = () => {
+
+        <Publicacoes/>
+
+    }
 
 
-    // useEffect( () => buscaEmprestados(), [] )
+    useEffect( () => buscaPublicacoes(), [] )
     
 
     return ( 
@@ -63,7 +69,7 @@ const Perfil = () => {
                     <div>
                     <nav className='navPerfil'>
 
-                        <NavLink to="/publicacoes"> Publicações </NavLink>
+                        <NavLink to="/publicacoes" onClick={() => buscaPublicacoes()}> Publicações </NavLink>
                         <p>|</p>
 
                         <NavLink to="/emprestados"> Emprestados  </NavLink>  

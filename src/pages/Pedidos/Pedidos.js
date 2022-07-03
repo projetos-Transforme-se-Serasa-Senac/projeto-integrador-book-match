@@ -2,25 +2,25 @@ import React from 'react';
 
 
 const Pedidos = () => {
-        const pedidos = [
-            { 
-            nome: "Fulaninha",
-            pessoa: " SOLICITAÇÃO" ,
-            pessoaa: "CANCELAR ",
-            },
 
-            {
-                nome: "Agatha",
-                pessoa: " SOLICITAÇÃO",
-                pessoaa: "CANCELAR ",
-            },
+    const axios = require('axios');
 
-            {
-                nome: "Beatriz",
-                pessoa: "SOLICITAÇÃO",
-                pessoaa: "CANCELAR ",
-            }
-        ]
+    const [pedidos, listaPedidos] = useState([])
+
+    const id_usuario = localStorage.getItem('id')
+
+    useEffect(() => {
+
+        axios.get('http://localhost:3001/publicacoes/' + id_usuario)
+        .then(function(response){
+            const dados = response.data;
+            console.log(dados)
+            listaPostagens(dados)
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }, [])
 
     return(
         <div> 
