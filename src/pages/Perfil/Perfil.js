@@ -9,6 +9,19 @@ const Perfil = () => {
     require ('./Perfil.css')
     document.body.style.backgroundImage='none'
 
+
+    // livros , alteraLivros
+
+    // buscaEmprestados
+    // buscaSolicitacoes
+    // ...
+
+    
+
+
+    // useEffect( () => buscaEmprestados(), [] )
+    
+
     return ( 
         <div id='perfil'>
 
@@ -31,30 +44,40 @@ const Perfil = () => {
 
  
 
-                <div className='container-perfil'>
-                    <div className='comunidadesParticipa'>
-                    <h6 className='titulo'>conheça novas comunidades</h6>
-                        <ol>
-                            <li>Assembléia de Deus</li>
-                        
-                            <li>Chocolatras anonimos book</li>
-                        
-                            <li> Para todos os livros que ja amei</li>
+                    <div className='container-perfil'>
+                        {/* <div className='comunidadesParticipa'>
+                        <h6 className='titulo'>conheça novas comunidades</h6>
+                            <ol>
+                                <li>Assembléia de Deus</li>
                             
-                            <li>A culpa é das estrelas e afins</li>
-                        </ol>
-                    </div>
+                                <li>Chocolatras anonimos book</li>
+                            
+                                <li> Para todos os livros que ja amei</li>
+                                
+                                <li>A culpa é das estrelas e afins</li>
+                            </ol>
+                        </div> */}
 
-                <div className='containerDireita'>
+                    <div className='containerDireita'>
 
                     <div>
-                        <div className='navegaçãoPerfil'>
-                            <NavLink className='opcao' to="/emprestados"> Emprestados </NavLink>
-                            
-                            <NavLink  className='opcao' to="/solicitacoes"> Solicitações </NavLink>
-                            
-                            <NavLink  className='opcao' to="/pedidos"> Meus Pedidos </NavLink>
-                        </div>
+                    <nav className='navPerfil'>
+
+                        <NavLink to="/publicacoes"> Publicações </NavLink>
+                        <p>|</p>
+
+                        <NavLink to="/emprestados"> Emprestados  </NavLink>  
+                        <p>|</p>
+
+                        <NavLink to="/pedidos"> Meus Pedidos </NavLink>
+                        <p>|</p>
+
+                        <NavLink to="/solicitacoes"> Solicitações </NavLink>
+                        <p>|</p>
+
+
+
+                    </nav>
                     </div>
                     <div className='post'>
                         <div className='perfilUsuario'>
@@ -70,11 +93,11 @@ const Perfil = () => {
                         <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
                         <div className='botoesFeed'>
 
-                            <button className='btn'>Curtir <i class="fa-solid fa-thumbs-up"></i></button>
+                            <button className='btn'>Curtir <i className="fa-solid fa-thumbs-up"></i></button>
                             <p className='btn'>|</p>
-                            <button className='btn'>Comentar <i class="fa-solid fa-comment"></i></button>
+                            <button className='btn'>Comentar <i className="fa-solid fa-comment"></i></button>
                             <p className='btn'>|</p>
-                            <button className='btn'>Compartilhar <i class="fa-solid fa-share"></i></button>
+                            <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
                     
                         </div>
                         

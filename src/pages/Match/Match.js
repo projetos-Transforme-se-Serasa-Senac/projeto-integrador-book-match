@@ -113,7 +113,7 @@ const Match = () => {
                                 <h3 className='txt1Match'> {match.titulo} </h3> 
                                 <h3 className='autorNome'> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
-                                <p> +{match.classficacao_etaria} </p> 
+                                <p> +{match.classificacao_etaria} </p> 
                                 <p> R${match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
                                 <p>@{match.user_name}</p>

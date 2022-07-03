@@ -18,21 +18,25 @@ const CadastroLivros = () => {
         const titulo = document.querySelector('#titulo').value
         const autor = document.querySelector('#autor').value
         const genero = document.querySelector('#genero').value
-        const classficacao_etaria = document.querySelector('#classficacao_etaria').value
+        const classificacao_etaria = document.querySelector('#classificacao_etaria').value
         const tags = document.querySelector('#tags').value
         const aluguel = document.querySelector('#aluguel').value
         const sinopse = document.querySelector('#sinopse').value
+        const img_livro = document.querySelector('#img_livro').value
 
         const obj = {
             id_usuario: id_usuario,
             titulo: titulo,
             autor: autor,
             genero: genero,
-            classficacao_etaria: classficacao_etaria,
+            classificacao_etaria: classificacao_etaria,
             tags: tags,
             aluguel: aluguel,
-            sinopse: sinopse
+            sinopse: sinopse,
+            img_livro: img_livro
         }
+
+        console.log(obj)
 
         const axios = require('axios');
 
@@ -95,7 +99,7 @@ const CadastroLivros = () => {
 
                         {/* Classificação indicatória */}
                         <div className='organizacaoCadastro'>
-                            <select name='classficacao_etaria' id='classficacao_etaria'    required >
+                            <select name='classificacao_etaria' id='classificacao_etaria'    required >
                                 <option value="0"> Classificação indicatória * </option> 
                                 <option value="1"> L </option>
                                 <option value="2"> 10 </option>
@@ -104,7 +108,7 @@ const CadastroLivros = () => {
                                 <option value="5"> 16 </option>
                                 <option value="6"> 18+ </option>
                             </select>
-                            <span for='classficacao_etaria'  ></span>
+                            <span for='classificacao_etaria'  ></span>
 
                             {/* Valor do aluguel */}
                             <label for='aluguel' ></label>
@@ -123,6 +127,10 @@ const CadastroLivros = () => {
                             
                             <span className="focusInputCadastro" data-placeholder="Insira a URL (link) do livro:"></span>
                             
+                        <div>
+                            <input name='foto_livro' type="text" id="img_livro"  placeholder='Insira o URL (link da foto)...'  required>  
+                            </input>
+                        </div>
                         </div>
 
                         <br/>
