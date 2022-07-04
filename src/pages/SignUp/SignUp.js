@@ -10,6 +10,8 @@ const SignUp = () => {
     const [dt_nascimento, setNascimento] = useState ("")
     const [senha, setSenha] = useState ("")
     const [confirmaSenha, setConfirmaSenha] = useState ("")
+    const [foto_perfil, setfoto_perfil] = useState ("")
+    const [foto_capa, setfoto_capa] = useState ("")
 
     const cadastraUsuario = (e) => {
         e.preventDefault();
@@ -121,6 +123,30 @@ const SignUp = () => {
                         <span className="focusInput" data-placeholder="Confirme sua senha"></span>
                       
                     </div>
+
+
+                    <div className="wrapInput">
+                            <input
+                                className={foto_perfil !== ""? 'temValor input': 'input'  } 
+                                id="foto_perfil"    type='text'      
+                                value={foto_perfil}
+                                onChange={e => setfoto_perfil(e.target.value)}
+                            />
+                            
+                            <span className="focusInput" data-placeholder="Insira a URL (link) da sua foto de perfil:"></span>
+                    </div>
+
+                    <div className="wrapInput">
+                            <input
+                                className={foto_capa !== ""? 'temValor input': 'input'  } 
+                                id="foto_capa"  type='text' 
+                                value={foto_capa}
+                                onChange={e => setfoto_capa(e.target.value)}
+                            />
+                            
+                            <span className="focusInput" data-placeholder="Insira a URL (link) da sua foto de capa:"></span>
+                    </div>
+
                     <div className="divButtons" >
                                 <a href="/" className="login-form-a"  value='Voltar'>Voltar</a>
                                 <input type='submit' className="login-form-btn" value='Cadastrar'/>
