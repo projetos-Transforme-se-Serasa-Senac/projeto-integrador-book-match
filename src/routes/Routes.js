@@ -29,13 +29,13 @@ const AppRouter = () => {
             <Route path="/chat" element={<Chat/>}/>
             <Route path="/forum" element={<Forum/>}/>
 
-            {/* ROTAS MENU */}
-            <Route path="/emprestados" element={<Emprestados/>}/>
+            {/* ROTAS MENU */}           
             <Route path="/cadastroLivros" element={<CadastroLivros/>}/>
             <Route path="/perfil" element={<Perfil/>}/>
             
             {/* ROTAS NAVEGAÇÃO PERFIL */}
             <Route path='publicacoes' element={<Publicacoes/>}/>
+            <Route path="/emprestados" element={<Emprestados/>}/>
             <Route path='pedidos' element={<Pedidos/>}/>
             <Route path='solicitacoes' element={<Solicitacoes/>}/>
         </Routes>
