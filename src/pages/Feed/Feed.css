@@ -167,6 +167,26 @@ body{
 
     margin: 10px;
 }
+  
+*::-webkit-scrollbar {
+    width: 10px; /* vertical scrollbar */
+    height: 10px; /* horizontal scrollbar */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background:none;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #afd3b9;
+    border-radius: 14px;
+    border:none;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background: #afd3b9;
+    background-color: #02735E;
+  }
 @media only screen and (max-width: 600px){
     #feed .containerFeed{
         width: 100%;

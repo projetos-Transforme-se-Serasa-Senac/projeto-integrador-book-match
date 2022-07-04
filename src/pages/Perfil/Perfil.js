@@ -69,9 +69,7 @@ const Perfil = () => {
                     <div>
                     <div className='navegacaoPerfil'>
 
-                        <NavLink to="/publicacoes" onClick={() => buscaPublicacoes()}> Publicações </NavLink>
-                        <p>|</p>
-
+                        <NavLink className='opcao' to="/publicacoes" onClick={() => buscaPublicacoes()}> Publicações </NavLink>
                     
                         <NavLink className='opcao' to="/emprestados"> Emprestados  </NavLink>                      
 

@@ -41,9 +41,11 @@ const Comunidade = () => {
                         <div class="cardComunidade">
                             <img src='https://i.imgur.com/unndAEa.png'/>
                             <div class="descriptions">
-                                <h1>Lorem</h1>
+                                <h1>Fãs de Jogos Vorazes</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis.
+                                Descrição - Depois da inusitada vitória de Katniss e Peeta nos últimos Jogos Vorazes, algo parece ter 
+                                mudado em Panem. 
+                                Aqui e ali, distúrbios e agitações nos distritos dão sinais de que uma revolta é iminente.
                                 </p>
                                 <div className='voltar'>
                                     <a href='Forum' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
