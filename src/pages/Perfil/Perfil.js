@@ -90,8 +90,6 @@ const Perfil = () => {
                     </div>
                 </div>
 
- 
-
                     <div className='container-perfil'>
                         <div className='comunidadesParticipa'>
                         <h6 className='titulo'>conheça novas comunidades</h6>
@@ -118,11 +116,10 @@ const Perfil = () => {
                         <button className='opcao' to="/pedidos"> Meus Pedidos </button>
                        
                         <button className='opcao' to="/solicitacoes" onClick={() => buscaLivros('solicitacoes')}> Solicitações </button>
-                       
-
-
-
+                
                     </div>
+                    </div>
+
                     </div>
                     {
                         postagens.map(post => {
@@ -169,7 +166,7 @@ const Perfil = () => {
                
             </div>
            
-        </div>
+      
      );
 }
  
