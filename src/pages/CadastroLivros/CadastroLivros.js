@@ -40,6 +40,7 @@ const CadastroLivros = () => {
 
         axios.post('http://localhost:3001/livros', obj)
         .then(function(response){
+            alert ("Cadastro realizado com sucesso, volte para a tela de procurar livros!")
             console.log(response)
         })
         .catch(function(error){
