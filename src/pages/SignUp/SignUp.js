@@ -34,6 +34,7 @@ const SignUp = () => {
 
         axios.post('http://localhost:3001/usuarios', obj)
         .then(function(response){
+            alert ("Cadastro realizado com sucesso, volte para a tela de login!")
             console.log(response)
         })
         .catch(function(error){
