@@ -19,7 +19,6 @@ const CadastroLivros = () => {
         const autor = document.querySelector('#autor').value
         const genero = document.querySelector('#genero').value
         const classificacao_etaria = document.querySelector('#classificacao_etaria').value
-        const tags = document.querySelector('#tags').value
         const aluguel = document.querySelector('#aluguel').value
         const sinopse = document.querySelector('#sinopse').value
         const img_livro = document.querySelector('#img_livro').value
@@ -30,7 +29,6 @@ const CadastroLivros = () => {
             autor: autor,
             genero: genero,
             classificacao_etaria: classificacao_etaria,
-            tags: tags,
             aluguel: aluguel,
             sinopse: sinopse,
             img_livro: img_livro
@@ -120,9 +118,9 @@ const CadastroLivros = () => {
 
                         {/* Foto do livro */}
                         <div className="wrapInputCadastro">
-                            <textarea name='foto_livro' 
+                            <textarea name='img_livro' 
                                 className={foto_livro !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="foto_livro"  rows='5' cols='35'   minLength={20}   required      
+                                id="img_livro"  rows='5' cols='35'   minLength={20}   required      
                                 value={foto_livro}
                                 onChange={e => setfoto_livro(e.target.value)}
                             />
