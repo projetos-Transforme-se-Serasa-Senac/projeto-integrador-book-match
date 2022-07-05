@@ -103,12 +103,12 @@ const CadastroLivros = () => {
                         <div className='organizacaoCadastro'>
                             <select name='classificacao_etaria' id='classificacao_etaria' className='classificacao_etaria'   required >
                                 <option value="0"> Classificação indicatória * </option> 
-                                <option value="1"> L </option>
-                                <option value="2"> 10 </option>
-                                <option value="3"> 12 </option>
-                                <option value="4"> 14 </option>
-                                <option value="5"> 16 </option>
-                                <option value="6"> 18+ </option>
+                                <option value="L"> L </option>
+                                <option value="10"> 10 </option>
+                                <option value="12"> 12 </option>
+                                <option value="14"> 14 </option>
+                                <option value="16"> 16 </option>
+                                <option value="18+"> 18+ </option>
                             </select>
                             <span for='classificacao_etaria'  ></span>
 
@@ -138,7 +138,7 @@ const CadastroLivros = () => {
                         <div className="wrapInputCadastro">
                             <textarea name='sinopse' 
                                 className={sinopse !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="sinopse"  rows='5' cols='35' minlength={20}  maxlength={200}   required      
+                                id="sinopse"  rows='5' cols='35' minLength={20}  maxLength={250}   required      
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />

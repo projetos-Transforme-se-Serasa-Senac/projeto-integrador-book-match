@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Menu from '../../components/Menu/Menu';
 import Navegacao from '../../components/Navegacao/Navegacao';
-import { NavLink } from "react-router-dom";
-import Publicacoes from '../Publicacoes/Publicacoes';
+// import Publicacoes from '../Publicacoes/Publicacoes';
 // import Pedidos from '../../components/Pedidos/Pedidos';
 
 const Perfil = () => {
@@ -11,21 +10,62 @@ const Perfil = () => {
     document.body.style.backgroundImage='none'
 
 
-    const [sessao, alteraSessao] = useState()
     // livros , alteraLivros
 
     // buscaEmprestados
     // buscaSolicitacoes
     // ...
 
-    const buscaPublicacoes = () => {
+    const [usuario, listaUsuario] = useState({})
 
-        <Publicacoes/>
+    const buscaUsuario = () => {
+        const id_usuario = localStorage.getItem('id')
+
+        const axios = require('axios');
+        axios.get('http://localhost:3001/perfil/' + id_usuario)
+        .then(function(response){
+            const dados = response.data;
+            console.log(dados)
+            listaUsuario(dados[0])
+        
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }
+
+
+
+    const [postagens, listaPostagens] = useState([])
+
+    const [tipo, mudaTipo] = useState("solicitacoes")
+
+
+    const buscaLivros = (tipo) => {
+        const id_usuario = localStorage.getItem('id')
+
+        // mudaTipo(tipo)
+
+        const axios = require('axios');
+    
+        axios.get('http://localhost:3001/' + tipo + '/' + id_usuario)
+        .then(function(response){
+            const dados = response.data;
+            console.log(dados)
+            listaPostagens(dados)
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    
 
     }
 
 
-    useEffect( () => buscaPublicacoes(), [] )
+    useEffect( () => {
+        buscaUsuario()
+        buscaLivros('publicacoes')
+    }, [] )
     
 
     return ( 
@@ -33,17 +73,19 @@ const Perfil = () => {
 
             <Menu/>
             <Navegacao/>
+            
             <h1> Perfil </h1>
+
             <div className='container'>
                 <div className='perfilPrincipal'>
-                    <img className='capaFundo' src='https://i.imgur.com/MMp8wsE.jpg'/>
+                    <img className='capaFundo' src={`${usuario.img_capa}`}/>
                     <br/>
-                    <img className='fotoPerfil' src='https://i.imgur.com/o8Mx6B5.jpg'/>
+                    <img className='fotoPerfil' src={`${usuario.img_perfil}`}/>
                     <div>                        
-                        <h6 className='nomePerfil'>Catchusca Tchutchuca</h6>
-                        <label className='infoPerfil'>Descrição textinho</label>
+                        <h6 className='nomePerfil'>{usuario.nome}</h6>
+                        <label className='infoPerfil'>{usuario.descricao}</label>
                         <br/>
-                        <label className='cidadePerfil'>São Carlos-sp</label>
+                        <label className='cidadePerfil'>São Carlos - SP</label>
 
                     </div>
                 </div>
@@ -69,42 +111,58 @@ const Perfil = () => {
                     <div>
                     <div className='navegacaoPerfil'>
 
-                        <NavLink className='opcao' to="/publicacoes" onClick={() => buscaPublicacoes()}> Publicações </NavLink>
+                        <button className='opcao' to="/publicacoes" onClick={() => buscaLivros('publicacoes')}> Publicações </button>
                     
-                        <NavLink className='opcao' to="/emprestados"> Emprestados  </NavLink>                      
+                        <button className='opcao' to="/emprestados"  onClick={() => buscaLivros('emprestados')}> Emprestados  </button>                      
 
-                        <NavLink className='opcao' to="/pedidos"> Meus Pedidos </NavLink>
+                        <button className='opcao' to="/pedidos"> Meus Pedidos </button>
                        
-                        <NavLink className='opcao' to="/solicitacoes"> Solicitações </NavLink>
+                        <button className='opcao' to="/solicitacoes" onClick={() => buscaLivros('solicitacoes')}> Solicitações </button>
                        
 
 
 
                     </div>
                     </div>
-                    <div className='post'>
-                        <div className='perfilUsuario'>
+                    {
+                        postagens.map(post => {
+                        return                        <div className='post'>
+                            <div className='perfilUsuario'>
 
-                            <span className='titulo'>Fulaninha de tal</span>
+                                {post.usuario_pedinte &&
+                                
+                                
+                                <div>
+                                    <span className='titulo'>{post.usuario_pedinte}</span>
+                                    <button>Aceitar</button>
+                                    <button>Recusar</button>
+                                </div>
+
                             
-                            <div> 
-                                <h6>Marina - Carlos Ruiz Zafon</h6>
-                                <label>*Resumo do livro* </label>
-                            </div>
-                        </div>
-                        
-                        <img className='imagemPost' src='https://cdn.culturagenial.com/imagens/dicas-livros-og.jpg'/>
-                        <div className='botoesFeed'>
+                            
+                            }
 
-                            <button className='btn'>Curtir <i className="fa-solid fa-thumbs-up"></i></button>
-                            <p className='btn'>|</p>
-                            <button className='btn'>Comentar <i className="fa-solid fa-comment"></i></button>
-                            <p className='btn'>|</p>
-                            <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
-                    
-                        </div>
+                                
+                                <div> 
+                                    <h6>Marina - Carlos Ruiz Zafon</h6>
+                                    <label>{post.sinopse}</label>
+                                </div>
+                            </div>
+                            
+                            <img className='imagemPost' src={`${post.imagem}`}/>
+                            <div className='botoesFeed'>
+
+                                <button className='btn'>Curtir <i className="fa-solid fa-thumbs-up"></i></button>
+                                <p className='btn'>|</p>
+                                <button className='btn'>Comentar <i className="fa-solid fa-comment"></i></button>
+                                <p className='btn'>|</p>
+                                <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
                         
-                    </div>
+                            </div>
+                            
+                        </div>
+                        })
+                    }
                 </div>
                 </div>
                

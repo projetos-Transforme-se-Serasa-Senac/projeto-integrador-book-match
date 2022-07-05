@@ -21,13 +21,17 @@ const SignUp = () => {
         const email = document.querySelector('#email').value
         const dt_nascimento = document.querySelector('#dt_nascimento').value
         const senha = document.querySelector('#senha').value
+        const img_perfil = document.querySelector('#img_perfil').value
+        const img_capa = document.querySelector('#img_capa').value
 
         const obj = {
             nome: nome,
             user_name: user_name,
             email: email,
             dt_nascimento: dt_nascimento,
-            senha: senha
+            senha: senha,
+            img_perfil: img_perfil,
+            img_capa: img_capa
         }
 
         const axios = require('axios');
@@ -128,7 +132,7 @@ const SignUp = () => {
                     <div className="wrapInput">
                             <input
                                 className={foto_perfil !== ""? 'temValor input': 'input'  } 
-                                id="foto_perfil"    type='text'      
+                                id="img_perfil"    type='text'      
                                 value={foto_perfil}
                                 onChange={e => setfoto_perfil(e.target.value)}
                             />
@@ -139,7 +143,7 @@ const SignUp = () => {
                     <div className="wrapInput">
                             <input
                                 className={foto_capa !== ""? 'temValor input': 'input'  } 
-                                id="foto_capa"  type='text' 
+                                id="img_capa"  type='text' 
                                 value={foto_capa}
                                 onChange={e => setfoto_capa(e.target.value)}
                             />
