@@ -41,18 +41,16 @@ const Comunidade = () => {
                         <div class="cardComunidade">
                             <img src='https://i.imgur.com/unndAEa.png'/>
                             <div class="descriptions">
-                                <h1>Fãs de Jogos Vorazes</h1>
+                                <h1>As meninas super poderosas</h1>
                                 <p>
-                                Descrição - Depois da inusitada vitória de Katniss e Peeta nos últimos Jogos Vorazes, algo parece ter 
-                                mudado em Panem. 
-                                Aqui e ali, distúrbios e agitações nos distritos dão sinais de que uma revolta é iminente.
+                                Acidentalmente criadas em laboratório por um professor, três irmãs combatem os malfeitores em Townsville.
                                 </p>
                                 <div className='voltar'>
                                     <a href='Forum' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cardComunidade">
+                        {/* <div class="cardComunidade">
                             <img src='https://i.imgur.com/uVURdSv.png'/>
                             <div class="descriptions">
                                 <h1>Lorem</h1>
@@ -123,7 +121,7 @@ const Comunidade = () => {
                                     entrar
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
             </div>
 

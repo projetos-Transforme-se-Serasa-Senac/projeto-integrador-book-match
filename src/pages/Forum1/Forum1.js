@@ -13,7 +13,7 @@ const Forum = () => {
 
             <Menu/>
             <Navegacao/>
-            <h1 className='TituloPagina'> Bem vindo a comunidade tal </h1>
+            <h1 className='TituloPagina'> Bem vindo a comunidade das meninas super poderosas </h1>
 
             <div className='containerForum'>
                 <div className='nomeDaComunidade'>
@@ -30,25 +30,14 @@ const Forum = () => {
                 <div className='post'>
                     <div className='postNomeForum'>
                         <img src='https://i.imgur.com/ETnEWOp.png'/>
-                        <p>NOME DE QUEM POSTOU</p>
+                        <p>ISABELA CORREIA</p>
                     </div>
                     <hr/>
 
-                    <h3>Lorem Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo mauris nec dui pellentesque,
-                        eu dictum ligula feugiat. Donec hendrerit ultrices neque, a luctus lacus. Aliquam aliquet sapien
-                        vel dui sagittis, vel convallis risus tempus. Nullam tempus aliquam efficitur. Donec at ante mi. 
-                        Donec pulvinar orci et ultricies elementum. Morbi sagittis mauris elit, sed gravida arcu volutpat 
-                        in. Nunc vehicula non enim id bibendum. Ut scelerisque sit amet dui sed cursus. Sed hendrerit et 
-                        nisi vitae bibendum. Proin ut urna at libero interdum gravida. Quisque lacinia vel nulla nec 
-                        pharetra. Nullam ornare risus eu nisl maximus mattis. Morbi at mauris leo. Nulla vitae felis in 
-                        ante fringilla auctor. Ut et elit eu arcu commodo tristique.
-
-                        Integer quis vestibulum nisl. Suspendisse tempor magna sed erat lobortis, eu fermentum sapien 
-                        ullamcorper. Sed non arcu ac tortor tincidunt accumsan eu sed risus. Pellentesque auctor augue
-                        id scelerisque gravida. Etiam posuere lorem eget massa pulvinar, nec cursus nunc viverra. 
-                        Vestibulum convallis dui quis lectus ultricies, sit amet scelerisque metus dapibus. Vivamus 
-                        id eros urna. In id arcu aliquet, pretium felis ac, laoreet mauris.</p>
+                    <h3>Coincidências?</h3>
+                    <p>Quando não estão combatendo vilões, Lindinha, Florzinha e Docinho frequentam o jardim-de-infância da Escola Carvalhinho, na cidade de Townsville. 
+                        Esta é a mesma escola (e sala de aula) do personagem Dexter, de O Laboratório de Dexter. Além disso, 
+                        o desenho Samurai Jack também se passa em uma espécie de Townsville, porém seria em uma versão pós-apocalíptica da cidade.</p>
                         <hr/>
                     <div className='botoesForum'>
                         <button className='botao'>curtir <i class="fa-solid fa-thumbs-up"></i></button>

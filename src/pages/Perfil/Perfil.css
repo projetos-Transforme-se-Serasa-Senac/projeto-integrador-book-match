@@ -13,6 +13,10 @@ body{
     
 }
 
+#perfil .container-colunas{
+    display: flex;
+}
+
 #perfil .capaFundo{
     border-radius: 10px 10px 0 0;
     width: 100%;
@@ -55,14 +59,14 @@ body{
 #perfil .post{ 
     border-radius: 10px;  
     border: 1px solid #C6C6C6;
-    width: 70%;
+    width: 100%;
     height: responsive;
 
     background: #FFFFFF;
 
     padding: 1% 1% 1% 1%;
 
-    margin-left: 120px;
+    margin-left: 40px;
     margin-bottom: 20px;
 }
 #perfil .perfilUsuario{
@@ -107,14 +111,15 @@ body{
     margin: 10px;
 }
 #perfil .navegacaoPerfil{ 
-    width: 70%;
+    width: 100%;
 
     background:transparent;
 
     display: flex;
     justify-content: space-between;
 
-    margin-left: 120px;
+    margin-left: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 #perfil .opcao{
@@ -124,11 +129,13 @@ body{
     background: #FFFFFF;
 
     border: 1px solid #C6C6C6;
-    padding: 1% 1% ;
-
-    margin-right:40px;
+    padding: 10px 30px ;
 
     color: #02735E ;
+    transition: 0.3s;
+}
+#perfil .opcao:hover{
+    transform: scale(1.05);
 }
 #perfil .comunidadesParticipa{
     background: #fff;

@@ -82,15 +82,17 @@ const Feed = () => {
                         </div>
                     </div>
                     <div className='exploreFeed'>
-                        <h6>conheça novos usuarios</h6>
+                        <h6>Conheça Novos Usuários</h6>
                         <ol>
-                            <li><i class="fa-solid fa-user-astronaut"></i>Sergio Berranteiro</li>
+                            <li><i class="fa-solid fa-user-astronaut"></i>Vitória Costa</li>
                             <hr/>
-                            <li><i class="fa-solid fa-user-injured"></i>Marcia sensitiva</li>
+                            <li><i class="fa-solid fa-user-injured"></i>Gabriela Maia</li>
                             <hr/>
-                            <li><i class="fa-solid fa-user-ninja"></i> sla mais quem</li>
+                            <li><i class="fa-solid fa-user-ninja"></i>Isabela Maia</li>
                             <hr/>
-                            <li><i class="fa-solid fa-user-nurse"></i> Outra Pessoa aqui</li>
+                            <li><i class="fa-solid fa-user-nurse"></i> Micaela Silva </li>
+                            <hr/>
+                            <li><i class="fa-solid fa-user-nurse"></i> Nayara Zambrano </li>
                         </ol>
                     </div>
                 </div>
@@ -106,8 +108,8 @@ const Feed = () => {
                                             <span className='tituloFeed'>{postagens.user_name}</span>
                                             
                                             <div> 
-                                                <h6>Marina - Carlos Ruiz Zafon</h6>
-                                                <label>*Resumo do livro* </label>
+                                                <h6>{postagens.titulo} - {postagens.autor} </h6>
+                                                <label>{postagens.sinopse} </label>
                                             </div>
                                         </div>
                                     <img className='imagemPostFeed' src={`${postagens.imagem}`}/>    
@@ -129,15 +131,15 @@ const Feed = () => {
                 
 
                 <div className='comunidadesFeed'>
-                        <h6 className='tituloFeed'>conheça novas comunidades</h6>
+                        <h6 className='tituloFeed'>Conheça Novas Comunidades</h6>
                             <ol>
-                                <li>Assembléia de Deus</li>
+                                <li>Jogos Vorazes</li>
                             
-                                <li>Chocolatras anonimos book</li>
+                                <li>As meninas super-poderosas</li>
                             
-                                <li> Para todos os livros que ja amei</li>
+                                <li>Harry Potter</li>
                                 
-                                <li>A culpa é das estrelas e afins</li>
+                                <li>A culpa é das estrelas</li>
                             </ol>
                     <div className='squadFeed'>
                         <p>Squad Amazonas © 2022 </p>

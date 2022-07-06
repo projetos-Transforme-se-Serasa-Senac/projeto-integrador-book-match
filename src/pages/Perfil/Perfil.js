@@ -90,77 +90,80 @@ const Perfil = () => {
                     </div>
                 </div>
 
-                <div className='container-perfil'>
-                    <div className='comunidadesParticipa'>
-                        <h6 className='titulo'>conheça novas comunidades</h6>
-                            <ol>
-                                <li>Assembléia de Deus</li>
-                            
-                                <li>Chocolatras anonimos book</li>
-                            
-                                <li> Para todos os livros que ja amei</li>
+                <div className="container-colunas">
+
+                    <div className='container-perfil'>
+                        <div className='comunidadesParticipa'>
+                            <h6 className='titulo'>Conheça Novas Comunidades</h6>
+                                <ol>
+                                    <li>Jogos Vorazes</li>
                                 
-                                <li>A culpa é das estrelas e afins</li>
-                            </ol>
-                    </div>
-                </div>
-                    
-                <div className='containerDireita'>
-
-                    <div>
-                        <div className='navegacaoPerfil'>
-
-                            <button className='opcao' to="/publicacoes" onClick={() => buscaLivros('publicacoes')}> Publicações </button>
-                        
-                            <button className='opcao' to="/emprestados"  onClick={() => buscaLivros('emprestados')}> Emprestados  </button>                      
-
-                            <button className='opcao' to="/pedidos"> Meus Pedidos </button>
-                        
-                            <button className='opcao' to="/solicitacoes" onClick={() => buscaLivros('solicitacoes')}> Solicitações </button>
-                    
+                                    <li>As meninas super-poderosas</li>
+                                
+                                    <li>Harry Potter</li>
+                                    
+                                    <li>A culpa é das estrelas</li>
+                                </ol>
                         </div>
                     </div>
+                        
+                    <div className='containerDireita'>
 
-                </div>
-                {
-                    postagens.map(post => {
-                    return(                        
-                        <div className='post'>
-                            <div className='perfilUsuario'>
+                        <div>
+                            <div className='navegacaoPerfil'>
 
-                                {post.usuario_pedinte &&
-                                
-                                
-                                <div>
-                                    <span className='titulo'>{post.usuario_pedinte}</span>
-                                    <button>Aceitar</button>
-                                    <button>Recusar</button>
-                                </div>}
-
+                                <button className='opcao' to="/publicacoes" onClick={() => buscaLivros('publicacoes')}> Publicações </button>
                             
-                                <div> 
-                                    <h6>{post.titulo} - {post.autor}</h6>
-                                    <label>{post.sinopse}</label>
+                                <button className='opcao' to="/emprestados"  onClick={() => buscaLivros('emprestados')}> Emprestados  </button>                      
+
+                                <button className='opcao' to="/pedidos"> Meus Pedidos </button>
+                            
+                                <button className='opcao' to="/solicitacoes" onClick={() => buscaLivros('solicitacoes')}> Solicitações </button>
+                        
+                            </div>
+                        </div>
+
+                        {
+                            postagens.map(post => {
+                            return(                        
+                                <div className='post'>
+                                    <div className='perfilUsuario'>
+
+                                        {post.usuario_pedinte &&
+                                        
+                                        
+                                        <div>
+                                            <span className='titulo'>{post.usuario_pedinte}</span>
+                                            <button>Aceitar</button>
+                                            <button>Recusar</button>
+                                        </div>}
+
+                                    
+                                        <div> 
+                                            <h6>{post.titulo} - {post.autor}</h6>
+                                            <label>{post.sinopse}</label>
+                                        </div>
+                                    </div>
+                                
+                                    <img className='imagemPost' src={`${post.imagem}`}/>
+                                    <div className='botoesFeed'>
+
+                                        <button className='btn'>Curtir <i className="fa-solid fa-thumbs-up"></i></button>
+                                        <p className='btn'>|</p>
+                                        <button className='btn'>Comentar <i className="fa-solid fa-comment"></i></button>
+                                        <p className='btn'>|</p>
+                                        <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
+                                
+                                    </div>
                                 </div>
-                            </div>
-                        
-                            <img className='imagemPost' src={`${post.imagem}`}/>
-                            <div className='botoesFeed'>
-
-                                <button className='btn'>Curtir <i className="fa-solid fa-thumbs-up"></i></button>
-                                <p className='btn'>|</p>
-                                <button className='btn'>Comentar <i className="fa-solid fa-comment"></i></button>
-                                <p className='btn'>|</p>
-                                <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
-                        
-                            </div>
-                        </div>
-                        )
-                        
-                    })
-                }
+                                )
+                                
+                            })
+                        }
+                    </div>
                 </div>
-                </div>
+            </div>
+        </div>
                
                
           
