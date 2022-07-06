@@ -111,11 +111,15 @@ const Feed = () => {
                                             </div>
                                         </div>
                                     <img className='imagemPostFeed' src={`${postagens.imagem}`}/>    
-                                    <div  onClick={e => curtir(e)} className='botoesFeed'>
+                                        <div  onClick={e => curtir(e)} className='botoesFeed'>
 
-                                        <button  className='btnFeed' > <i class="fa-solid fa-thumbs-up"  
-                                        style={{backgroundColor:cor,}}>  </i></button>
-                                    </div>
+                                            <button  className='btnFeed' > Curtir <i class="fa-solid fa-thumbs-up"  
+                                            style={{backgroundColor:cor,}}>  </i></button>
+                                            <p className='btn'>|</p>
+                                            <button className='btn'>Comentar <i className="fa-solid fa-comment"></i></button>
+                                            <p className='btn'>|</p>
+                                            <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
+                                        </div>
                                     </div>
                             
                     )
