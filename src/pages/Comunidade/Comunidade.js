@@ -57,9 +57,9 @@ const Comunidade = () => {
                             <div class="descriptions">
                                 <h1>Lorem</h1>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
-                                <button>
-                                    entrar
-                                </button>
+                                <div className='voltar'>
+                                    <a href='Forum2' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
+                                </div>
                             </div>
                         </div>
                         <div class="cardComunidade">
@@ -67,9 +67,9 @@ const Comunidade = () => {
                             <div class="descriptions">
                                 <h1>Lorem</h1>
                                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend dui nec magna semper aliquet. Nunc ullamcorper eleifend mattis. Duis. </p>
-                                <button>
-                                    entrar
-                                </button>
+                                <div className='voltar'>
+                                    <a href='Forum3' className='voltarLink'> <i class="fa-solid fa-arrow-left"></i> entrar</a>
+                                </div>
                             </div>
                         </div>
                         <div class="cardComunidade">
