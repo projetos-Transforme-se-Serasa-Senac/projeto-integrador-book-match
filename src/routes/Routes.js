@@ -6,13 +6,11 @@ import Match from '../pages/Match/Match';
 import Feed from '../pages/Feed/Feed';
 import Comunidade from '../pages/Comunidade/Comunidade';
 import Chat from '../pages/Chat/Chat';
-import Emprestados from '../pages/Emprestados/Emprestados';
+// import Emprestados from '../pages/Emprestados/Emprestados';
 import CadastroLivros from '../pages/CadastroLivros/CadastroLivros';
 import Perfil from '../pages/Perfil/Perfil';
 import Forum from '../pages/Forum/Forum';
-import Pedidos from '../pages/Pedidos/Pedidos';
-import Solicitacoes from '../pages/Solicitacoes/Solicitacoes';
-import Publicacoes from '../pages/Publicacoes/Publicacoes'
+
 
 const AppRouter = () => {
     return(
@@ -30,14 +28,11 @@ const AppRouter = () => {
             <Route path="/forum" element={<Forum/>}/>
 
             {/* ROTAS MENU */}
-            <Route path="/emprestados" element={<Emprestados/>}/>
+            {/* <Route path="/emprestados" element={<Emprestados/>}/> */}
             <Route path="/cadastroLivros" element={<CadastroLivros/>}/>
             <Route path="/perfil" element={<Perfil/>}/>
             
-            {/* ROTAS NAVEGAÇÃO PERFIL */}
-            <Route path='publicacoes' element={<Publicacoes/>}/>
-            <Route path='pedidos' element={<Pedidos/>}/>
-            <Route path='solicitacoes' element={<Solicitacoes/>}/>
+
         </Routes>
 
     );

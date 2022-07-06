@@ -19,7 +19,6 @@ const CadastroLivros = () => {
         const autor = document.querySelector('#autor').value
         const genero = document.querySelector('#genero').value
         const classificacao_etaria = document.querySelector('#classificacao_etaria').value
-        const tags = document.querySelector('#tags').value
         const aluguel = document.querySelector('#aluguel').value
         const sinopse = document.querySelector('#sinopse').value
         const img_livro = document.querySelector('#img_livro').value
@@ -30,7 +29,6 @@ const CadastroLivros = () => {
             autor: autor,
             genero: genero,
             classificacao_etaria: classificacao_etaria,
-            tags: tags,
             aluguel: aluguel,
             sinopse: sinopse,
             img_livro: img_livro
@@ -42,6 +40,7 @@ const CadastroLivros = () => {
 
         axios.post('http://localhost:3001/livros', obj)
         .then(function(response){
+            alert ("Cadastro realizado com sucesso, volte para a tela de procurar livros!")
             console.log(response)
         })
         .catch(function(error){
@@ -103,12 +102,12 @@ const CadastroLivros = () => {
                         <div className='organizacaoCadastro'>
                             <select name='classificacao_etaria' id='classificacao_etaria' className='classificacao_etaria'   required >
                                 <option value="0"> Classificação indicatória * </option> 
-                                <option value="1"> L </option>
-                                <option value="2"> 10 </option>
-                                <option value="3"> 12 </option>
-                                <option value="4"> 14 </option>
-                                <option value="5"> 16 </option>
-                                <option value="6"> 18+ </option>
+                                <option value="L"> L </option>
+                                <option value="10"> 10 </option>
+                                <option value="12"> 12 </option>
+                                <option value="14"> 14 </option>
+                                <option value="16"> 16 </option>
+                                <option value="18+"> 18+ </option>
                             </select>
                             <span for='classificacao_etaria'  ></span>
 
@@ -120,9 +119,9 @@ const CadastroLivros = () => {
 
                         {/* Foto do livro */}
                         <div className="wrapInputCadastro">
-                            <textarea name='foto_livro' 
+                            <textarea name='img_livro' 
                                 className={foto_livro !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="foto_livro"  rows='5' cols='35'   minLength={20}   required      
+                                id="img_livro"  rows='5' cols='35'   minLength={20}   required      
                                 value={foto_livro}
                                 onChange={e => setfoto_livro(e.target.value)}
                             />
@@ -138,7 +137,7 @@ const CadastroLivros = () => {
                         <div className="wrapInputCadastro">
                             <textarea name='sinopse' 
                                 className={sinopse !== ""? 'temValorCadastro inputCadastro': 'inputCadastro'  } 
-                                id="sinopse"  rows='5' cols='35' minlength={20}  maxlength={200}   required      
+                                id="sinopse"  rows='5' cols='35' minLength={20}  maxLength={250}   required      
                                 value={sinopse}
                                 onChange={e => setsinopse(e.target.value)}
                             />
