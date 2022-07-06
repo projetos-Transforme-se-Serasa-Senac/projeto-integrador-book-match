@@ -90,8 +90,8 @@ const Perfil = () => {
                     </div>
                 </div>
 
-                    <div className='container-perfil'>
-                        <div className='comunidadesParticipa'>
+                <div className='container-perfil'>
+                    <div className='comunidadesParticipa'>
                         <h6 className='titulo'>conheça novas comunidades</h6>
                             <ol>
                                 <li>Assembléia de Deus</li>
@@ -102,28 +102,30 @@ const Perfil = () => {
                                 
                                 <li>A culpa é das estrelas e afins</li>
                             </ol>
-                        </div>
-
-                    <div className='containerDireita'>
+                    </div>
+                </div>
+                    
+                <div className='containerDireita'>
 
                     <div>
-                    <div className='navegacaoPerfil'>
+                        <div className='navegacaoPerfil'>
 
-                        <button className='opcao' to="/publicacoes" onClick={() => buscaLivros('publicacoes')}> Publicações </button>
+                            <button className='opcao' to="/publicacoes" onClick={() => buscaLivros('publicacoes')}> Publicações </button>
+                        
+                            <button className='opcao' to="/emprestados"  onClick={() => buscaLivros('emprestados')}> Emprestados  </button>                      
+
+                            <button className='opcao' to="/pedidos"> Meus Pedidos </button>
+                        
+                            <button className='opcao' to="/solicitacoes" onClick={() => buscaLivros('solicitacoes')}> Solicitações </button>
                     
-                        <button className='opcao' to="/emprestados"  onClick={() => buscaLivros('emprestados')}> Emprestados  </button>                      
-
-                        <button className='opcao' to="/pedidos"> Meus Pedidos </button>
-                       
-                        <button className='opcao' to="/solicitacoes" onClick={() => buscaLivros('solicitacoes')}> Solicitações </button>
-                
-                    </div>
+                        </div>
                     </div>
 
-                    </div>
-                    {
-                        postagens.map(post => {
-                        return                        <div className='post'>
+                </div>
+                {
+                    postagens.map(post => {
+                    return(                        
+                        <div className='post'>
                             <div className='perfilUsuario'>
 
                                 {post.usuario_pedinte &&
@@ -133,19 +135,15 @@ const Perfil = () => {
                                     <span className='titulo'>{post.usuario_pedinte}</span>
                                     <button>Aceitar</button>
                                     <button>Recusar</button>
-                                </div>
+                                </div>}
 
                             
-                            
-                            }
-
-                                
                                 <div> 
-                                    <h6>Marina - Carlos Ruiz Zafon</h6>
+                                    <h6>{post.titulo} - {post.autor}</h6>
                                     <label>{post.sinopse}</label>
                                 </div>
                             </div>
-                            
+                        
                             <img className='imagemPost' src={`${post.imagem}`}/>
                             <div className='botoesFeed'>
 
@@ -156,15 +154,16 @@ const Perfil = () => {
                                 <button className='btn'>Compartilhar <i className="fa-solid fa-share"></i></button>
                         
                             </div>
-                            
                         </div>
-                        })
-                    }
+                        )
+                        
+                    })
+                }
                 </div>
                 </div>
                
                
-            </div>
+          
            
       
      );

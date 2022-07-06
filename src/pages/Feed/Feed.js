@@ -10,12 +10,32 @@ const Feed = () => {
     document.body.style.backgroundImage='none'
     const axios = require('axios');
 
+    const [usuario, listaUsuario] = useState({})
+
+    const buscaUsuario = () => {
+        const id_usuario = localStorage.getItem('id')
+
+        const axios = require('axios');
+        axios.get('http://localhost:3001/perfil/' + id_usuario)
+        .then(function(response){
+            const dados = response.data;
+            console.log(dados)
+            listaUsuario(dados[0])
+        
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }
+
     const [postagens, listaPostagens] = useState([])
 
     const id_seguidor = localStorage.getItem('id')
 
 
     useEffect(() => {
+
+        buscaUsuario()
 
         axios.get('http://localhost:3001/feed/' + id_seguidor)
         .then(function(response){
@@ -52,15 +72,13 @@ const Feed = () => {
             <div className='containerFeed'>
                 <div className='container-perfilFeed'>
                     <div className='miniPerfilFeed'>
-                        <img className="perfil02Feed" src="https://i.imgur.com/o8Mx6B5.jpg"/>
+                        <img className="perfil02Feed" src={`${usuario.img_perfil}`}/>
                         <div className='entraPerfilFeed'>
                             {/* <h6 className='nomeUsuarioFeed'></h6> */}
 
-                            <p><NavLink className='nomeUsuarioFeed' to="/perfil"> Fulaninha {postagens.user_name} </NavLink></p>
+                            <p><NavLink className='nomeUsuarioFeed' to="/perfil"> {usuario.nome} </NavLink></p>
 
-                            <p><span className='descricaoPerfilFeed'>EU GOSTO ASSIM, MUITO CHEIONAS,
-                             EU GOSTO ASSIM DAS BEM GRANDONAS, EU GOSTO MAIS SE SÃO CARNUDAS, AINDA MAIS
-                             SE SÃO PANÇUDAS ♪♪♪</span></p>
+                            <p><span className='descricaoPerfilFeed'>{usuario.descricao}</span></p>
                         </div>
                     </div>
                     <div className='exploreFeed'>
@@ -83,7 +101,7 @@ const Feed = () => {
 
                                     <div className='postFeed'>
                                         <div className='perfilUsuarioFeed'>
-                                            <img className='fotoPerfilFeed' src=''/>
+                                            <img className='fotoPerfilFeed' src={`${postagens.img_perfil}`}/>
 
                                             <span className='tituloFeed'>{postagens.user_name}</span>
                                             

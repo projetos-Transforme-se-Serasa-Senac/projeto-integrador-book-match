@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 
@@ -10,6 +10,29 @@ const Menu = () => {
     const mostrarOuOcultar = () => mostraElemento(!estaMostrando)
 
     const [mostraMenu, alteraMostrarMenu] = useState(true)
+
+    const [usuario, listaUsuario] = useState({})
+
+    const buscaUsuario = () => {
+        const id_usuario = localStorage.getItem('id')
+
+        const axios = require('axios');
+        axios.get('http://localhost:3001/perfil/' + id_usuario)
+        .then(function(response){
+            const dados = response.data;
+            console.log(dados)
+            listaUsuario(dados[0])
+        
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    }
+
+    useEffect( () => {
+        buscaUsuario()
+
+    }, [] )
 
 
 
@@ -48,7 +71,7 @@ const Menu = () => {
             </div>
         
             <div> 
-                <a onClick={mostrarOuOcultar} href="#"> <img className="perfil" src="https://i.imgur.com/o8Mx6B5.jpg"/>  </a>
+                <a onClick={mostrarOuOcultar} href="#"> <img className="perfil" src={`${usuario.img_perfil}`}/>  </a>
                 {/* <div id="modal" onblur="fecha()"></div> */}
                 {estaMostrando ? 
 

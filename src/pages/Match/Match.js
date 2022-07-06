@@ -8,7 +8,7 @@ const Match = () => {
     require ('./Match.css')
     document.body.style.backgroundImage='none'
 
-
+        const id_usuario = localStorage.getItem('id')
     
         const [matches, alteraMatches] = useState([])
         const [match, alteraMatch] = useState( null )
@@ -17,7 +17,7 @@ const Match = () => {
         const axios = require('axios');
 
         useEffect(() => {
-            axios.get('http://localhost:3001/livros')
+            axios.get('http://localhost:3001/livros' + id_usuario)
             .then(function(response){
                 const dados = response.data;
                 console.log(dados)
@@ -113,8 +113,8 @@ const Match = () => {
                                 <h3 className='txt1Match'> {match.titulo} </h3> 
                                 <h3 className='autorNome'> {match.autor} </h3> 
                                 <p> {match.genero} </p> 
-                                <p> +{match.classificacao_etaria} </p> 
-                                <p> R${match.aluguel} </p> 
+                                <p>Classificação indicatória: +{match.classificacao_etaria} </p> 
+                                <p>Aluguel: R${match.aluguel} </p> 
                                 <p className='txt2Match'>{match.sinopse}</p>
                                 <p>@{match.user_name}</p>
                             </div>                             
