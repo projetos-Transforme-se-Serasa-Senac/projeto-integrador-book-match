@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book Share
 
-## Available Scripts
+## De onde surgiu a ideia?
 
-In the project directory, you can run:
+O Book Share nasceu a partir de uma problematização 
+encontrada em: **Os livros físicos estão realmente caros
+hoje em dia.**
 
-### `npm start`
+Ao realizarmos uma pesquisa, levantamos que o preço 
+do papel **subiu em 65%**, o que fez com que o valor
+dos **livros aumentassem em 20,3%** no último ano.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Outro dado importante que buscamos é qual tipo
+de leitura as pessoas geralmente preferem, e **90% ainda
+hoje preferem ler um livro físico.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Proposta do site
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No Book Share, o usuário pode cadastrar seus livros
+físicos para que outros usuários possam demonstrar 
+interesse no empréstimo. Para isso, temos a tela 
+de **Procurar Livros**, onde é mostrado ao usuário 
+todos os livros cadastrados no banco de dados que estão 
+disponíveis para empréstimo, onde o dono pode escolher 
+por um valor ou não nele.
 
-### `npm run build`
+![](https://i.imgur.com/5Hkr2YR.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**No Feed** aparece para o usuário apenas os livros
+dos usuários que o dono do perfil segue:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](https://i.imgur.com/0d6OkU4.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ao entrar no **perfil**, o usuário pode visualizar as
+publicações que realizou e solicitações de empréstimos
+que tem de outros usuários:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://i.imgur.com/pcIVLmH.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+**Outras telas**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Cadastro de livros*
+![Cadastro de livros](https://i.imgur.com/q1NyEZJ.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*Login*
+![](https://i.imgur.com/ES71kFb.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Fontes de pesquisa
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Aumento do preço do papel](https://diariodocomercio.com.br/economia/precos-do-papel-disparam-com-aumento-da-demanda/#:~:text=Diante%20disso%2C%20Baggio%20acredita%20que,Relatório%20Focus%20do%20Banco%20Central)
